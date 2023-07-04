@@ -6,7 +6,7 @@
 Списки доступны в нескольких форматах:
 - RAW - это список доменов и субдоменов
 - Dnsmasq-ipset - список для Dnsmasq в формате ipset (OpenWrt <= 21.02)
-- Dnsmasq-nfset - список для Dnsmasq в формате nftables set (OpenWrt >=22.03)
+- Dnsmasq-nfset - список для Dnsmasq в формате nftables set (OpenWrt >=22.03). Для работы c доменами в 22.03 требуется [установить](https://t.me/itdoginfo/12) dnsmasq-full из snapshot версии.
 
 Конфигурация для Dnsmasq добавляет все зарезолвенные IP-адреса в set `vpn-domain`. И можно оперировать этим списком. Заблокировать, конечно же, все эти IP к чертям.
 
