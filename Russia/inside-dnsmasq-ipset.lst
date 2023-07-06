@@ -25,6 +25,7 @@ ipset=/bradyid.com/vpn_domains
 ipset=/buckaroo.nl/vpn_domains
 ipset=/cambiumnetworks.com/vpn_domains
 ipset=/canva.com/vpn_domains
+ipset=/carmasters.org/vpn_domains
 ipset=/cdninstagram.com/vpn_domains
 ipset=/certifytheweb.com/vpn_domains
 ipset=/cherta.media/vpn_domains
