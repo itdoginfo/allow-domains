@@ -190,6 +190,7 @@ ipset=/semnasem.org/vpn_domains
 ipset=/serpstat.com/vpn_domains
 ipset=/servarr.com/vpn_domains
 ipset=/skladchik.com/vpn_domains
+ipset=/skyscanner.com/vpn_domains
 ipset=/slideshare.net/vpn_domains
 ipset=/smashwords.com/vpn_domains
 ipset=/soapui.org/vpn_domains
