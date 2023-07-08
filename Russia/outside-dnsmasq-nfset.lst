@@ -9,6 +9,7 @@ nftset=/ozone.ru/4#inet#fw4#vpn_domains
 nftset=/ozonusercontent.com/4#inet#fw4#vpn_domains
 nftset=/pochta.ru/4#inet#fw4#vpn_domains
 nftset=/refocus.ru/4#inet#fw4#vpn_domains
+nftset=/russianpost.ru/4#inet#fw4#vpn_domains
 nftset=/rzd-bonus.ru/4#inet#fw4#vpn_domains
 nftset=/rzd.ru/4#inet#fw4#vpn_domains
 nftset=/ttk.ru/4#inet#fw4#vpn_domains

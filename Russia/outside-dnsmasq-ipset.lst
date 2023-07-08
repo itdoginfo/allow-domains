@@ -9,6 +9,7 @@ ipset=/ozone.ru/vpn_domains
 ipset=/ozonusercontent.com/vpn_domains
 ipset=/pochta.ru/vpn_domains
 ipset=/refocus.ru/vpn_domains
+ipset=/russianpost.ru/vpn_domains
 ipset=/rzd-bonus.ru/vpn_domains
 ipset=/rzd.ru/vpn_domains
 ipset=/ttk.ru/vpn_domains
