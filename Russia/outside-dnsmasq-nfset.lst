@@ -1,8 +1,11 @@
+nftset=/avtodor-tr.ru/4#inet#fw4#vpn_domains
 nftset=/bitrix.info/4#inet#fw4#vpn_domains
 nftset=/bkvet.ru/4#inet#fw4#vpn_domains
 nftset=/cdn77.org/4#inet#fw4#vpn_domains
 nftset=/dzvr.ru/4#inet#fw4#vpn_domains
 nftset=/kinopoisk.ru/4#inet#fw4#vpn_domains
+nftset=/mos.ru/4#inet#fw4#vpn_domains
+nftset=/mosenergosbyt.ru/4#inet#fw4#vpn_domains
 nftset=/onelya.ru/4#inet#fw4#vpn_domains
 nftset=/ozon.ru/4#inet#fw4#vpn_domains
 nftset=/ozone.ru/4#inet#fw4#vpn_domains
