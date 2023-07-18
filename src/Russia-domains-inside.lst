@@ -185,6 +185,11 @@ terraform.io
 www.terraform.io
 registry.terraform.io
 
+# Lambda Labs
+lambdalabs.com
+cloud.lambdalabs.com
+docs.lambdalabs.com
+
 # Other
 saverudata.net
 graylog.org
