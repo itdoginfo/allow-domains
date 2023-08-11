@@ -1,19 +1,26 @@
 # Instagram
+instagram.com
+www.instagram.com
 graph.instagram.com
 gateway.instagram.com
 i.instagram.com
+z-p42-instagram.c10r.instagram.com
 i-fallback.instagram.com
+www.facebook.com
 mqtt-mini.facebook.com
 edge-mqtt.facebook.com
 graph.facebook.com
 web.facebook.com
-z-p42-chat-e2ee-ig.facebook.com
 connect.facebook.net
-cdn.fbsbx.com
+z-p42-chat-e2ee-ig.facebook.com
+star-mini.c10r.facebook.com
+static.cdninstagram.com
+scontent.cdninstagram.com
 scontent-ams2-1.cdninstagram.com
 scontent-ams4-1.cdninstagram.com
 scontent-ams4-1.xx.fbcdn.net
 scontent.xx.fbcdn.net
+cdn.fbsbx.com
 
 # servarr
 translate.servarr.com
@@ -29,6 +36,8 @@ picks.nba.com
 # News. From: https://ru.m.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B7%D0%B0%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%D0%A1%D0%9C%D0%98
 ovd.news
 ovdinfo.org
+ovd.legal
+oi.legal
 grani.ru
 ej.ru
 www.kasparov.ru
@@ -169,6 +178,9 @@ tvfreedom.io
 politiken.dk
 thebell.io
 arbat.media
+svidomi.in.ua
+vesma.one
+vesma.today
 
 # VPN service
 vpnlove.me
@@ -189,6 +201,10 @@ registry.terraform.io
 lambdalabs.com
 cloud.lambdalabs.com
 docs.lambdalabs.com
+
+# Grafana
+grafana.com
+dl.grafana.com
 
 # Other
 saverudata.net
@@ -221,3 +237,6 @@ kupujemprodajem.com
 www.ti.com
 threads.net
 www.threads.net
+www.neformat.com.ua
+neformat.com.ua
+forum.neformat.com.ua
