@@ -101,6 +101,7 @@ ipset=/grammarly.com/vpn_domains
 ipset=/grani.ru/vpn_domains
 ipset=/graty.me/vpn_domains
 ipset=/graylog.org/vpn_domains
+ipset=/grazie.ai/vpn_domains
 ipset=/gulagu.net/vpn_domains
 ipset=/hashicorp.com/vpn_domains
 ipset=/holod.media/vpn_domains
