@@ -118,6 +118,7 @@ ipset=/ilook.tv/vpn_domains
 ipset=/important-stories.com/vpn_domains
 ipset=/instagram.com/vpn_domains
 ipset=/intel.com/vpn_domains
+ipset=/intellij.net/vpn_domains
 ipset=/interfax.com.ua/vpn_domains
 ipset=/iptv.online/vpn_domains
 ipset=/is.fi/vpn_domains
