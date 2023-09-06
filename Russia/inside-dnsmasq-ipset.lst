@@ -17,7 +17,6 @@ ipset=/appspot.com/vpn_domains
 ipset=/appstorrent.ru/vpn_domains
 ipset=/aqicn.org/vpn_domains
 ipset=/arbat.media/vpn_domains
-ipset=/asus.com/vpn_domains
 ipset=/atlassian.com/vpn_domains
 ipset=/atn.ua/vpn_domains
 ipset=/azathabar.com/vpn_domains

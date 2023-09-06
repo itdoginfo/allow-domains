@@ -17,7 +17,6 @@ nftset=/appspot.com/4#inet#fw4#vpn_domains
 nftset=/appstorrent.ru/4#inet#fw4#vpn_domains
 nftset=/aqicn.org/4#inet#fw4#vpn_domains
 nftset=/arbat.media/4#inet#fw4#vpn_domains
-nftset=/asus.com/4#inet#fw4#vpn_domains
 nftset=/atlassian.com/4#inet#fw4#vpn_domains
 nftset=/atn.ua/4#inet#fw4#vpn_domains
 nftset=/azathabar.com/4#inet#fw4#vpn_domains
