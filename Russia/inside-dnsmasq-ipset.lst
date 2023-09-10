@@ -10,6 +10,7 @@ ipset=/agents.media/vpn_domains
 ipset=/agentura.ru/vpn_domains
 ipset=/alberta.ca/vpn_domains
 ipset=/amazonaws.com/vpn_domains
+ipset=/analog.com/vpn_domains
 ipset=/anidub.com/vpn_domains
 ipset=/anilibria.tv/vpn_domains
 ipset=/aplawrence.com/vpn_domains
