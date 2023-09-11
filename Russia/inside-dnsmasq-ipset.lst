@@ -165,6 +165,7 @@ ipset=/memohrc.org/vpn_domains
 ipset=/merezha.co/vpn_domains
 ipset=/metacritic.com/vpn_domains
 ipset=/metla.press/vpn_domains
+ipset=/microchip.com/vpn_domains
 ipset=/mignews.com/vpn_domains
 ipset=/mongodb.com/vpn_domains
 ipset=/mongodb.org/vpn_domains

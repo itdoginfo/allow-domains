@@ -165,6 +165,7 @@ nftset=/memohrc.org/4#inet#fw4#vpn_domains
 nftset=/merezha.co/4#inet#fw4#vpn_domains
 nftset=/metacritic.com/4#inet#fw4#vpn_domains
 nftset=/metla.press/4#inet#fw4#vpn_domains
+nftset=/microchip.com/4#inet#fw4#vpn_domains
 nftset=/mignews.com/4#inet#fw4#vpn_domains
 nftset=/mongodb.com/4#inet#fw4#vpn_domains
 nftset=/mongodb.org/4#inet#fw4#vpn_domains
