@@ -1,4 +1,4 @@
-#!/usr/bin/python3.8
+#!/usr/bin/python3.10
 
 import tldextract
 import urllib.request
@@ -47,6 +47,23 @@ def dnsmasq(src, out, remove={'google.com'}):
         for name in domains:
             file.write(f'ipset=/{name}/vpn_domains\n')
 
+def clashx(src, out, remove={'google.com'}):
+    domains = set()
+
+    for f in src:
+        with open(f) as infile:
+                for line in infile:
+                    if tldextract.extract(line).suffix:
+                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
+
+    domains = domains - remove
+    domains = sorted(domains)
+
+    with open(f'{out}-clashx.lst', 'w') as file:
+        for name in domains:
+            file.write(f'DOMAIN-SUFFIX,{name}\n')
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -57,12 +74,14 @@ if __name__ == '__main__':
 
     raw(inside_lists, rusDomainsInsideOut)
     dnsmasq(inside_lists, rusDomainsInsideOut, removeDomains)
+    clashx(inside_lists, rusDomainsInsideOut, removeDomains)
 
     # Russia outside
     ouside_lists = [rusDomainsOutsideSrc]
 
     raw(ouside_lists, rusDomainsOutsideOut)
     dnsmasq(ouside_lists, rusDomainsOutsideOut)
+    clashx(ouside_lists, rusDomainsOutsideOut)
 
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
@@ -71,3 +90,4 @@ if __name__ == '__main__':
     ua_lists = ['uablacklist-domains.lst']
 
     dnsmasq(ua_lists, uaDomainsOut)
+    clashx(ua_lists, uaDomainsOut)
