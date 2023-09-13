@@ -22,11 +22,13 @@ Inside:
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-raw.lst)
 - [Dnsmasq nfset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-dnsmasq-nfset.lst)
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-dnsmasq-ipset.lst)
+- [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-clashx.lst)
 
 Outside:
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-raw.lst)
 - [Dnsmasq nfset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-dnsmasq-nfset.lst)
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-dnsmasq-ipset.lst)
+- [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-clashx.lst)
 
 ## Украина
 Список заблокированных ресурсов в Украине. Списки берутся с ресурса https://uablacklist.net/, который предоставляет их в RAW формате.
@@ -37,6 +39,7 @@ Outside:
 
 - [Dnsmasq nfset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-dnsmasq-nfset.lst)
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-dnsmasq-ipset.lst)
+- [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-clashx.lst)
 
 # Как добавить домены в списки?
 Приветствуется добавление новых доменов и удаление неактуальных.
