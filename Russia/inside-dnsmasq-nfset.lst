@@ -356,6 +356,7 @@ nftset=/welt.de/4#inet#fw4#vpn_domains
 nftset=/wheather.com/4#inet#fw4#vpn_domains
 nftset=/wikiart.org/4#inet#fw4#vpn_domains
 nftset=/windguru.cz/4#inet#fw4#vpn_domains
+nftset=/wixmp.com/4#inet#fw4#vpn_domains
 nftset=/wonderzine.com/4#inet#fw4#vpn_domains
 nftset=/wunderground.com/4#inet#fw4#vpn_domains
 nftset=/xhamster.com/4#inet#fw4#vpn_domains
