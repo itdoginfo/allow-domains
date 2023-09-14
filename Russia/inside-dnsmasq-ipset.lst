@@ -78,6 +78,7 @@ ipset=/expres.online/vpn_domains
 ipset=/facebook.com/vpn_domains
 ipset=/facebook.net/vpn_domains
 ipset=/fastly.net/vpn_domains
+ipset=/fb.com/vpn_domains
 ipset=/fbcdn.net/vpn_domains
 ipset=/fbsbx.com/vpn_domains
 ipset=/flibusta.is/vpn_domains
