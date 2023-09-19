@@ -132,6 +132,7 @@ nftset=/jauns.lv/4#inet#fw4#vpn_domains
 nftset=/kasparov.ru/4#inet#fw4#vpn_domains
 nftset=/kavkaz-uzel.eu/4#inet#fw4#vpn_domains
 nftset=/kavkazr.com/4#inet#fw4#vpn_domains
+nftset=/kemono.party/4#inet#fw4#vpn_domains
 nftset=/kino.pub/4#inet#fw4#vpn_domains
 nftset=/kinobase.org/4#inet#fw4#vpn_domains
 nftset=/kinogo.la/4#inet#fw4#vpn_domains

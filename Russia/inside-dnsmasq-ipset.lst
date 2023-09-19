@@ -132,6 +132,7 @@ ipset=/jauns.lv/vpn_domains
 ipset=/kasparov.ru/vpn_domains
 ipset=/kavkaz-uzel.eu/vpn_domains
 ipset=/kavkazr.com/vpn_domains
+ipset=/kemono.party/vpn_domains
 ipset=/kino.pub/vpn_domains
 ipset=/kinobase.org/vpn_domains
 ipset=/kinogo.la/vpn_domains
