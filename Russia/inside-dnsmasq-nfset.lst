@@ -217,6 +217,7 @@ nftset=/paperpaper.io/4#inet#fw4#vpn_domains
 nftset=/paperpaper.ru/4#inet#fw4#vpn_domains
 nftset=/paraplan.net/4#inet#fw4#vpn_domains
 nftset=/paraswap.io/4#inet#fw4#vpn_domains
+nftset=/parsec.app/4#inet#fw4#vpn_domains
 nftset=/patreon.com/4#inet#fw4#vpn_domains
 nftset=/patriot.dp.ua/4#inet#fw4#vpn_domains
 nftset=/paypal.com/4#inet#fw4#vpn_domains

@@ -217,6 +217,7 @@ ipset=/paperpaper.io/vpn_domains
 ipset=/paperpaper.ru/vpn_domains
 ipset=/paraplan.net/vpn_domains
 ipset=/paraswap.io/vpn_domains
+ipset=/parsec.app/vpn_domains
 ipset=/patreon.com/vpn_domains
 ipset=/patriot.dp.ua/vpn_domains
 ipset=/paypal.com/vpn_domains
