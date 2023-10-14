@@ -6,6 +6,7 @@ gateway.instagram.com
 i.instagram.com
 z-p42-instagram.c10r.instagram.com
 i-fallback.instagram.com
+ig.me
 www.facebook.com
 mqtt-mini.facebook.com
 edge-mqtt.facebook.com
@@ -216,6 +217,11 @@ docs.lambdalabs.com
 grafana.com
 dl.grafana.com
 
+# A-GPS
+xtracloud.net
+glpals.com
+gpsonextra.net
+
 # Other
 saverudata.net
 graylog.org
@@ -248,3 +254,7 @@ www.neformat.com.ua
 neformat.com.ua
 forum.neformat.com.ua
 spacelift.io
+www.flir.com
+www.flir.eu
+selezen.org
+open.selezen.org
