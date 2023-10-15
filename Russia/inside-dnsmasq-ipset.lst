@@ -375,7 +375,6 @@ ipset=/xtracloud.net/vpn_domains
 ipset=/xvideos-cdn.com/vpn_domains
 ipset=/xvideos.com/vpn_domains
 ipset=/yle.fi/vpn_domains
-ipset=/youtube.com/vpn_domains
 ipset=/zahav.ru/vpn_domains
 ipset=/zannn.top/vpn_domains
 ipset=/zerkalo.io/vpn_domains

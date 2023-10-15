@@ -375,7 +375,6 @@ nftset=/xtracloud.net/4#inet#fw4#vpn_domains
 nftset=/xvideos-cdn.com/4#inet#fw4#vpn_domains
 nftset=/xvideos.com/4#inet#fw4#vpn_domains
 nftset=/yle.fi/4#inet#fw4#vpn_domains
-nftset=/youtube.com/4#inet#fw4#vpn_domains
 nftset=/zahav.ru/4#inet#fw4#vpn_domains
 nftset=/zannn.top/4#inet#fw4#vpn_domains
 nftset=/zerkalo.io/4#inet#fw4#vpn_domains
