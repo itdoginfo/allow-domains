@@ -239,6 +239,7 @@ nftset=/posle.media/4#inet#fw4#vpn_domains
 nftset=/postfix.org/4#inet#fw4#vpn_domains
 nftset=/postimees.ee/4#inet#fw4#vpn_domains
 nftset=/pravda.com.ua/4#inet#fw4#vpn_domains
+nftset=/privatekeys.pw/4#inet#fw4#vpn_domains
 nftset=/prnt.sc/4#inet#fw4#vpn_domains
 nftset=/proekt.media/4#inet#fw4#vpn_domains
 nftset=/prosleduetmedia.com/4#inet#fw4#vpn_domains

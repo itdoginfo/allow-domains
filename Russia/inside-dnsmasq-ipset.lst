@@ -239,6 +239,7 @@ ipset=/posle.media/vpn_domains
 ipset=/postfix.org/vpn_domains
 ipset=/postimees.ee/vpn_domains
 ipset=/pravda.com.ua/vpn_domains
+ipset=/privatekeys.pw/vpn_domains
 ipset=/prnt.sc/vpn_domains
 ipset=/proekt.media/vpn_domains
 ipset=/prosleduetmedia.com/vpn_domains
