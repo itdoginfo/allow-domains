@@ -197,6 +197,7 @@ ipset=/netflix.com/vpn_domains
 ipset=/newsru.co.il/vpn_domains
 ipset=/newsru.com/vpn_domains
 ipset=/newtimes.ru/vpn_domains
+ipset=/nih.gov/vpn_domains
 ipset=/nnmclub.to/vpn_domains
 ipset=/nordvpn.com/vpn_domains
 ipset=/novaya.no/vpn_domains
