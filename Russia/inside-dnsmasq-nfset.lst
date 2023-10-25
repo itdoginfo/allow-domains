@@ -281,6 +281,7 @@ nftset=/sakharovfoundation.org/4#inet#fw4#vpn_domains
 nftset=/saverudata.info/4#inet#fw4#vpn_domains
 nftset=/saverudata.net/4#inet#fw4#vpn_domains
 nftset=/saverudata.online/4#inet#fw4#vpn_domains
+nftset=/seasonvar.ru/4#inet#fw4#vpn_domains
 nftset=/sebeanus.online/4#inet#fw4#vpn_domains
 nftset=/selezen.org/4#inet#fw4#vpn_domains
 nftset=/semnasem.org/4#inet#fw4#vpn_domains

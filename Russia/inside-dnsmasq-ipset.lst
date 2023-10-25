@@ -281,6 +281,7 @@ ipset=/sakharovfoundation.org/vpn_domains
 ipset=/saverudata.info/vpn_domains
 ipset=/saverudata.net/vpn_domains
 ipset=/saverudata.online/vpn_domains
+ipset=/seasonvar.ru/vpn_domains
 ipset=/sebeanus.online/vpn_domains
 ipset=/selezen.org/vpn_domains
 ipset=/semnasem.org/vpn_domains
