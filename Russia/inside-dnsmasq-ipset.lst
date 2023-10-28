@@ -1,4 +1,6 @@
 ipset=/10minutemail.com/vpn_domains
+ipset=/24.kg/vpn_domains
+ipset=/4freerussia.org/vpn_domains
 ipset=/4pda.ru/vpn_domains
 ipset=/7dniv.rv.ua/vpn_domains
 ipset=/9tv.co.il/vpn_domains
@@ -235,6 +237,7 @@ ipset=/piccy.info/vpn_domains
 ipset=/pixiv.net/vpn_domains
 ipset=/politiken.dk/vpn_domains
 ipset=/pornolab.net/vpn_domains
+ipset=/porsche.com/vpn_domains
 ipset=/portal.lviv.ua/vpn_domains
 ipset=/posle.media/vpn_domains
 ipset=/postfix.org/vpn_domains
