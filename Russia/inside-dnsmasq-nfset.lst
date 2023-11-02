@@ -221,6 +221,7 @@ nftset=/ovd.legal/4#inet#fw4#vpn_domains
 nftset=/ovd.news/4#inet#fw4#vpn_domains
 nftset=/ovdinfo.org/4#inet#fw4#vpn_domains
 nftset=/ozodi.org/4#inet#fw4#vpn_domains
+nftset=/pandasecurity.com/4#inet#fw4#vpn_domains
 nftset=/pap.pl/4#inet#fw4#vpn_domains
 nftset=/paperpaper.io/4#inet#fw4#vpn_domains
 nftset=/paperpaper.ru/4#inet#fw4#vpn_domains
