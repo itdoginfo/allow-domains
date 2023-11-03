@@ -122,6 +122,7 @@ ipset=/hrw.org/vpn_domains
 ipset=/hs.fi/vpn_domains
 ipset=/huawei.com/vpn_domains
 ipset=/hyperhost.ua/vpn_domains
+ipset=/ibm.com/vpn_domains
 ipset=/idelreal.org/vpn_domains
 ipset=/ig.me/vpn_domains
 ipset=/iherb.com/vpn_domains

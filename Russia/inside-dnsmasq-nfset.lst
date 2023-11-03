@@ -122,6 +122,7 @@ nftset=/hrw.org/4#inet#fw4#vpn_domains
 nftset=/hs.fi/4#inet#fw4#vpn_domains
 nftset=/huawei.com/4#inet#fw4#vpn_domains
 nftset=/hyperhost.ua/4#inet#fw4#vpn_domains
+nftset=/ibm.com/4#inet#fw4#vpn_domains
 nftset=/idelreal.org/4#inet#fw4#vpn_domains
 nftset=/ig.me/4#inet#fw4#vpn_domains
 nftset=/iherb.com/4#inet#fw4#vpn_domains
