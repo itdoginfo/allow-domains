@@ -344,6 +344,7 @@ nftset=/theins.info/4#inet#fw4#vpn_domains
 nftset=/theins.press/4#inet#fw4#vpn_domains
 nftset=/theins.ru/4#inet#fw4#vpn_domains
 nftset=/themoviedb.org/4#inet#fw4#vpn_domains
+nftset=/thepiratebay.org/4#inet#fw4#vpn_domains
 nftset=/thetruestory.news/4#inet#fw4#vpn_domains
 nftset=/threads.net/4#inet#fw4#vpn_domains
 nftset=/ti.com/4#inet#fw4#vpn_domains

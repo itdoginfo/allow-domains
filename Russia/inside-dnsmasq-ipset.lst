@@ -344,6 +344,7 @@ ipset=/theins.info/vpn_domains
 ipset=/theins.press/vpn_domains
 ipset=/theins.ru/vpn_domains
 ipset=/themoviedb.org/vpn_domains
+ipset=/thepiratebay.org/vpn_domains
 ipset=/thetruestory.news/vpn_domains
 ipset=/threads.net/vpn_domains
 ipset=/ti.com/vpn_domains
