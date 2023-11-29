@@ -194,6 +194,7 @@ ipset=/metacritic.com/vpn_domains
 ipset=/metla.press/vpn_domains
 ipset=/microchip.com/vpn_domains
 ipset=/microsoft.com/vpn_domains
+ipset=/middlewareinventory.com/vpn_domains
 ipset=/mignews.com/vpn_domains
 ipset=/mongodb.com/vpn_domains
 ipset=/mongodb.org/vpn_domains
