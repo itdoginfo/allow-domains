@@ -48,6 +48,7 @@ ipset=/canva.com/vpn_domains
 ipset=/carmasters.org/vpn_domains
 ipset=/cdninstagram.com/vpn_domains
 ipset=/certifytheweb.com/vpn_domains
+ipset=/chatgpt.com/vpn_domains
 ipset=/cherta.media/vpn_domains
 ipset=/chess.com/vpn_domains
 ipset=/cisco.com/vpn_domains

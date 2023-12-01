@@ -48,6 +48,7 @@ nftset=/canva.com/4#inet#fw4#vpn_domains
 nftset=/carmasters.org/4#inet#fw4#vpn_domains
 nftset=/cdninstagram.com/4#inet#fw4#vpn_domains
 nftset=/certifytheweb.com/4#inet#fw4#vpn_domains
+nftset=/chatgpt.com/4#inet#fw4#vpn_domains
 nftset=/cherta.media/4#inet#fw4#vpn_domains
 nftset=/chess.com/4#inet#fw4#vpn_domains
 nftset=/cisco.com/4#inet#fw4#vpn_domains
