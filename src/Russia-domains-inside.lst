@@ -232,9 +232,11 @@ static.licdn.com
 
 # OpenAI
 openai.com
-hat.openai.com
+chat.openai.com
+chatgpt.com
 oaistatic.com
 cdn.oaistatic.com
+oaiusercontent.com
 
 # Other
 saverudata.net
@@ -243,8 +245,6 @@ mail-api.proton.me
 www.olx.ua
 anilibria.tv
 gamesrepack.com
-openai.com
-chat.openai.com
 opensea.io
 prnt.sc
 www.bestbuy.com
