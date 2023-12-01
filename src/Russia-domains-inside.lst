@@ -230,6 +230,12 @@ dms.licdn.com
 media.licdn.com
 static.licdn.com
 
+# OpenAI
+openai.com
+hat.openai.com
+oaistatic.com
+cdn.oaistatic.com
+
 # Other
 saverudata.net
 graylog.org
