@@ -292,6 +292,7 @@ ipset=/root-nation.com/vpn_domains
 ipset=/ruckuswireless.com/vpn_domains
 ipset=/rus-media.org/vpn_domains
 ipset=/rus.ec/vpn_domains
+ipset=/rustorka.com/vpn_domains
 ipset=/rutor.info/vpn_domains
 ipset=/rutor.is/vpn_domains
 ipset=/rutor.org/vpn_domains
