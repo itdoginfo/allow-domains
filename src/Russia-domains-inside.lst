@@ -238,6 +238,10 @@ oaistatic.com
 cdn.oaistatic.com
 oaiusercontent.com
 
+# blocked in Crimea
+reactflow.dev
+netlify.com
+
 # Other
 saverudata.net
 graylog.org
@@ -291,3 +295,4 @@ booktracker.org
 livetv.sx
 annas-archive.org
 malwarebytes.com
+fls.guru
