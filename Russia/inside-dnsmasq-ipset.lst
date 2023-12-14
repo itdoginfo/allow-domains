@@ -350,6 +350,7 @@ ipset=/tayga.info/vpn_domains
 ipset=/te-st.org/vpn_domains
 ipset=/telegraf.by/vpn_domains
 ipset=/telegraf.news/vpn_domains
+ipset=/telemetr.io/vpn_domains
 ipset=/terraform.io/vpn_domains
 ipset=/terrasoft.ua/vpn_domains
 ipset=/the-village.ru/vpn_domains
