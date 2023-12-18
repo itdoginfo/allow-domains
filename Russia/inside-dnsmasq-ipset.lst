@@ -94,6 +94,7 @@ ipset=/fastly.net/vpn_domains
 ipset=/fb.com/vpn_domains
 ipset=/fbcdn.net/vpn_domains
 ipset=/fbsbx.com/vpn_domains
+ipset=/fex.net/vpn_domains
 ipset=/flibusta.is/vpn_domains
 ipset=/flir.com/vpn_domains
 ipset=/flir.eu/vpn_domains
