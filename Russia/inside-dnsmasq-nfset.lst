@@ -27,6 +27,7 @@ nftset=/arbat.media/4#inet#fw4#vpn_domains
 nftset=/atlassian.com/4#inet#fw4#vpn_domains
 nftset=/atn.ua/4#inet#fw4#vpn_domains
 nftset=/att.com/4#inet#fw4#vpn_domains
+nftset=/avira.com/4#inet#fw4#vpn_domains
 nftset=/azathabar.com/4#inet#fw4#vpn_domains
 nftset=/azattyq.org/4#inet#fw4#vpn_domains
 nftset=/bbc.com/4#inet#fw4#vpn_domains

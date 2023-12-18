@@ -27,6 +27,7 @@ ipset=/arbat.media/vpn_domains
 ipset=/atlassian.com/vpn_domains
 ipset=/atn.ua/vpn_domains
 ipset=/att.com/vpn_domains
+ipset=/avira.com/vpn_domains
 ipset=/azathabar.com/vpn_domains
 ipset=/azattyq.org/vpn_domains
 ipset=/bbc.com/vpn_domains
