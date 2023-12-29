@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,agentura.ru
 DOMAIN-SUFFIX,alberta.ca
+DOMAIN-SUFFIX,amazfitwatchfaces.com
 DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,analog.com
 DOMAIN-SUFFIX,anidub.com
@@ -96,6 +97,8 @@ DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,fex.net
+DOMAIN-SUFFIX,filmix.ac
+DOMAIN-SUFFIX,filmix.biz
 DOMAIN-SUFFIX,flibusta.is
 DOMAIN-SUFFIX,flir.com
 DOMAIN-SUFFIX,flir.eu
@@ -117,6 +120,7 @@ DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,glpals.com
 DOMAIN-SUFFIX,gnome-look.org
 DOMAIN-SUFFIX,golosameriki.com
+DOMAIN-SUFFIX,gonitro.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,gordonua.com
 DOMAIN-SUFFIX,gpsonextra.net
@@ -206,6 +210,7 @@ DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,mongodb.org
+DOMAIN-SUFFIX,monoprice.com
 DOMAIN-SUFFIX,monster.ie
 DOMAIN-SUFFIX,moscowtimes.ru
 DOMAIN-SUFFIX,mouser.com
@@ -223,6 +228,7 @@ DOMAIN-SUFFIX,newsru.co.il
 DOMAIN-SUFFIX,newsru.com
 DOMAIN-SUFFIX,newtimes.ru
 DOMAIN-SUFFIX,nih.gov
+DOMAIN-SUFFIX,nitropdf.com
 DOMAIN-SUFFIX,nnmclub.to
 DOMAIN-SUFFIX,nordvpn.com
 DOMAIN-SUFFIX,novaya.no
@@ -330,6 +336,7 @@ DOMAIN-SUFFIX,snort.org
 DOMAIN-SUFFIX,soapui.org
 DOMAIN-SUFFIX,sobesednik.com
 DOMAIN-SUFFIX,sobesednik.ru
+DOMAIN-SUFFIX,solarwinds.com
 DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,spacelift.io
 DOMAIN-SUFFIX,spektr.press
@@ -345,6 +352,7 @@ DOMAIN-SUFFIX,svidomi.in.ua
 DOMAIN-SUFFIX,svoboda.org
 DOMAIN-SUFFIX,svoi.kr.ua
 DOMAIN-SUFFIX,svtv.org
+DOMAIN-SUFFIX,swagger.io
 DOMAIN-SUFFIX,sysdig.com
 DOMAIN-SUFFIX,t-ru.org
 DOMAIN-SUFFIX,t.co
