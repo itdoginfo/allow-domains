@@ -226,6 +226,7 @@ nftset=/netflix.com/4#inet#fw4#vpn_domains
 nftset=/netlify.com/4#inet#fw4#vpn_domains
 nftset=/newsru.co.il/4#inet#fw4#vpn_domains
 nftset=/newsru.com/4#inet#fw4#vpn_domains
+nftset=/newstudio.tv/4#inet#fw4#vpn_domains
 nftset=/newtimes.ru/4#inet#fw4#vpn_domains
 nftset=/nih.gov/4#inet#fw4#vpn_domains
 nftset=/nitropdf.com/4#inet#fw4#vpn_domains

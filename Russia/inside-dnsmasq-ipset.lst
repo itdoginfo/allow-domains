@@ -226,6 +226,7 @@ ipset=/netflix.com/vpn_domains
 ipset=/netlify.com/vpn_domains
 ipset=/newsru.co.il/vpn_domains
 ipset=/newsru.com/vpn_domains
+ipset=/newstudio.tv/vpn_domains
 ipset=/newtimes.ru/vpn_domains
 ipset=/nih.gov/vpn_domains
 ipset=/nitropdf.com/vpn_domains
