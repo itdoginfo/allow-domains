@@ -389,6 +389,7 @@ nftset=/tvrain.ru/4#inet#fw4#vpn_domains
 nftset=/tvrain.tv/4#inet#fw4#vpn_domains
 nftset=/twimg.com/4#inet#fw4#vpn_domains
 nftset=/twitter.com/4#inet#fw4#vpn_domains
+nftset=/ufile.io/4#inet#fw4#vpn_domains
 nftset=/underver.se/4#inet#fw4#vpn_domains
 nftset=/unian.net/4#inet#fw4#vpn_domains
 nftset=/unian.ua/4#inet#fw4#vpn_domains

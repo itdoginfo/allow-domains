@@ -389,6 +389,7 @@ ipset=/tvrain.ru/vpn_domains
 ipset=/tvrain.tv/vpn_domains
 ipset=/twimg.com/vpn_domains
 ipset=/twitter.com/vpn_domains
+ipset=/ufile.io/vpn_domains
 ipset=/underver.se/vpn_domains
 ipset=/unian.net/vpn_domains
 ipset=/unian.ua/vpn_domains
