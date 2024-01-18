@@ -95,6 +95,7 @@ ipset=/everand.com/vpn_domains
 ipset=/expres.online/vpn_domains
 ipset=/facebook.com/vpn_domains
 ipset=/facebook.net/vpn_domains
+ipset=/fast.com/vpn_domains
 ipset=/fastly.net/vpn_domains
 ipset=/fb.com/vpn_domains
 ipset=/fbcdn.net/vpn_domains
