@@ -61,6 +61,7 @@ DOMAIN-SUFFIX,citrix.com
 DOMAIN-SUFFIX,clamav.net
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,crunchyroll.com
 DOMAIN-SUFFIX,currenttime.tv
@@ -138,6 +139,7 @@ DOMAIN-SUFFIX,graylog.org
 DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,gulagu.net
 DOMAIN-SUFFIX,hashicorp.com
+DOMAIN-SUFFIX,healthline.com
 DOMAIN-SUFFIX,holod.media
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hrw.org
@@ -185,6 +187,7 @@ DOMAIN-SUFFIX,lamcdn.net
 DOMAIN-SUFFIX,lenovo.com
 DOMAIN-SUFFIX,libgen.rs
 DOMAIN-SUFFIX,licdn.com
+DOMAIN-SUFFIX,lidarr.audio
 DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,linuxiac.com
 DOMAIN-SUFFIX,livetv.sx
@@ -203,6 +206,7 @@ DOMAIN-SUFFIX,mbed.com
 DOMAIN-SUFFIX,mdza.io
 DOMAIN-SUFFIX,mediazona.ca
 DOMAIN-SUFFIX,mediazona.online
+DOMAIN-SUFFIX,medicalnewstoday.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,meduza.io
 DOMAIN-SUFFIX,megapeer.ru
