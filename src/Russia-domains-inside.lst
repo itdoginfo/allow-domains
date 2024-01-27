@@ -243,6 +243,12 @@ platform.openai.com
 reactflow.dev
 netlify.com
 
+# Show VPN IP-address
+showip.net
+
+# Top-level domains
+.ua
+
 # Other
 saverudata.net
 graylog.org
