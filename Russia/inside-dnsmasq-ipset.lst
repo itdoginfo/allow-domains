@@ -1,3 +1,4 @@
+ipset=/.ua/vpn_domains
 ipset=/10minutemail.com/vpn_domains
 ipset=/1337x.to/vpn_domains
 ipset=/24.kg/vpn_domains
