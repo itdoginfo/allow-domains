@@ -58,6 +58,8 @@ def clashx(src, out, remove={'google.com'}):
                     if tldextract.extract(line).suffix:
                         if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
                             domains.add(tldextract.extract(line.rstrip()).registered_domain)
+                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
+                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
 
     domains = domains - remove
     domains = sorted(domains)
