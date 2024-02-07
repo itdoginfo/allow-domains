@@ -7,6 +7,7 @@ from pathlib import Path
 
 rusDomainsInsideSrc='src/Russia-domains-inside.lst'
 rusDomainsInsideOut='Russia/inside'
+rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
 rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
 uaDomainsOut='Ukraine/inside'
@@ -68,6 +69,35 @@ def clashx(src, out, remove={'google.com'}):
         for name in domains:
             file.write(f'DOMAIN-SUFFIX,{name}\n')
 
+def kvas(src, out, single=None, remove={'google.com'}):
+    domains = set()
+    domains_single = set()
+
+    for f in src:
+        with open(f) as infile:
+                for line in infile:
+                    if tldextract.extract(line).suffix:
+                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                            domains.add("*" + tldextract.extract(line.rstrip()).registered_domain)
+                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
+                            domains.add("*." + tldextract.extract(line.rstrip()).suffix)
+
+    if single is not None:
+        with open(single) as infile:
+            for line in infile:
+                if tldextract.extract(line).suffix:
+                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
+
+    domains = domains - remove
+    domains = domains.union(domains_single)
+
+    domains = sorted(domains)
+
+    with open(f'{out}-kvas.lst', 'w') as file:
+        for name in domains:
+            file.write(f'{name}\n')
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -79,13 +109,15 @@ if __name__ == '__main__':
     raw(inside_lists, rusDomainsInsideOut)
     dnsmasq(inside_lists, rusDomainsInsideOut, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
+    kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
 
     # Russia outside
-    ouside_lists = [rusDomainsOutsideSrc]
+    outside_lists = [rusDomainsOutsideSrc]
 
-    raw(ouside_lists, rusDomainsOutsideOut)
-    dnsmasq(ouside_lists, rusDomainsOutsideOut)
-    clashx(ouside_lists, rusDomainsOutsideOut)
+    raw(outside_lists, rusDomainsOutsideOut)
+    dnsmasq(outside_lists, rusDomainsOutsideOut)
+    clashx(outside_lists, rusDomainsOutsideOut)
+    kvas(outside_lists, rusDomainsOutsideOut)
 
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
@@ -95,3 +127,4 @@ if __name__ == '__main__':
 
     dnsmasq(ua_lists, uaDomainsOut)
     clashx(ua_lists, uaDomainsOut)
+    kvas(ua_lists, uaDomainsOut)
