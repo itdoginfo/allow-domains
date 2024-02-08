@@ -11,6 +11,7 @@ nftset=/abook-club.ru/4#inet#fw4#vpn_domains
 nftset=/acf.international/4#inet#fw4#vpn_domains
 nftset=/activatica.org/4#inet#fw4#vpn_domains
 nftset=/adguard.com/4#inet#fw4#vpn_domains
+nftset=/adobe.io/4#inet#fw4#vpn_domains
 nftset=/agents.media/4#inet#fw4#vpn_domains
 nftset=/agentura.ru/4#inet#fw4#vpn_domains
 nftset=/alberta.ca/4#inet#fw4#vpn_domains

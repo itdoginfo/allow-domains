@@ -11,6 +11,7 @@ ipset=/abook-club.ru/vpn_domains
 ipset=/acf.international/vpn_domains
 ipset=/activatica.org/vpn_domains
 ipset=/adguard.com/vpn_domains
+ipset=/adobe.io/vpn_domains
 ipset=/agents.media/vpn_domains
 ipset=/agentura.ru/vpn_domains
 ipset=/alberta.ca/vpn_domains
