@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,acf.international
 DOMAIN-SUFFIX,activatica.org
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adobe.io
+DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,agentura.ru
 DOMAIN-SUFFIX,alberta.ca
@@ -63,6 +64,7 @@ DOMAIN-SUFFIX,citrix.com
 DOMAIN-SUFFIX,clamav.net
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,crunchyroll.com
@@ -91,6 +93,7 @@ DOMAIN-SUFFIX,ehorussia.com
 DOMAIN-SUFFIX,ej.ru
 DOMAIN-SUFFIX,ekhokavkaza.com
 DOMAIN-SUFFIX,elastic.co
+DOMAIN-SUFFIX,element14.com
 DOMAIN-SUFFIX,err.ee
 DOMAIN-SUFFIX,euronews.com
 DOMAIN-SUFFIX,euroradio.fm
@@ -277,6 +280,7 @@ DOMAIN-SUFFIX,patreon.com
 DOMAIN-SUFFIX,patriot.dp.ua
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,pb.wtf
+DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,php.su
 DOMAIN-SUFFIX,piccy.info
@@ -297,6 +301,7 @@ DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,protonmail.ch
 DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,provereno.media
+DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qualcomm.com
@@ -380,6 +385,7 @@ DOMAIN-SUFFIX,te-st.org
 DOMAIN-SUFFIX,telegraf.by
 DOMAIN-SUFFIX,telegraf.news
 DOMAIN-SUFFIX,telemetr.io
+DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,terraform.io
 DOMAIN-SUFFIX,terrasoft.ua
 DOMAIN-SUFFIX,the-village.ru
@@ -405,8 +411,21 @@ DOMAIN-SUFFIX,tutanota.com
 DOMAIN-SUFFIX,tvfreedom.io
 DOMAIN-SUFFIX,tvrain.ru
 DOMAIN-SUFFIX,tvrain.tv
+DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.biz
 DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,twittercommunity.com
+DOMAIN-SUFFIX,twitterflightschool.com
+DOMAIN-SUFFIX,twitterinc.com
+DOMAIN-SUFFIX,twitteroauth.com
+DOMAIN-SUFFIX,twitterstat.us
+DOMAIN-SUFFIX,twtrdns.net
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twttr.net
+DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,ufile.io
 DOMAIN-SUFFIX,underver.se
 DOMAIN-SUFFIX,unian.net
@@ -418,6 +437,7 @@ DOMAIN-SUFFIX,verstka.media
 DOMAIN-SUFFIX,vesma.one
 DOMAIN-SUFFIX,vesma.today
 DOMAIN-SUFFIX,vesty.co.il
+DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,vipdrive.net
 DOMAIN-SUFFIX,voanews.com
 DOMAIN-SUFFIX,vot-tak.tv
@@ -437,6 +457,7 @@ DOMAIN-SUFFIX,windguru.cz
 DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wonderzine.com
 DOMAIN-SUFFIX,wunderground.com
+DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xhamster.com
 DOMAIN-SUFFIX,xhamsterlive.com
 DOMAIN-SUFFIX,xiaomi.eu
