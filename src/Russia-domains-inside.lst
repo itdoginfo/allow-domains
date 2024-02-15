@@ -13,6 +13,7 @@ edge-mqtt.facebook.com
 graph.facebook.com
 web.facebook.com
 connect.facebook.net
+facebook.net
 z-p42-chat-e2ee-ig.facebook.com
 star-mini.c10r.facebook.com
 static.cdninstagram.com
@@ -22,6 +23,31 @@ scontent-ams4-1.cdninstagram.com
 scontent-ams4-1.xx.fbcdn.net
 scontent.xx.fbcdn.net
 cdn.fbsbx.com
+
+# Twitter/X from https://github.com/v2fly/domain-list-community/blob/master/data/twitter
+ads-twitter.com
+cms-twdigitalassets.com
+periscope.tv
+pscp.tv
+t.co
+tellapart.com
+tweetdeck.com
+twimg.com
+twitpic.com
+twitter.biz
+twitter.com
+twitter.jp
+twittercommunity.com
+twitterflightschool.com
+twitterinc.com
+twitteroauth.com
+twitterstat.us
+twtrdns.net
+twttr.com
+twttr.net
+twvid.com
+vine.co
+x.com
 
 # servarr
 translate.servarr.com
@@ -270,7 +296,6 @@ kinogo.la
 academy.terrasoft.ua
 gagadget.com
 rutracker.net
-facebook.net
 kupujemprodajem.com
 www.ti.com
 threads.net
@@ -326,3 +351,4 @@ medicalnewstoday.com
 healthline.com
 quietpc.com
 shinyhardware.co.uk
+element14.com
