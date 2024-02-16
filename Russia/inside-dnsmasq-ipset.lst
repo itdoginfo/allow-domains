@@ -34,6 +34,7 @@ ipset=/att.com/vpn_domains
 ipset=/avira.com/vpn_domains
 ipset=/azathabar.com/vpn_domains
 ipset=/azattyq.org/vpn_domains
+ipset=/baginya.org/vpn_domains
 ipset=/bbc.co.uk/vpn_domains
 ipset=/bbc.com/vpn_domains
 ipset=/bbci.co.uk/vpn_domains
