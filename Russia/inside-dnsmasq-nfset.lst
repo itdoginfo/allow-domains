@@ -125,6 +125,7 @@ nftset=/freemedia.io/4#inet#fw4#vpn_domains
 nftset=/gagadget.com/4#inet#fw4#vpn_domains
 nftset=/gamesrepack.com/4#inet#fw4#vpn_domains
 nftset=/geni.us/4#inet#fw4#vpn_domains
+nftset=/genius.com/4#inet#fw4#vpn_domains
 nftset=/germania.one/4#inet#fw4#vpn_domains
 nftset=/gitlab.com/4#inet#fw4#vpn_domains
 nftset=/gitlab.io/4#inet#fw4#vpn_domains

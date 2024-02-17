@@ -125,6 +125,7 @@ ipset=/freemedia.io/vpn_domains
 ipset=/gagadget.com/vpn_domains
 ipset=/gamesrepack.com/vpn_domains
 ipset=/geni.us/vpn_domains
+ipset=/genius.com/vpn_domains
 ipset=/germania.one/vpn_domains
 ipset=/gitlab.com/vpn_domains
 ipset=/gitlab.io/vpn_domains
