@@ -275,6 +275,11 @@ showip.net
 # Top-level domains
 .ua
 
+# Netflix
+nflxvideo.net
+nflxext.com
+nflximg.net
+
 # Other
 saverudata.net
 graylog.org
@@ -354,3 +359,5 @@ shinyhardware.co.uk
 element14.com
 baginya.org
 linktr.ee
+lib.rus.ec
+hdrezka.ag
