@@ -465,6 +465,7 @@ nftset=/watchguard.com/4#inet#fw4#vpn_domains
 nftset=/weather.com/4#inet#fw4#vpn_domains
 nftset=/weblance.com.ua/4#inet#fw4#vpn_domains
 nftset=/welt.de/4#inet#fw4#vpn_domains
+nftset=/wetransfer.com/4#inet#fw4#vpn_domains
 nftset=/wheather.com/4#inet#fw4#vpn_domains
 nftset=/wikiart.org/4#inet#fw4#vpn_domains
 nftset=/windguru.cz/4#inet#fw4#vpn_domains
