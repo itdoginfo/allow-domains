@@ -74,6 +74,7 @@ ipset=/currenttime.tv/vpn_domains
 ipset=/cursorinfo.co.il/vpn_domains
 ipset=/cyxymu.info/vpn_domains
 ipset=/czx.to/vpn_domains
+ipset=/daemon-tools.cc/vpn_domains
 ipset=/deezer.com/vpn_domains
 ipset=/delfi.ee/vpn_domains
 ipset=/delfi.lt/vpn_domains
