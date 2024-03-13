@@ -52,6 +52,7 @@ ipset=/booktracker.org/vpn_domains
 ipset=/boosteroid.com/vpn_domains
 ipset=/bradyid.com/vpn_domains
 ipset=/buckaroo.nl/vpn_domains
+ipset=/buf.build/vpn_domains
 ipset=/cambiumnetworks.com/vpn_domains
 ipset=/canva.com/vpn_domains
 ipset=/carmasters.org/vpn_domains
