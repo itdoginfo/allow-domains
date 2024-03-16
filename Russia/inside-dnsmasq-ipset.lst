@@ -264,6 +264,7 @@ ipset=/nordvpn.com/vpn_domains
 ipset=/novaya.no/vpn_domains
 ipset=/novayagazeta.eu/vpn_domains
 ipset=/novayagazeta.ru/vpn_domains
+ipset=/ntc.party/vpn_domains
 ipset=/nyaa.si/vpn_domains
 ipset=/oaistatic.com/vpn_domains
 ipset=/oaiusercontent.com/vpn_domains
