@@ -50,6 +50,7 @@ ipset=/bitru.org/vpn_domains
 ipset=/blackseanews.net/vpn_domains
 ipset=/booktracker.org/vpn_domains
 ipset=/boosteroid.com/vpn_domains
+ipset=/bosch-home.com/vpn_domains
 ipset=/bradyid.com/vpn_domains
 ipset=/buckaroo.nl/vpn_domains
 ipset=/buf.build/vpn_domains

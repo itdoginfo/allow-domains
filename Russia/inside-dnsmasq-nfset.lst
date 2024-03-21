@@ -50,6 +50,7 @@ nftset=/bitru.org/4#inet#fw4#vpn_domains
 nftset=/blackseanews.net/4#inet#fw4#vpn_domains
 nftset=/booktracker.org/4#inet#fw4#vpn_domains
 nftset=/boosteroid.com/4#inet#fw4#vpn_domains
+nftset=/bosch-home.com/4#inet#fw4#vpn_domains
 nftset=/bradyid.com/4#inet#fw4#vpn_domains
 nftset=/buckaroo.nl/4#inet#fw4#vpn_domains
 nftset=/buf.build/4#inet#fw4#vpn_domains
