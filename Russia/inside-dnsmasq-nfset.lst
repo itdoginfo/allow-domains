@@ -347,6 +347,7 @@ nftset=/rustorka.com/4#inet#fw4#vpn_domains
 nftset=/rutor.info/4#inet#fw4#vpn_domains
 nftset=/rutor.is/4#inet#fw4#vpn_domains
 nftset=/rutor.org/4#inet#fw4#vpn_domains
+nftset=/rutracker.cc/4#inet#fw4#vpn_domains
 nftset=/rutracker.net/4#inet#fw4#vpn_domains
 nftset=/rutracker.org/4#inet#fw4#vpn_domains
 nftset=/rutracker.ru/4#inet#fw4#vpn_domains

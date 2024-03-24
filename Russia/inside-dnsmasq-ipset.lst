@@ -347,6 +347,7 @@ ipset=/rustorka.com/vpn_domains
 ipset=/rutor.info/vpn_domains
 ipset=/rutor.is/vpn_domains
 ipset=/rutor.org/vpn_domains
+ipset=/rutracker.cc/vpn_domains
 ipset=/rutracker.net/vpn_domains
 ipset=/rutracker.org/vpn_domains
 ipset=/rutracker.ru/vpn_domains
