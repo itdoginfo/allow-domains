@@ -89,7 +89,7 @@ def kvas(src, out, single=None, remove={'google.com'}):
                     if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
                         domains_single.add(tldextract.extract(line.rstrip()).fqdn)
 
-    domains = domains - remove
+    domains -= {f"*{domains}" for domains in removeDomains}
     domains = domains.union(domains_single)
 
     domains = sorted(domains)
