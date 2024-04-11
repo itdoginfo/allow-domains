@@ -20,13 +20,7 @@ mobileapp.russianpost.ru
 1018213540.rsc.cdn77.org
 
 # www.kinopoisk.ru
-www.kinopoisk.ru
-api.ott.kinopoisk.ru
-api.plus.kinopoisk.ru
-external-api.mediabilling.kinopoisk.ru
-hd.kinopoisk.ru
-mc.kinopoisk.ru
-widgets.kinopoisk.ru
+graphql.kinopoisk.ru
 
 # ozon.ru
 ozon.ru
