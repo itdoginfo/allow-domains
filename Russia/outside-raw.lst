@@ -2,9 +2,7 @@
 _9443._https.ws.finance.ozon.ru
 api.cdp.mos.ru
 api.finance.ozon.ru
-api.ott.kinopoisk.ru
 api.ozon.ru
-api.plus.kinopoisk.ru
 auth-lkmp.avtodor-tr.ru
 avtodor-tr.ru
 b2c-ticket-sentry.onelya.ru
@@ -22,10 +20,9 @@ dzvr.ru
 edge-lb-g1.ozon.ru
 edge-mmedia-lb.ozone.ru
 evp.mos.ru
-external-api.mediabilling.kinopoisk.ru
 finance.ozon.ru
 gisoivapi.mos.ru
-hd.kinopoisk.ru
+graphql.kinopoisk.ru
 io.ozone.ru
 ir-3.ozone.ru
 ir.ozone.ru
@@ -33,7 +30,6 @@ js-pgu.mos.ru
 lk.avtodor-tr.ru
 login.mos.ru
 map3d.mos.ru
-mc.kinopoisk.ru
 media-pgu.mos.ru
 metrika.mos.ru
 mobileapp.russianpost.ru
@@ -61,9 +57,7 @@ t.finance.ozon.ru
 ticket.rzd.ru
 v.ozone.ru
 vshark.ttk.ru
-widgets.kinopoisk.ru
 ws.finance.ozon.ru
-www.kinopoisk.ru
 www.mos.ru
 www.ozon.ru
 www.pochta.ru
