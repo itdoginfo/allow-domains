@@ -402,6 +402,7 @@ nftset=/swagger.io/4#inet#fw4#vpn_domains
 nftset=/sysdig.com/4#inet#fw4#vpn_domains
 nftset=/t-ru.org/4#inet#fw4#vpn_domains
 nftset=/t.co/4#inet#fw4#vpn_domains
+nftset=/tableau.com/4#inet#fw4#vpn_domains
 nftset=/tayga.info/4#inet#fw4#vpn_domains
 nftset=/te-st.org/4#inet#fw4#vpn_domains
 nftset=/telegraf.by/4#inet#fw4#vpn_domains

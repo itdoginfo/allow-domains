@@ -402,6 +402,7 @@ ipset=/swagger.io/vpn_domains
 ipset=/sysdig.com/vpn_domains
 ipset=/t-ru.org/vpn_domains
 ipset=/t.co/vpn_domains
+ipset=/tableau.com/vpn_domains
 ipset=/tayga.info/vpn_domains
 ipset=/te-st.org/vpn_domains
 ipset=/telegraf.by/vpn_domains
