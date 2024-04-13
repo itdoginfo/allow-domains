@@ -48,6 +48,7 @@ DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,bitcoin.org
 DOMAIN-SUFFIX,bitru.org
 DOMAIN-SUFFIX,blackseanews.net
+DOMAIN-SUFFIX,bluehost.com
 DOMAIN-SUFFIX,booktracker.org
 DOMAIN-SUFFIX,boosteroid.com
 DOMAIN-SUFFIX,bosch-home.com
@@ -86,12 +87,14 @@ DOMAIN-SUFFIX,dellcdn.com
 DOMAIN-SUFFIX,depositphotos.com
 DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,devops.com
+DOMAIN-SUFFIX,digitalocean.com
 DOMAIN-SUFFIX,discours.io
 DOMAIN-SUFFIX,disctech.com
 DOMAIN-SUFFIX,dobrochan.net
 DOMAIN-SUFFIX,dovod.online
 DOMAIN-SUFFIX,doxa.team
 DOMAIN-SUFFIX,doxajournal.ru
+DOMAIN-SUFFIX,dreamhost.com
 DOMAIN-SUFFIX,dw.com
 DOMAIN-SUFFIX,echofm.online
 DOMAIN-SUFFIX,ehorussia.com
@@ -136,6 +139,7 @@ DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,glpals.com
 DOMAIN-SUFFIX,gnome-look.org
+DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gofile.io
 DOMAIN-SUFFIX,golosameriki.com
 DOMAIN-SUFFIX,gonitro.com
@@ -154,6 +158,7 @@ DOMAIN-SUFFIX,hdrezka.ag
 DOMAIN-SUFFIX,healthline.com
 DOMAIN-SUFFIX,holod.media
 DOMAIN-SUFFIX,home-connect.com
+DOMAIN-SUFFIX,hostgator.com
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hrw.org
 DOMAIN-SUFFIX,hs.fi
@@ -173,6 +178,7 @@ DOMAIN-SUFFIX,intel.com
 DOMAIN-SUFFIX,intellij.net
 DOMAIN-SUFFIX,interfax.com.ua
 DOMAIN-SUFFIX,intuit.com
+DOMAIN-SUFFIX,ionos.com
 DOMAIN-SUFFIX,iptv.online
 DOMAIN-SUFFIX,is.fi
 DOMAIN-SUFFIX,island-of-pleasure.site
@@ -181,6 +187,7 @@ DOMAIN-SUFFIX,itsmycity.ru
 DOMAIN-SUFFIX,jabra.com
 DOMAIN-SUFFIX,jamf.com
 DOMAIN-SUFFIX,jauns.lv
+DOMAIN-SUFFIX,kamatera.com
 DOMAIN-SUFFIX,kasparov.ru
 DOMAIN-SUFFIX,kavkaz-uzel.eu
 DOMAIN-SUFFIX,kavkazr.com
@@ -252,6 +259,7 @@ DOMAIN-SUFFIX,nba.com
 DOMAIN-SUFFIX,neformat.com.ua
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,networksolutions.com
 DOMAIN-SUFFIX,newsru.co.il
 DOMAIN-SUFFIX,newsru.com
 DOMAIN-SUFFIX,newstudio.tv
@@ -481,6 +489,7 @@ DOMAIN-SUFFIX,wikiart.org
 DOMAIN-SUFFIX,windguru.cz
 DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wonderzine.com
+DOMAIN-SUFFIX,wpengine.com
 DOMAIN-SUFFIX,wunderground.com
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xhamster.com
