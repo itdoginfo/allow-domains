@@ -311,6 +311,7 @@ nftset=/php.su/4#inet#fw4#vpn_domains
 nftset=/piccy.info/4#inet#fw4#vpn_domains
 nftset=/pixiv.net/4#inet#fw4#vpn_domains
 nftset=/plab.site/4#inet#fw4#vpn_domains
+nftset=/polit.ru/4#inet#fw4#vpn_domains
 nftset=/politiken.dk/4#inet#fw4#vpn_domains
 nftset=/pornolab.net/4#inet#fw4#vpn_domains
 nftset=/porsche.com/4#inet#fw4#vpn_domains
