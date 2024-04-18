@@ -17,6 +17,7 @@ ipset=/ads-twitter.com/vpn_domains
 ipset=/agents.media/vpn_domains
 ipset=/agentura.ru/vpn_domains
 ipset=/alberta.ca/vpn_domains
+ipset=/alphacoders.com/vpn_domains
 ipset=/amazfitwatchfaces.com/vpn_domains
 ipset=/amazonaws.com/vpn_domains
 ipset=/analog.com/vpn_domains
