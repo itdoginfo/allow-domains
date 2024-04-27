@@ -291,6 +291,20 @@ ionos.com
 digitalocean.com
 godaddy.com
 
+# Intel. It's not working, need to investigate
+intel.com
+www.intel.com
+intel.de
+apis.intel.com
+ainu.intel.com
+consumer.intel.com
+community.intel.com
+corpredirect.intel.com
+downloadmirror.intel.com
+elqtrk.intel.com
+starget.intel.com
+geolocation.onetrust.com
+
 # Other
 saverudata.net
 graylog.org
