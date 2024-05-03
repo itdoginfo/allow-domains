@@ -345,6 +345,7 @@ nftset=/reactflow.dev/4#inet#fw4#vpn_domains
 nftset=/realist.online/4#inet#fw4#vpn_domains
 nftset=/redis.com/4#inet#fw4#vpn_domains
 nftset=/redshieldvpn.com/4#inet#fw4#vpn_domains
+nftset=/redtube.com/4#inet#fw4#vpn_domains
 nftset=/refactoring.guru/4#inet#fw4#vpn_domains
 nftset=/refinitiv.com/4#inet#fw4#vpn_domains
 nftset=/republic.ru/4#inet#fw4#vpn_domains
