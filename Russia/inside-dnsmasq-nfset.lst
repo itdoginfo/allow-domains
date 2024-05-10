@@ -256,7 +256,6 @@ nftset=/mouser.com/4#inet#fw4#vpn_domains
 nftset=/mouser.fi/4#inet#fw4#vpn_domains
 nftset=/mrakopedia.net/4#inet#fw4#vpn_domains
 nftset=/mullvad.net/4#inet#fw4#vpn_domains
-nftset=/mult.ru/4#inet#fw4#vpn_domains
 nftset=/nasvsehtoshnit.ru/4#inet#fw4#vpn_domains
 nftset=/navalny.com/4#inet#fw4#vpn_domains
 nftset=/nba.com/4#inet#fw4#vpn_domains
