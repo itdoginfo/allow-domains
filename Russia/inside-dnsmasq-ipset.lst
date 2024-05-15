@@ -373,6 +373,7 @@ ipset=/saverudata.info/vpn_domains
 ipset=/saverudata.net/vpn_domains
 ipset=/schaeffler.com/vpn_domains
 ipset=/screamingfrog.co.uk/vpn_domains
+ipset=/searchfloor.org/vpn_domains
 ipset=/seasonvar.ru/vpn_domains
 ipset=/sebeanus.online/vpn_domains
 ipset=/selezen.org/vpn_domains
