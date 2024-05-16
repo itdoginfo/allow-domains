@@ -430,6 +430,7 @@ ipset=/tellapart.com/vpn_domains
 ipset=/terraform.io/vpn_domains
 ipset=/terrasoft.ua/vpn_domains
 ipset=/the-village.ru/vpn_domains
+ipset=/theaudiodb.com/vpn_domains
 ipset=/thebarentsobserver.com/vpn_domains
 ipset=/thebell.io/vpn_domains
 ipset=/theins.info/vpn_domains
