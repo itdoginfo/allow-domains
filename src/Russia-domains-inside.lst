@@ -310,6 +310,14 @@ geolocation.onetrust.com
 # Torrent trackers
 nnmclub.to
 
+# Media DB. DNS record issue
+www.theaudiodb.com
+theaudiodb.com
+www.themoviedb.org
+themoviedb.org
+api.themoviedb.org
+media.themoviedb.org
+
 # Other
 saverudata.net
 graylog.org
