@@ -330,6 +330,7 @@ nftset=/privatekeys.pw/4#inet#fw4#vpn_domains
 nftset=/prnt.sc/4#inet#fw4#vpn_domains
 nftset=/proekt.media/4#inet#fw4#vpn_domains
 nftset=/prosleduetmedia.com/4#inet#fw4#vpn_domains
+nftset=/prostovpn.org/4#inet#fw4#vpn_domains
 nftset=/proton.me/4#inet#fw4#vpn_domains
 nftset=/protonmail.ch/4#inet#fw4#vpn_domains
 nftset=/protonmail.com/4#inet#fw4#vpn_domains

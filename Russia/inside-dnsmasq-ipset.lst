@@ -330,6 +330,7 @@ ipset=/privatekeys.pw/vpn_domains
 ipset=/prnt.sc/vpn_domains
 ipset=/proekt.media/vpn_domains
 ipset=/prosleduetmedia.com/vpn_domains
+ipset=/prostovpn.org/vpn_domains
 ipset=/proton.me/vpn_domains
 ipset=/protonmail.ch/vpn_domains
 ipset=/protonmail.com/vpn_domains
