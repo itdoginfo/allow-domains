@@ -226,6 +226,7 @@ psiphon.ca
 www.vpngate.net
 mullvad.net
 censortracker.org
+prostovpn.org
 
 # Hashicorp
 hashicorp.com
@@ -310,13 +311,9 @@ geolocation.onetrust.com
 # Torrent trackers
 nnmclub.to
 
-# Media DB. DNS record issue
+# Media DB
 www.theaudiodb.com
 theaudiodb.com
-www.themoviedb.org
-themoviedb.org
-api.themoviedb.org
-media.themoviedb.org
 
 # Other
 saverudata.net
