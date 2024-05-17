@@ -218,6 +218,7 @@ ipset=/lidarr.audio/vpn_domains
 ipset=/linkedin.com/vpn_domains
 ipset=/linktr.ee/vpn_domains
 ipset=/linuxiac.com/vpn_domains
+ipset=/live.net/vpn_domains
 ipset=/livetv.sx/vpn_domains
 ipset=/localbitcoins.com/vpn_domains
 ipset=/locals.md/vpn_domains

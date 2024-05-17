@@ -218,6 +218,7 @@ nftset=/lidarr.audio/4#inet#fw4#vpn_domains
 nftset=/linkedin.com/4#inet#fw4#vpn_domains
 nftset=/linktr.ee/4#inet#fw4#vpn_domains
 nftset=/linuxiac.com/4#inet#fw4#vpn_domains
+nftset=/live.net/4#inet#fw4#vpn_domains
 nftset=/livetv.sx/4#inet#fw4#vpn_domains
 nftset=/localbitcoins.com/4#inet#fw4#vpn_domains
 nftset=/locals.md/4#inet#fw4#vpn_domains
