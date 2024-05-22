@@ -76,5 +76,8 @@ auth-lkmp.avtodor-tr.ru
 lk.avtodor-tr.ru
 pays.avtodor-tr.ru
 
+# Show VPN IP-address
+showip.net
+
 # One domain sites
 bkvet.ru
