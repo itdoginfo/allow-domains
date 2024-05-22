@@ -10,6 +10,7 @@ rusDomainsInsideOut='Russia/inside'
 rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
 rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
+uaDomainsSrc='src/Ukraine-domains-inside.lst'
 uaDomainsOut='Ukraine/inside'
 
 def raw(src, out):
@@ -123,7 +124,9 @@ if __name__ == '__main__':
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
 
     urllib.request.urlretrieve("https://uablacklist.net/domains.txt", "uablacklist-domains.lst")
-    ua_lists = ['uablacklist-domains.lst']
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/domainsdb.txt", "zaboronahelp-domains.lst")
+
+    ua_lists = ['uablacklist-domains.lst', 'zaboronahelp-domains.lst', uaDomainsSrc]
 
     dnsmasq(ua_lists, uaDomainsOut)
     clashx(ua_lists, uaDomainsOut)
