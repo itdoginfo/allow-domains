@@ -33,7 +33,7 @@ Outside:
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-kvas.lst)
 
 ## Украина
-Список заблокированных ресурсов в Украине. Списки берутся с ресурса https://uablacklist.net/, который предоставляет их в RAW формате.
+Список заблокированных ресурсов в Украине. Списки берутся с ресурсов https://uablacklist.net/ и https://zaborona.help/.
 
 Преобразуются в формат Dnsmasq. При этом удаляются домены с кириллическими буквами. 
 
