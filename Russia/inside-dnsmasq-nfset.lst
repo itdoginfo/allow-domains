@@ -10,6 +10,7 @@ nftset=/9tv.co.il/4#inet#fw4#vpn_domains
 nftset=/a-msedge.net/4#inet#fw4#vpn_domains
 nftset=/abook-club.ru/4#inet#fw4#vpn_domains
 nftset=/activatica.org/4#inet#fw4#vpn_domains
+nftset=/adguard-dns.com/4#inet#fw4#vpn_domains
 nftset=/adguard.com/4#inet#fw4#vpn_domains
 nftset=/adobe.io/4#inet#fw4#vpn_domains
 nftset=/ads-twitter.com/4#inet#fw4#vpn_domains
