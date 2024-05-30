@@ -294,7 +294,7 @@ ionos.com
 digitalocean.com
 godaddy.com
 
-# Intel. It's not working, need to investigate
+# Intel
 intel.com
 www.intel.com
 intel.de
@@ -314,6 +314,16 @@ nnmclub.to
 # Media DB
 www.theaudiodb.com
 theaudiodb.com
+
+# Docker
+docker.com
+hub.docker.com
+desktop.docker.com
+docs.docker.com
+production.cloudflare.docker.com
+docker.io
+registry-1.docker.io
+auth.docker.io
 
 # Other
 saverudata.net
