@@ -55,6 +55,7 @@ artifacts.elastic.co
 atlassian.com
 atn.ua
 att.com
+auth.docker.io
 auth.grazie.ai
 auth.openai.com
 auth0.openai.com
@@ -120,6 +121,7 @@ daemon-tools.cc
 database.clamav.net
 deezer.com
 dell.com
+desktop.docker.com
 deviantart.com
 devops.com
 digitalocean.com
@@ -128,7 +130,10 @@ disctech.com
 dist.torproject.org
 dl.grafana.com
 dms.licdn.com
+docker.com
 docker.elastic.co
+docker.io
+docs.docker.com
 docs.lambdalabs.com
 docs.redis.com
 documentation.meraki.com
@@ -219,6 +224,7 @@ holod.global.ssl.fastly.net
 holod.media
 hostgator.com
 hromadske.ua
+hub.docker.com
 hyperhost.ua
 i-fallback.instagram.com
 i.instagram.com
@@ -388,6 +394,7 @@ posle.media
 postimees.ee
 privatekeys.pw
 prnt.sc
+production.cloudflare.docker.com
 proekt.media
 prosleduetmedia.com
 prostovpn.org
@@ -409,6 +416,7 @@ redshieldvpn.com
 redtube.com
 refactoring.guru
 refinitiv.com
+registry-1.docker.io
 registry.terraform.io
 releases.hashicorp.com
 repo.mongodb.org
