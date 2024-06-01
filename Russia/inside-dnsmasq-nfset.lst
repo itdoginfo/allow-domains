@@ -462,6 +462,7 @@ nftset=/tvrain.ru/4#inet#fw4#vpn_domains
 nftset=/tvrain.tv/4#inet#fw4#vpn_domains
 nftset=/tweetdeck.com/4#inet#fw4#vpn_domains
 nftset=/twimg.com/4#inet#fw4#vpn_domains
+nftset=/twirpx.com/4#inet#fw4#vpn_domains
 nftset=/twitpic.com/4#inet#fw4#vpn_domains
 nftset=/twitter.biz/4#inet#fw4#vpn_domains
 nftset=/twitter.com/4#inet#fw4#vpn_domains

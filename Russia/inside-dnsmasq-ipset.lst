@@ -462,6 +462,7 @@ ipset=/tvrain.ru/vpn_domains
 ipset=/tvrain.tv/vpn_domains
 ipset=/tweetdeck.com/vpn_domains
 ipset=/twimg.com/vpn_domains
+ipset=/twirpx.com/vpn_domains
 ipset=/twitpic.com/vpn_domains
 ipset=/twitter.biz/vpn_domains
 ipset=/twitter.com/vpn_domains
