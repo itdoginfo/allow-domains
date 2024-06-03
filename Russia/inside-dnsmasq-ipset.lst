@@ -95,7 +95,6 @@ ipset=/discours.io/vpn_domains
 ipset=/disctech.com/vpn_domains
 ipset=/dobrochan.net/vpn_domains
 ipset=/docker.com/vpn_domains
-ipset=/docker.io/vpn_domains
 ipset=/dovod.online/vpn_domains
 ipset=/doxa.team/vpn_domains
 ipset=/doxajournal.ru/vpn_domains
