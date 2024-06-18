@@ -163,6 +163,7 @@ ipset=/gulagu.net/vpn_domains
 ipset=/hashicorp.com/vpn_domains
 ipset=/hdrezka.ag/vpn_domains
 ipset=/healthline.com/vpn_domains
+ipset=/hetzner.com/vpn_domains
 ipset=/holod.media/vpn_domains
 ipset=/home-connect.com/vpn_domains
 ipset=/hostgator.com/vpn_domains
