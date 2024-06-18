@@ -354,6 +354,7 @@ ipset=/rbc.ua/vpn_domains
 ipset=/reactflow.dev/vpn_domains
 ipset=/realist.online/vpn_domains
 ipset=/redis.com/vpn_domains
+ipset=/redis.io/vpn_domains
 ipset=/redshieldvpn.com/vpn_domains
 ipset=/redtube.com/vpn_domains
 ipset=/refactoring.guru/vpn_domains
