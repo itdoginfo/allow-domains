@@ -4,9 +4,9 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - .github/**
+      - .github/create-lists.yml
       - src/**
-      - '*.py'
+      - convert.py
   schedule:
     - cron: '29 */8 * * *'
 

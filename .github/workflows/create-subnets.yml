@@ -1,0 +1,33 @@
+name: Create subnets
+
+on:
+  push:
+    branches: [ "subnets" ]
+    paths:
+      - .github/create-subnets.yml
+      - get-subnets.py
+  schedule:
+    - cron: '15 7 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4.1.7
+    - name: Generate subnets
+      uses: actions/setup-python@v5.1.0
+      with:
+        python-version: '3.10'
+    - run: |
+        python get-subnets.py
+    - name: Push subnets
+      uses: EndBug/add-and-commit@v9.1.4
+      with:
+        add: 'Subnets'
+        author_name: GitHub Action
+        author_email: githubaction@githubaction.com
+        message: 'Update subnet'
+        push: true
