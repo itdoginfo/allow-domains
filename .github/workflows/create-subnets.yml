@@ -2,7 +2,7 @@ name: Create subnets
 
 on:
   push:
-    branches: [ "subnets" ]
+    branches: [ "main" ]
     paths:
       - .github/workflows/create-subnets.yml
       - get-subnets.py
