@@ -7,7 +7,7 @@ on:
       - .github/create-subnets.yml
       - get-subnets.py
   schedule:
-    - cron: '15 7 * * 1'
+    - cron: '16 7 * * 1'
 
 permissions:
   contents: write
