@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - .github/create-lists.yml
+      - .github/workflows/create-lists.yml
       - src/**
       - convert.py
   schedule:

@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "subnets" ]
     paths:
-      - .github/create-subnets.yml
+      - .github/workflows/create-subnets.yml
       - get-subnets.py
   schedule:
     - cron: '16 7 * * 1'
