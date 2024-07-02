@@ -199,6 +199,7 @@ ipset=/itsmycity.ru/vpn_domains
 ipset=/jabra.com/vpn_domains
 ipset=/jamf.com/vpn_domains
 ipset=/jauns.lv/vpn_domains
+ipset=/jetbrains.com/vpn_domains
 ipset=/kamatera.com/vpn_domains
 ipset=/kasparov.ru/vpn_domains
 ipset=/kavkaz-uzel.eu/vpn_domains
