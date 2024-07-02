@@ -199,6 +199,7 @@ nftset=/itsmycity.ru/4#inet#fw4#vpn_domains
 nftset=/jabra.com/4#inet#fw4#vpn_domains
 nftset=/jamf.com/4#inet#fw4#vpn_domains
 nftset=/jauns.lv/4#inet#fw4#vpn_domains
+nftset=/jetbrains.com/4#inet#fw4#vpn_domains
 nftset=/kamatera.com/4#inet#fw4#vpn_domains
 nftset=/kasparov.ru/4#inet#fw4#vpn_domains
 nftset=/kavkaz-uzel.eu/4#inet#fw4#vpn_domains
