@@ -365,6 +365,7 @@ ipset=/redshieldvpn.com/vpn_domains
 ipset=/redtube.com/vpn_domains
 ipset=/refactoring.guru/vpn_domains
 ipset=/refinitiv.com/vpn_domains
+ipset=/remove.bg/vpn_domains
 ipset=/republic.ru/vpn_domains
 ipset=/resp.app/vpn_domains
 ipset=/rezonans.media/vpn_domains

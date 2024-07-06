@@ -365,6 +365,7 @@ nftset=/redshieldvpn.com/4#inet#fw4#vpn_domains
 nftset=/redtube.com/4#inet#fw4#vpn_domains
 nftset=/refactoring.guru/4#inet#fw4#vpn_domains
 nftset=/refinitiv.com/4#inet#fw4#vpn_domains
+nftset=/remove.bg/4#inet#fw4#vpn_domains
 nftset=/republic.ru/4#inet#fw4#vpn_domains
 nftset=/resp.app/4#inet#fw4#vpn_domains
 nftset=/rezonans.media/4#inet#fw4#vpn_domains
