@@ -126,6 +126,7 @@ ipset=/fb.com/vpn_domains
 ipset=/fbcdn.net/vpn_domains
 ipset=/fbsbx.com/vpn_domains
 ipset=/fex.net/vpn_domains
+ipset=/ficbook.net/vpn_domains
 ipset=/filmix.ac/vpn_domains
 ipset=/filmix.biz/vpn_domains
 ipset=/flibusta.is/vpn_domains
