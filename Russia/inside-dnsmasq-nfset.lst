@@ -18,6 +18,7 @@ nftset=/ads-twitter.com/4#inet#fw4#vpn_domains
 nftset=/agents.media/4#inet#fw4#vpn_domains
 nftset=/agentura.ru/4#inet#fw4#vpn_domains
 nftset=/alberta.ca/4#inet#fw4#vpn_domains
+nftset=/allegro.pl/4#inet#fw4#vpn_domains
 nftset=/alphacoders.com/4#inet#fw4#vpn_domains
 nftset=/amazfitwatchfaces.com/4#inet#fw4#vpn_domains
 nftset=/amazonaws.com/4#inet#fw4#vpn_domains
