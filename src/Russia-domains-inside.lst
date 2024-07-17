@@ -2,7 +2,7 @@
 fast.com
 showip.net
 
-# Instagram
+# Meta (Instagram, Facebook)
 instagram.com
 www.instagram.com
 graph.instagram.com
@@ -27,6 +27,7 @@ scontent-ams4-1.cdninstagram.com
 scontent-ams4-1.xx.fbcdn.net
 scontent.xx.fbcdn.net
 cdn.fbsbx.com
+internalfb.com
 
 # Twitter/X. From: https://github.com/v2fly/domain-list-community/blob/master/data/twitter
 ads-twitter.com
@@ -314,6 +315,10 @@ geolocation.onetrust.com
 
 # Torrent trackers
 nnmclub.to
+
+# Media
+lostfilmtv2.site
+static.lostfilm.top
 
 # Media DB
 www.theaudiodb.com
