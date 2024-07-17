@@ -33,7 +33,6 @@ Outside:
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-kvas.lst)
 
 ### Почему нет некоторых популярных доменов?
-#### Картинки YouTube
 Ресурс **yt3.ggpht.com** резолвится в IP-адреса балансировщиков Google. Меняется страна, появляется реклама.
 
 Ресурс **play.google.com** есть только в списках без wildcard.
