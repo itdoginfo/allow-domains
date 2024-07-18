@@ -309,6 +309,7 @@ ipset=/olx.ua/vpn_domains
 ipset=/omv-extras.org/vpn_domains
 ipset=/on24.com/vpn_domains
 ipset=/onetrust.com/vpn_domains
+ipset=/onlineradiobox.com/vpn_domains
 ipset=/onlinesim.ru/vpn_domains
 ipset=/openai.com/vpn_domains
 ipset=/openmedia.io/vpn_domains
