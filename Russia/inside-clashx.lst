@@ -34,6 +34,7 @@ DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,appstorrent.ru
 DOMAIN-SUFFIX,aqicn.org
 DOMAIN-SUFFIX,arbat.media
+DOMAIN-SUFFIX,archiveofourown.org
 DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atn.ua
 DOMAIN-SUFFIX,att.com
@@ -42,6 +43,7 @@ DOMAIN-SUFFIX,azathabar.com
 DOMAIN-SUFFIX,azattyq.org
 DOMAIN-SUFFIX,babook.org
 DOMAIN-SUFFIX,baginya.org
+DOMAIN-SUFFIX,bato.to
 DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbc.com
 DOMAIN-SUFFIX,bbci.co.uk
@@ -80,8 +82,10 @@ DOMAIN-SUFFIX,clamav.net
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudflare-dns.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,cock.li
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
+DOMAIN-SUFFIX,cpu-monkey.com
 DOMAIN-SUFFIX,crunchyroll.com
 DOMAIN-SUFFIX,currenttime.tv
 DOMAIN-SUFFIX,cursorinfo.co.il
@@ -102,6 +106,7 @@ DOMAIN-SUFFIX,digitalocean.com
 DOMAIN-SUFFIX,discours.io
 DOMAIN-SUFFIX,disctech.com
 DOMAIN-SUFFIX,dobrochan.net
+DOMAIN-SUFFIX,donmai.us
 DOMAIN-SUFFIX,dovod.online
 DOMAIN-SUFFIX,doxa.team
 DOMAIN-SUFFIX,doxajournal.ru
@@ -121,6 +126,7 @@ DOMAIN-SUFFIX,eutrp.eu
 DOMAIN-SUFFIX,everand.com
 DOMAIN-SUFFIX,exler.ru
 DOMAIN-SUFFIX,expres.online
+DOMAIN-SUFFIX,f95zone.to
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fast.com
@@ -147,6 +153,7 @@ DOMAIN-SUFFIX,freedomletters.org
 DOMAIN-SUFFIX,freemedia.io
 DOMAIN-SUFFIX,gagadget.com
 DOMAIN-SUFFIX,gamesrepack.com
+DOMAIN-SUFFIX,gelbooru.com
 DOMAIN-SUFFIX,geni.us
 DOMAIN-SUFFIX,genius.com
 DOMAIN-SUFFIX,germania.one
@@ -158,6 +165,7 @@ DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gofile.io
 DOMAIN-SUFFIX,golosameriki.com
 DOMAIN-SUFFIX,gonitro.com
+DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,gordonua.com
 DOMAIN-SUFFIX,gpsonextra.net
@@ -251,7 +259,9 @@ DOMAIN-SUFFIX,lostfilmtv5.site
 DOMAIN-SUFFIX,m3u.in
 DOMAIN-SUFFIX,macpaw.com
 DOMAIN-SUFFIX,macvendors.com
+DOMAIN-SUFFIX,mailo.com
 DOMAIN-SUFFIX,malwarebytes.com
+DOMAIN-SUFFIX,mangapark.net
 DOMAIN-SUFFIX,mattermost.com
 DOMAIN-SUFFIX,mbed.com
 DOMAIN-SUFFIX,mdza.io
@@ -321,6 +331,7 @@ DOMAIN-SUFFIX,ovd.legal
 DOMAIN-SUFFIX,ovd.news
 DOMAIN-SUFFIX,ovdinfo.org
 DOMAIN-SUFFIX,ozodi.org
+DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,pandasecurity.com
 DOMAIN-SUFFIX,pap.pl
 DOMAIN-SUFFIX,paperpaper.io
@@ -334,6 +345,7 @@ DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,pb.wtf
 DOMAIN-SUFFIX,pcbway.com
 DOMAIN-SUFFIX,pcbway.ru
+DOMAIN-SUFFIX,pcgamesn.com
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,php.su
@@ -371,6 +383,8 @@ DOMAIN-SUFFIX,radiosvoboda.org
 DOMAIN-SUFFIX,rbc.ua
 DOMAIN-SUFFIX,reactflow.dev
 DOMAIN-SUFFIX,realist.online
+DOMAIN-SUFFIX,reddxxx.com
+DOMAIN-SUFFIX,redgifs.com
 DOMAIN-SUFFIX,redis.com
 DOMAIN-SUFFIX,redis.io
 DOMAIN-SUFFIX,redshieldvpn.com
@@ -384,6 +398,7 @@ DOMAIN-SUFFIX,rezonans.media
 DOMAIN-SUFFIX,rferl.org
 DOMAIN-SUFFIX,roar-review.com
 DOMAIN-SUFFIX,root-nation.com
+DOMAIN-SUFFIX,rsf.org
 DOMAIN-SUFFIX,ruckuswireless.com
 DOMAIN-SUFFIX,rus-media.org
 DOMAIN-SUFFIX,rus.ec
@@ -514,6 +529,7 @@ DOMAIN-SUFFIX,vesma.today
 DOMAIN-SUFFIX,vesty.co.il
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,vipdrive.net
+DOMAIN-SUFFIX,vndb.org
 DOMAIN-SUFFIX,voanews.com
 DOMAIN-SUFFIX,vot-tak.tv
 DOMAIN-SUFFIX,voynaplemyon.com
