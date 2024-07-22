@@ -107,6 +107,7 @@ DOMAIN-SUFFIX,blogspot.com
 DOMAIN-SUFFIX,bloknot.ru
 DOMAIN-SUFFIX,bmpvsu.ru
 DOMAIN-SUFFIX,bober-tv.ru
+DOMAIN-SUFFIX,bober.ru
 DOMAIN-SUFFIX,bookmate.com
 DOMAIN-SUFFIX,boosty.to
 DOMAIN-SUFFIX,britannia-kaliningrad.ru
@@ -120,6 +121,7 @@ DOMAIN-SUFFIX,c-pravda.ru
 DOMAIN-SUFFIX,cackle.me
 DOMAIN-SUFFIX,calend.ru
 DOMAIN-SUFFIX,cambridgecentre.ru
+DOMAIN-SUFFIX,capitalfm.moscow
 DOMAIN-SUFFIX,capitaller.ru
 DOMAIN-SUFFIX,cardsharingserver.tv
 DOMAIN-SUFFIX,casinotoken.com
@@ -157,6 +159,7 @@ DOMAIN-SUFFIX,crimea-news.com
 DOMAIN-SUFFIX,crimea-radio.ru
 DOMAIN-SUFFIX,crimea.com
 DOMAIN-SUFFIX,crimea24.tv
+DOMAIN-SUFFIX,crimea24tv.ru
 DOMAIN-SUFFIX,crimeapress.info
 DOMAIN-SUFFIX,css-ms.ru
 DOMAIN-SUFFIX,cwer.ru
@@ -199,6 +202,7 @@ DOMAIN-SUFFIX,dns-shop.ru
 DOMAIN-SUFFIX,do-mein.ru
 DOMAIN-SUFFIX,domkino-premium.tv
 DOMAIN-SUFFIX,domkino.tv
+DOMAIN-SUFFIX,domkinopremium.tv
 DOMAIN-SUFFIX,dommintrans.ru
 DOMAIN-SUFFIX,donationalerts.com
 DOMAIN-SUFFIX,donbass-insider.com
@@ -211,6 +215,7 @@ DOMAIN-SUFFIX,donmarkets.ru
 DOMAIN-SUFFIX,donmintrans.ru
 DOMAIN-SUFFIX,donnu.ru
 DOMAIN-SUFFIX,dontimes.ru
+DOMAIN-SUFFIX,doverie-tv.ru
 DOMAIN-SUFFIX,drive2.ru
 DOMAIN-SUFFIX,driver.ru
 DOMAIN-SUFFIX,droider.ru
@@ -294,6 +299,7 @@ DOMAIN-SUFFIX,gazetacrimea.ru
 DOMAIN-SUFFIX,gb-dnr.com
 DOMAIN-SUFFIX,gb.ru
 DOMAIN-SUFFIX,gcdn.co
+DOMAIN-SUFFIX,gcs-web.com
 DOMAIN-SUFFIX,gdcert.com
 DOMAIN-SUFFIX,geopolitika.ru
 DOMAIN-SUFFIX,getcourse.ru
@@ -446,6 +452,7 @@ DOMAIN-SUFFIX,krtech.ru
 DOMAIN-SUFFIX,labirint.ru
 DOMAIN-SUFFIX,laitis.ru
 DOMAIN-SUFFIX,lampa32.ru
+DOMAIN-SUFFIX,lapki.live
 DOMAIN-SUFFIX,lenovo-forums.ru
 DOMAIN-SUFFIX,lenta.ru
 DOMAIN-SUFFIX,leon.ru
@@ -542,6 +549,9 @@ DOMAIN-SUFFIX,miranda-ng.org
 DOMAIN-SUFFIX,mirkosmosa.ru
 DOMAIN-SUFFIX,mirplus.info
 DOMAIN-SUFFIX,mirtesen.ru
+DOMAIN-SUFFIX,mk-donbass.ru
+DOMAIN-SUFFIX,mk-herson.ru
+DOMAIN-SUFFIX,mk-zap.ru
 DOMAIN-SUFFIX,mk.ru
 DOMAIN-SUFFIX,mklnr.su
 DOMAIN-SUFFIX,mmnt.ru
@@ -551,6 +561,7 @@ DOMAIN-SUFFIX,money.ru
 DOMAIN-SUFFIX,monteon.ru
 DOMAIN-SUFFIX,moonback.ru
 DOMAIN-SUFFIX,moscowmedia.net
+DOMAIN-SUFFIX,mosfm.com
 DOMAIN-SUFFIX,mostbet.ru
 DOMAIN-SUFFIX,moyaposylka.ru
 DOMAIN-SUFFIX,mozaika.dn.ua
@@ -726,6 +737,7 @@ DOMAIN-SUFFIX,ppcrimea.ru
 DOMAIN-SUFFIX,pravdabeslana.ru
 DOMAIN-SUFFIX,pravdnr.ru
 DOMAIN-SUFFIX,premier.one
+DOMAIN-SUFFIX,premium.tv
 DOMAIN-SUFFIX,pressa.ru
 DOMAIN-SUFFIX,primedice.com
 DOMAIN-SUFFIX,prodonbass.ru
@@ -747,11 +759,13 @@ DOMAIN-SUFFIX,rabotavtaxi.pro
 DOMAIN-SUFFIX,radcap.ru
 DOMAIN-SUFFIX,radio.ru
 DOMAIN-SUFFIX,radiokot.ru
+DOMAIN-SUFFIX,radiomoskvy.ru
 DOMAIN-SUFFIX,radiopotok.ru
 DOMAIN-SUFFIX,radiorecord.ru
 DOMAIN-SUFFIX,radioscanner.net
 DOMAIN-SUFFIX,radioscanner.ru
 DOMAIN-SUFFIX,radiovera.ru
+DOMAIN-SUFFIX,radiozvezda.ru
 DOMAIN-SUFFIX,rambler.ru
 DOMAIN-SUFFIX,rbc.ru
 DOMAIN-SUFFIX,rcz-dnr.ru
@@ -776,6 +790,7 @@ DOMAIN-SUFFIX,rian.ru
 DOMAIN-SUFFIX,rinoptica.ru
 DOMAIN-SUFFIX,riperam.org
 DOMAIN-SUFFIX,ritualdnr.ru
+DOMAIN-SUFFIX,rknpa.ru
 DOMAIN-SUFFIX,rkproc.ru
 DOMAIN-SUFFIX,rmnews.ru
 DOMAIN-SUFFIX,rncb.ru
@@ -858,6 +873,7 @@ DOMAIN-SUFFIX,skyeng.com.ua
 DOMAIN-SUFFIX,skyeng.in.ua
 DOMAIN-SUFFIX,skyeng.ru
 DOMAIN-SUFFIX,skysmart.ru
+DOMAIN-SUFFIX,slavasev.ru
 DOMAIN-SUFFIX,slavlnr.su
 DOMAIN-SUFFIX,slavvesti.su
 DOMAIN-SUFFIX,sledcom.ru
@@ -971,6 +987,7 @@ DOMAIN-SUFFIX,ukraine.ru
 DOMAIN-SUFFIX,ukrgarant.com
 DOMAIN-SUFFIX,ulstu.ru
 DOMAIN-SUFFIX,umi.ru
+DOMAIN-SUFFIX,ural.ru
 DOMAIN-SUFFIX,uraltm08.ru
 DOMAIN-SUFFIX,urtaev.com
 DOMAIN-SUFFIX,usbtor.ru
@@ -983,6 +1000,7 @@ DOMAIN-SUFFIX,vc.ru
 DOMAIN-SUFFIX,vedomosti.ru
 DOMAIN-SUFFIX,veesp.com
 DOMAIN-SUFFIX,vegalab.ru
+DOMAIN-SUFFIX,veraifoma.ru
 DOMAIN-SUFFIX,versia.ru
 DOMAIN-SUFFIX,veseloeradio.ru
 DOMAIN-SUFFIX,vesti-k.ru
@@ -1021,7 +1039,6 @@ DOMAIN-SUFFIX,walletone.com
 DOMAIN-SUFFIX,wasd.tv
 DOMAIN-SUFFIX,web-moneta.com
 DOMAIN-SUFFIX,web-money.ru
-DOMAIN-SUFFIX,web.com
 DOMAIN-SUFFIX,webhamster.ru
 DOMAIN-SUFFIX,webmoney-keeper.ru
 DOMAIN-SUFFIX,webmoney.by
@@ -1081,9 +1098,12 @@ DOMAIN-SUFFIX,yandextaxi.kiev.ua
 DOMAIN-SUFFIX,yasispolkom.ru
 DOMAIN-SUFFIX,yataxi.com.ua
 DOMAIN-SUFFIX,yataxi.net
+DOMAIN-SUFFIX,yoobusiness.ru
 DOMAIN-SUFFIX,yookassa.ru
 DOMAIN-SUFFIX,yoomoney.ru
+DOMAIN-SUFFIX,yoomoney.uk
 DOMAIN-SUFFIX,yoomoney.website
+DOMAIN-SUFFIX,youmoney.ru
 DOMAIN-SUFFIX,yourok.ru
 DOMAIN-SUFFIX,ytro.news
 DOMAIN-SUFFIX,yumoney.ru
