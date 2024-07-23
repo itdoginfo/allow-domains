@@ -534,6 +534,7 @@ nftset=/voanews.com/4#inet#fw4#vpn_domains
 nftset=/vot-tak.tv/4#inet#fw4#vpn_domains
 nftset=/voynaplemyon.com/4#inet#fw4#vpn_domains
 nftset=/vpngate.net/4#inet#fw4#vpn_domains
+nftset=/vpngen.org/4#inet#fw4#vpn_domains
 nftset=/vpnlove.me/4#inet#fw4#vpn_domains
 nftset=/vrv.co/4#inet#fw4#vpn_domains
 nftset=/vyos.io/4#inet#fw4#vpn_domains

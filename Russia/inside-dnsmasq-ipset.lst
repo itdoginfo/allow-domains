@@ -534,6 +534,7 @@ ipset=/voanews.com/vpn_domains
 ipset=/vot-tak.tv/vpn_domains
 ipset=/voynaplemyon.com/vpn_domains
 ipset=/vpngate.net/vpn_domains
+ipset=/vpngen.org/vpn_domains
 ipset=/vpnlove.me/vpn_domains
 ipset=/vrv.co/vpn_domains
 ipset=/vyos.io/vpn_domains
