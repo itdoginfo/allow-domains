@@ -17,6 +17,7 @@ account-api.protonmail.com
 account.protonmail.com
 accounts.hetzner.com
 accounts.spotify.com
+accounts.youtube.com
 activatica.org
 adguard.com
 ads-twitter.com
@@ -120,6 +121,7 @@ colta.ru
 community.cisco.com
 community.intel.com
 connect.facebook.net
+consent.youtube.com
 consumer.intel.com
 corpredirect.intel.com
 cpu-monkey.com
@@ -220,6 +222,7 @@ golosameriki.com
 gonitro.com
 goodreads.com
 googletagmanager.com
+googlevideo.com
 gordonua.com
 gpsonextra.net
 grafana.com
@@ -247,6 +250,8 @@ hyperhost.ua
 i-fallback.instagram.com
 i.instagram.com
 i.sakh.com
+i.ytimg.com
+i9.ytimg.com
 ibm.com
 ichef.bbci.co.uk
 id.supercell.com
@@ -441,6 +446,7 @@ radiosvoboda.org
 raw-data.gitlab.io
 reactflow.dev
 realist.online
+realtimesupport.youtube.com
 reddxxx.com
 redgifs.com
 redis.com
@@ -536,6 +542,7 @@ static.rutracker.cc
 strana.news
 strana.today
 strava.com
+studio.youtube.com
 stulchik.net
 support.cambiumnetworks.com
 support.huawei.com
@@ -711,6 +718,8 @@ www.wikiart.org
 www.wonderzine.com
 www.wunderground.com
 www.yle.fi
+www.youtube.com
+www.youtubekids.com
 www.zerkalo.io
 x.com
 xhamster.com
@@ -719,6 +728,8 @@ xnxx.com
 xtracloud.net
 xvideos.com
 yaoilib.me
+youtube.com
+yt3.ggpht.com
 z-p42-chat-e2ee-ig.facebook.com
 z-p42-instagram.c10r.instagram.com
 zahav.ru
