@@ -80,7 +80,6 @@ nftset=/cisco.com/4#inet#fw4#vpn_domains
 nftset=/citrix.com/4#inet#fw4#vpn_domains
 nftset=/clamav.net/4#inet#fw4#vpn_domains
 nftset=/claude.ai/4#inet#fw4#vpn_domains
-nftset=/cloudflare-dns.com/4#inet#fw4#vpn_domains
 nftset=/cms-twdigitalassets.com/4#inet#fw4#vpn_domains
 nftset=/cock.li/4#inet#fw4#vpn_domains
 nftset=/coldfilm.xyz/4#inet#fw4#vpn_domains

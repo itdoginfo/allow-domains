@@ -80,7 +80,6 @@ ipset=/cisco.com/vpn_domains
 ipset=/citrix.com/vpn_domains
 ipset=/clamav.net/vpn_domains
 ipset=/claude.ai/vpn_domains
-ipset=/cloudflare-dns.com/vpn_domains
 ipset=/cms-twdigitalassets.com/vpn_domains
 ipset=/cock.li/vpn_domains
 ipset=/coldfilm.xyz/vpn_domains
