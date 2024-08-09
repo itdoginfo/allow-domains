@@ -332,6 +332,7 @@ ipset=/openmedia.io/vpn_domains
 ipset=/opensea.io/vpn_domains
 ipset=/opentrackr.org/vpn_domains
 ipset=/opposition-news.com/vpn_domains
+ipset=/ovd.info/vpn_domains
 ipset=/ovd.legal/vpn_domains
 ipset=/ovd.news/vpn_domains
 ipset=/ovdinfo.org/vpn_domains
