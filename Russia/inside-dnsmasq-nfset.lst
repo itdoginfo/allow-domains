@@ -209,6 +209,7 @@ nftset=/instagram.com/4#inet#fw4#vpn_domains
 nftset=/intel.com/4#inet#fw4#vpn_domains
 nftset=/intel.de/4#inet#fw4#vpn_domains
 nftset=/intellij.net/4#inet#fw4#vpn_domains
+nftset=/interactivebrokers.co.uk/4#inet#fw4#vpn_domains
 nftset=/interfax.com.ua/4#inet#fw4#vpn_domains
 nftset=/internalfb.com/4#inet#fw4#vpn_domains
 nftset=/intuit.com/4#inet#fw4#vpn_domains
