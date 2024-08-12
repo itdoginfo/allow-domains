@@ -90,6 +90,7 @@ nftset=/cpu-monkey.com/4#inet#fw4#vpn_domains
 nftset=/crunchyroll.com/4#inet#fw4#vpn_domains
 nftset=/currenttime.tv/4#inet#fw4#vpn_domains
 nftset=/cursorinfo.co.il/4#inet#fw4#vpn_domains
+nftset=/cyberghostvpn.com/4#inet#fw4#vpn_domains
 nftset=/cyxymu.info/4#inet#fw4#vpn_domains
 nftset=/czx.to/4#inet#fw4#vpn_domains
 nftset=/daemon-tools.cc/4#inet#fw4#vpn_domains

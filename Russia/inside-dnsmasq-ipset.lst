@@ -90,6 +90,7 @@ ipset=/cpu-monkey.com/vpn_domains
 ipset=/crunchyroll.com/vpn_domains
 ipset=/currenttime.tv/vpn_domains
 ipset=/cursorinfo.co.il/vpn_domains
+ipset=/cyberghostvpn.com/vpn_domains
 ipset=/cyxymu.info/vpn_domains
 ipset=/czx.to/vpn_domains
 ipset=/daemon-tools.cc/vpn_domains
