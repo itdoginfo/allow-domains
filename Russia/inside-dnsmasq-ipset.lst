@@ -22,6 +22,7 @@ ipset=/allegro.pl/vpn_domains
 ipset=/alphacoders.com/vpn_domains
 ipset=/amazfitwatchfaces.com/vpn_domains
 ipset=/amazonaws.com/vpn_domains
+ipset=/amd.com/vpn_domains
 ipset=/amdm.ru/vpn_domains
 ipset=/amnezia.org/vpn_domains
 ipset=/amx.com/vpn_domains
