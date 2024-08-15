@@ -343,6 +343,7 @@ nftset=/ovd.info/4#inet#fw4#vpn_domains
 nftset=/ovd.legal/4#inet#fw4#vpn_domains
 nftset=/ovd.news/4#inet#fw4#vpn_domains
 nftset=/ovdinfo.org/4#inet#fw4#vpn_domains
+nftset=/ozi-ru.org/4#inet#fw4#vpn_domains
 nftset=/ozodi.org/4#inet#fw4#vpn_domains
 nftset=/pages.dev/4#inet#fw4#vpn_domains
 nftset=/pandasecurity.com/4#inet#fw4#vpn_domains

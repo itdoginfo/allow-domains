@@ -343,6 +343,7 @@ ipset=/ovd.info/vpn_domains
 ipset=/ovd.legal/vpn_domains
 ipset=/ovd.news/vpn_domains
 ipset=/ovdinfo.org/vpn_domains
+ipset=/ozi-ru.org/vpn_domains
 ipset=/ozodi.org/vpn_domains
 ipset=/pages.dev/vpn_domains
 ipset=/pandasecurity.com/vpn_domains
