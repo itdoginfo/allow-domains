@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,adobe.io
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,agentura.ru
+DOMAIN-SUFFIX,ahrefs.com
 DOMAIN-SUFFIX,alberta.ca
 DOMAIN-SUFFIX,allegro.pl
 DOMAIN-SUFFIX,alphacoders.com
@@ -110,6 +111,9 @@ DOMAIN-SUFFIX,discours.io
 DOMAIN-SUFFIX,disctech.com
 DOMAIN-SUFFIX,dobrochan.net
 DOMAIN-SUFFIX,donmai.us
+DOMAIN-SUFFIX,dorama.live
+DOMAIN-SUFFIX,doramalive.ru
+DOMAIN-SUFFIX,doramy.club
 DOMAIN-SUFFIX,dovod.online
 DOMAIN-SUFFIX,doxa.team
 DOMAIN-SUFFIX,doxajournal.ru
@@ -147,8 +151,11 @@ DOMAIN-SUFFIX,flir.com
 DOMAIN-SUFFIX,flir.eu
 DOMAIN-SUFFIX,fls.guru
 DOMAIN-SUFFIX,fluke.com
+DOMAIN-SUFFIX,flukenetworks.com
 DOMAIN-SUFFIX,fn-volga.ru
 DOMAIN-SUFFIX,fonge.org
+DOMAIN-SUFFIX,force-user-content.com
+DOMAIN-SUFFIX,force.com
 DOMAIN-SUFFIX,fork.pet
 DOMAIN-SUFFIX,forklog.com
 DOMAIN-SUFFIX,formula1.com
@@ -227,6 +234,7 @@ DOMAIN-SUFFIX,jabra.com
 DOMAIN-SUFFIX,jamf.com
 DOMAIN-SUFFIX,jauns.lv
 DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,kaktus.media
 DOMAIN-SUFFIX,kamatera.com
 DOMAIN-SUFFIX,kasparov.ru
 DOMAIN-SUFFIX,kavkaz-uzel.eu
@@ -272,6 +280,7 @@ DOMAIN-SUFFIX,macpaw.com
 DOMAIN-SUFFIX,macvendors.com
 DOMAIN-SUFFIX,mailo.com
 DOMAIN-SUFFIX,malwarebytes.com
+DOMAIN-SUFFIX,mangahub.ru
 DOMAIN-SUFFIX,mangapark.net
 DOMAIN-SUFFIX,mattermost.com
 DOMAIN-SUFFIX,mbed.com
@@ -343,6 +352,7 @@ DOMAIN-SUFFIX,ovd.info
 DOMAIN-SUFFIX,ovd.legal
 DOMAIN-SUFFIX,ovd.news
 DOMAIN-SUFFIX,ovdinfo.org
+DOMAIN-SUFFIX,ozi-ru.org
 DOMAIN-SUFFIX,ozodi.org
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,pandasecurity.com
@@ -429,6 +439,14 @@ DOMAIN-SUFFIX,rutracker.ru
 DOMAIN-SUFFIX,sakh.com
 DOMAIN-SUFFIX,sakhalin.info
 DOMAIN-SUFFIX,sakharovfoundation.org
+DOMAIN-SUFFIX,salesforce-experience.com
+DOMAIN-SUFFIX,salesforce-hub.com
+DOMAIN-SUFFIX,salesforce-scrt.com
+DOMAIN-SUFFIX,salesforce-setup.com
+DOMAIN-SUFFIX,salesforce-sites.com
+DOMAIN-SUFFIX,salesforce.com
+DOMAIN-SUFFIX,salesforceiq.com
+DOMAIN-SUFFIX,salesforceliveagent.com
 DOMAIN-SUFFIX,sap.com
 DOMAIN-SUFFIX,saverudata.info
 DOMAIN-SUFFIX,saverudata.net
@@ -442,11 +460,13 @@ DOMAIN-SUFFIX,semnasem.org
 DOMAIN-SUFFIX,serpstat.com
 DOMAIN-SUFFIX,servarr.com
 DOMAIN-SUFFIX,severreal.org
+DOMAIN-SUFFIX,sfdcopens.com
 DOMAIN-SUFFIX,shinyhardware.co.uk
 DOMAIN-SUFFIX,showip.net
 DOMAIN-SUFFIX,sibreal.org
 DOMAIN-SUFFIX,simplix.info
 DOMAIN-SUFFIX,singlekey-id.com
+DOMAIN-SUFFIX,site.com
 DOMAIN-SUFFIX,skat.media
 DOMAIN-SUFFIX,skladchik.com
 DOMAIN-SUFFIX,skyscanner.com
@@ -510,6 +530,8 @@ DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,torproject.org
 DOMAIN-SUFFIX,torrent.by
 DOMAIN-SUFFIX,tracker.wf
+DOMAIN-SUFFIX,trailblazer.me
+DOMAIN-SUFFIX,trailhead.com
 DOMAIN-SUFFIX,trellix.com
 DOMAIN-SUFFIX,tsmc.com
 DOMAIN-SUFFIX,tutanota.com
@@ -587,6 +609,7 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,zahav.ru
 DOMAIN-SUFFIX,zannn.top
 DOMAIN-SUFFIX,zedge.net
+DOMAIN-SUFFIX,zendesk.com
 DOMAIN-SUFFIX,zerkalo.io
 DOMAIN-SUFFIX,zerossl.com
 DOMAIN-SUFFIX,zetalliance.org
