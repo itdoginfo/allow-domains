@@ -474,6 +474,7 @@ nftset=/slavicsac.com/4#inet#fw4#vpn_domains
 nftset=/slideshare.net/4#inet#fw4#vpn_domains
 nftset=/smartbear.com/4#inet#fw4#vpn_domains
 nftset=/smashwords.com/4#inet#fw4#vpn_domains
+nftset=/smassets.net/4#inet#fw4#vpn_domains
 nftset=/snort.org/4#inet#fw4#vpn_domains
 nftset=/snyk.io/4#inet#fw4#vpn_domains
 nftset=/soapui.org/4#inet#fw4#vpn_domains

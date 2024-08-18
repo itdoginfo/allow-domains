@@ -474,6 +474,7 @@ ipset=/slavicsac.com/vpn_domains
 ipset=/slideshare.net/vpn_domains
 ipset=/smartbear.com/vpn_domains
 ipset=/smashwords.com/vpn_domains
+ipset=/smassets.net/vpn_domains
 ipset=/snort.org/vpn_domains
 ipset=/snyk.io/vpn_domains
 ipset=/soapui.org/vpn_domains
