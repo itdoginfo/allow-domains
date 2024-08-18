@@ -492,6 +492,7 @@ ipset=/strana.today/vpn_domains
 ipset=/strava.com/vpn_domains
 ipset=/stulchik.net/vpn_domains
 ipset=/supercell.com/vpn_domains
+ipset=/surveymonkey.com/vpn_domains
 ipset=/suspilne.media/vpn_domains
 ipset=/svidomi.in.ua/vpn_domains
 ipset=/svoboda.org/vpn_domains

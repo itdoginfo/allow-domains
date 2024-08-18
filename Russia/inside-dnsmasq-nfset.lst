@@ -492,6 +492,7 @@ nftset=/strana.today/4#inet#fw4#vpn_domains
 nftset=/strava.com/4#inet#fw4#vpn_domains
 nftset=/stulchik.net/4#inet#fw4#vpn_domains
 nftset=/supercell.com/4#inet#fw4#vpn_domains
+nftset=/surveymonkey.com/4#inet#fw4#vpn_domains
 nftset=/suspilne.media/4#inet#fw4#vpn_domains
 nftset=/svidomi.in.ua/4#inet#fw4#vpn_domains
 nftset=/svoboda.org/4#inet#fw4#vpn_domains
