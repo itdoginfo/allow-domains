@@ -306,6 +306,7 @@ nftset=/microchip.com/4#inet#fw4#vpn_domains
 nftset=/middlewareinventory.com/4#inet#fw4#vpn_domains
 nftset=/mignews.com/4#inet#fw4#vpn_domains
 nftset=/miro.com/4#inet#fw4#vpn_domains
+nftset=/mirostatic.com/4#inet#fw4#vpn_domains
 nftset=/mongodb.com/4#inet#fw4#vpn_domains
 nftset=/mongodb.org/4#inet#fw4#vpn_domains
 nftset=/monoprice.com/4#inet#fw4#vpn_domains

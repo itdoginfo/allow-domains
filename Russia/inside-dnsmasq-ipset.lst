@@ -306,6 +306,7 @@ ipset=/microchip.com/vpn_domains
 ipset=/middlewareinventory.com/vpn_domains
 ipset=/mignews.com/vpn_domains
 ipset=/miro.com/vpn_domains
+ipset=/mirostatic.com/vpn_domains
 ipset=/mongodb.com/vpn_domains
 ipset=/mongodb.org/vpn_domains
 ipset=/monoprice.com/vpn_domains
