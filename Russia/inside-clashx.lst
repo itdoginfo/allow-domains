@@ -108,6 +108,7 @@ DOMAIN-SUFFIX,dellcdn.com
 DOMAIN-SUFFIX,depositphotos.com
 DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,devops.com
+DOMAIN-SUFFIX,digitalcontent.sky
 DOMAIN-SUFFIX,digitalocean.com
 DOMAIN-SUFFIX,discours.io
 DOMAIN-SUFFIX,disctech.com
@@ -208,6 +209,8 @@ DOMAIN-SUFFIX,hetzner.com
 DOMAIN-SUFFIX,holod.media
 DOMAIN-SUFFIX,home-connect.com
 DOMAIN-SUFFIX,hostgator.com
+DOMAIN-SUFFIX,hotels.com
+DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,hqporner.com
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hrw.org
@@ -217,6 +220,7 @@ DOMAIN-SUFFIX,hyperhost.ua
 DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,idelreal.org
 DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,ign.com
 DOMAIN-SUFFIX,iherb.com
 DOMAIN-SUFFIX,iichan.hk
 DOMAIN-SUFFIX,ill.in.ua
@@ -308,7 +312,6 @@ DOMAIN-SUFFIX,metla.press
 DOMAIN-SUFFIX,microchip.com
 DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
-DOMAIN-SUFFIX,miro.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,mongodb.org
 DOMAIN-SUFFIX,monoprice.com
@@ -336,6 +339,11 @@ DOMAIN-SUFFIX,nih.gov
 DOMAIN-SUFFIX,nitropdf.com
 DOMAIN-SUFFIX,nnmclub.to
 DOMAIN-SUFFIX,nordvpn.com
+DOMAIN-SUFFIX,notion-static.com
+DOMAIN-SUFFIX,notion.com
+DOMAIN-SUFFIX,notion.new
+DOMAIN-SUFFIX,notion.site
+DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,novaya.no
 DOMAIN-SUFFIX,novayagazeta.eu
 DOMAIN-SUFFIX,novayagazeta.ru
@@ -396,6 +404,7 @@ DOMAIN-SUFFIX,posle.media
 DOMAIN-SUFFIX,postfix.org
 DOMAIN-SUFFIX,postimees.ee
 DOMAIN-SUFFIX,pravda.com.ua
+DOMAIN-SUFFIX,premierleague.com
 DOMAIN-SUFFIX,privatekeys.pw
 DOMAIN-SUFFIX,prnt.sc
 DOMAIN-SUFFIX,proekt.media
@@ -480,6 +489,8 @@ DOMAIN-SUFFIX,singlekey-id.com
 DOMAIN-SUFFIX,site.com
 DOMAIN-SUFFIX,skat.media
 DOMAIN-SUFFIX,skladchik.com
+DOMAIN-SUFFIX,sky.com
+DOMAIN-SUFFIX,skycdp.com
 DOMAIN-SUFFIX,skyscanner.com
 DOMAIN-SUFFIX,slavicsac.com
 DOMAIN-SUFFIX,slideshare.net
