@@ -103,7 +103,7 @@ if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
-    removeDomains = {'google.com', 'github.com', 'microsoft.com', 'cloudflare-dns.com'}
+    removeDomains = {'google.com', 'github.com', 'githubusercontent.com', 'microsoft.com', 'cloudflare-dns.com' }
     urllib.request.urlretrieve("https://community.antifilter.download/list/domains.lst", "antifilter-domains.lst")
     inside_lists = ['antifilter-domains.lst', rusDomainsInsideSrc]
 
