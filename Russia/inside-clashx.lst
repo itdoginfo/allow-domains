@@ -182,7 +182,6 @@ DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gfn.am
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,gitlab.io
 DOMAIN-SUFFIX,glpals.com
@@ -194,7 +193,6 @@ DOMAIN-SUFFIX,gonitro.com
 DOMAIN-SUFFIX,goodreads.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gordonua.com
 DOMAIN-SUFFIX,gpsonextra.net
 DOMAIN-SUFFIX,gr-assets.com
@@ -215,7 +213,7 @@ DOMAIN-SUFFIX,holod.media
 DOMAIN-SUFFIX,home-connect.com
 DOMAIN-SUFFIX,hostgator.com
 DOMAIN-SUFFIX,hotels.com
-DOMAIN-SUFFIX,howlongtobeat.com
+DOMAIN-SUFFIX,howlongtobeast.com
 DOMAIN-SUFFIX,hqporner.com
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hrw.org
@@ -423,7 +421,6 @@ DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,provereno.media
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
-DOMAIN-SUFFIX,pulselive.com
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qualcomm.com
 DOMAIN-SUFFIX,quietpc.com
@@ -605,6 +602,7 @@ DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,vipdrive.net
 DOMAIN-SUFFIX,vndb.org
 DOMAIN-SUFFIX,voanews.com
+DOMAIN-SUFFIX,volkswagen-classic-parts.com
 DOMAIN-SUFFIX,vot-tak.tv
 DOMAIN-SUFFIX,voynaplemyon.com
 DOMAIN-SUFFIX,vpngate.net
@@ -640,6 +638,7 @@ DOMAIN-SUFFIX,xvideos-cdn.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yaoilib.me
 DOMAIN-SUFFIX,yle.fi
+DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,ytimg.com
