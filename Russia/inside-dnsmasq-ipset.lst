@@ -594,6 +594,7 @@ ipset=/vagrantcloud.com/vpn_domains
 ipset=/vectorworks.net/vpn_domains
 ipset=/veeam.com/vpn_domains
 ipset=/velocidrone.com/vpn_domains
+ipset=/veritas.com/vpn_domains
 ipset=/verstka.media/vpn_domains
 ipset=/vesma.one/vpn_domains
 ipset=/vesma.today/vpn_domains
