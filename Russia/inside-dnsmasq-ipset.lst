@@ -58,6 +58,7 @@ ipset=/bihus.info/vpn_domains
 ipset=/bing.com/vpn_domains
 ipset=/bitbucket.org/vpn_domains
 ipset=/bitcoin.org/vpn_domains
+ipset=/bitdefender.com/vpn_domains
 ipset=/bitru.org/vpn_domains
 ipset=/blackseanews.net/vpn_domains
 ipset=/bluehost.com/vpn_domains

@@ -58,6 +58,7 @@ nftset=/bihus.info/4#inet#fw4#vpn_domains
 nftset=/bing.com/4#inet#fw4#vpn_domains
 nftset=/bitbucket.org/4#inet#fw4#vpn_domains
 nftset=/bitcoin.org/4#inet#fw4#vpn_domains
+nftset=/bitdefender.com/4#inet#fw4#vpn_domains
 nftset=/bitru.org/4#inet#fw4#vpn_domains
 nftset=/blackseanews.net/4#inet#fw4#vpn_domains
 nftset=/bluehost.com/4#inet#fw4#vpn_domains
