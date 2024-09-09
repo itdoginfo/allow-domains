@@ -58,6 +58,7 @@ DOMAIN-SUFFIX,bihus.info
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,bitcoin.org
+DOMAIN-SUFFIX,bitdefender.com
 DOMAIN-SUFFIX,bitru.org
 DOMAIN-SUFFIX,blackseanews.net
 DOMAIN-SUFFIX,bluehost.com
@@ -70,6 +71,7 @@ DOMAIN-SUFFIX,brawlstarsgame.com
 DOMAIN-SUFFIX,buckaroo.nl
 DOMAIN-SUFFIX,buf.build
 DOMAIN-SUFFIX,bumble.com
+DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,cambiumnetworks.com
 DOMAIN-SUFFIX,canva.com
 DOMAIN-SUFFIX,capcut.com
@@ -149,6 +151,7 @@ DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,fex.net
+DOMAIN-SUFFIX,fextralife.com
 DOMAIN-SUFFIX,ficbook.net
 DOMAIN-SUFFIX,filmitorrent.net
 DOMAIN-SUFFIX,filmix.ac
@@ -213,7 +216,7 @@ DOMAIN-SUFFIX,holod.media
 DOMAIN-SUFFIX,home-connect.com
 DOMAIN-SUFFIX,hostgator.com
 DOMAIN-SUFFIX,hotels.com
-DOMAIN-SUFFIX,howlongtobeast.com
+DOMAIN-SUFFIX,howlongtobeat.com
 DOMAIN-SUFFIX,hqporner.com
 DOMAIN-SUFFIX,hromadske.ua
 DOMAIN-SUFFIX,hrw.org
@@ -221,6 +224,7 @@ DOMAIN-SUFFIX,hs.fi
 DOMAIN-SUFFIX,huawei.com
 DOMAIN-SUFFIX,hyperhost.ua
 DOMAIN-SUFFIX,ibm.com
+DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,idelreal.org
 DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,ign.com
@@ -325,6 +329,9 @@ DOMAIN-SUFFIX,mouser.com
 DOMAIN-SUFFIX,mouser.fi
 DOMAIN-SUFFIX,mrakopedia.net
 DOMAIN-SUFFIX,mullvad.net
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,mydoramy.club
 DOMAIN-SUFFIX,nasvsehtoshnit.ru
 DOMAIN-SUFFIX,navalny.com
 DOMAIN-SUFFIX,nba.com
@@ -356,6 +363,7 @@ DOMAIN-SUFFIX,nyaa.si
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,oasis.app
+DOMAIN-SUFFIX,ocstore.com
 DOMAIN-SUFFIX,ohmyswift.ru
 DOMAIN-SUFFIX,oi.legal
 DOMAIN-SUFFIX,okx.com
@@ -553,7 +561,16 @@ DOMAIN-SUFFIX,thetruestory.news
 DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,ti.com
 DOMAIN-SUFFIX,tidal.com
+DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn-eu.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokd.net
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,timberland.com
 DOMAIN-SUFFIX,tjournal.ru
 DOMAIN-SUFFIX,tmdb.org
@@ -564,6 +581,7 @@ DOMAIN-SUFFIX,trailblazer.me
 DOMAIN-SUFFIX,trailhead.com
 DOMAIN-SUFFIX,trellix.com
 DOMAIN-SUFFIX,tsmc.com
+DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,tutanota.com
 DOMAIN-SUFFIX,tvfreedom.io
 DOMAIN-SUFFIX,tvrain.ru
@@ -615,6 +633,7 @@ DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,weblance.com.ua
+DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,welt.de
 DOMAIN-SUFFIX,wetransfer.com
 DOMAIN-SUFFIX,wheather.com
