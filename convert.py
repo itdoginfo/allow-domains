@@ -41,8 +41,6 @@ def dnsmasq(src, out, single=None, remove={'google.com'}):
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
                             domains.add("." + tldextract.extract(line.rstrip()).suffix)
 
-    #domains = domains - remove
-
     if single is not None:
         with open(single) as infile:
             for line in infile:

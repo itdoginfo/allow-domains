@@ -32,11 +32,6 @@ Outside:
 - [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-clashx.lst)
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-kvas.lst)
 
-### Почему нет некоторых популярных доменов?
-Ресурс **play.google.com** есть только в списках без wildcard.
-
-Тоже самое касается и других ресурсов, с подобными субдоменами.
-
 ## Украина
 Список заблокированных ресурсов в Украине. Списки берутся с ресурсов https://uablacklist.net/ и https://zaborona.help/.
 
@@ -91,11 +86,11 @@ service firewall restart && service dnsmasq restart
 ```
 
 # Как устроено?
-Список **Russia inside** формируются из списка https://community.antifilter.download/ и списка `src/Russia-domains-inside.lst`. Они объединяются, удаляются повторы и сортируются по алфавиту. 
+Список **Russia inside** формируются из списка https://community.antifilter.download/, списка `src/Russia-domains-inside.lst` и списка `Russia-domains-inside-single.lst`. Они объединяются, удаляются повторы и сортируются по алфавиту. 
 
 Список **Russia outside** формируется из списка `src/Russia-domains-outside.lst`. Также происходит сортировка по алфавиту.
 
-Dnmasq работает по wildcard. Это означает, что при добавлении домена `domain.com`, в списки IP-адресов будут добавляться также все поддомены `subdomain.domain.com`. Поэтому Dnsmasq списки состоят только из доменов второго уровня. Повторы удаляются, удаляются субдомены с `google.com` и происходит сортировка.
+Dnmasq работает по wildcard. При добавлении домена `domain.com`, в списки IP-адресов будут добавляться также все поддомены `subdomain.domain.com`. Для тех ресурсов, у которым нужны только субдомены - добавляются только субдомены.
 
 Списки обновляются при каждом коммите в репозитории с помощью GitHub Actions. Также скрипт `convert.py` запускается каждые 8 часов, чтобы синхронизировать списки со сторонними сервисами.
 
