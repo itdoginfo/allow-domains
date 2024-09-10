@@ -609,6 +609,7 @@ nftset=/twtrdns.net/4#inet#fw4#vpn_domains
 nftset=/twttr.com/4#inet#fw4#vpn_domains
 nftset=/twttr.net/4#inet#fw4#vpn_domains
 nftset=/twvid.com/4#inet#fw4#vpn_domains
+nftset=/ubnt.com/4#inet#fw4#vpn_domains
 nftset=/ufile.io/4#inet#fw4#vpn_domains
 nftset=/underver.se/4#inet#fw4#vpn_domains
 nftset=/unian.net/4#inet#fw4#vpn_domains

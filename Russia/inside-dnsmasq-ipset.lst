@@ -609,6 +609,7 @@ ipset=/twtrdns.net/vpn_domains
 ipset=/twttr.com/vpn_domains
 ipset=/twttr.net/vpn_domains
 ipset=/twvid.com/vpn_domains
+ipset=/ubnt.com/vpn_domains
 ipset=/ufile.io/vpn_domains
 ipset=/underver.se/vpn_domains
 ipset=/unian.net/vpn_domains
