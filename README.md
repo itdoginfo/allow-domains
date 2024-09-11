@@ -44,6 +44,9 @@ Outside:
 - [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-clashx.lst)
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-kvas.lst)
 
+# Как найти все-все домены ресурса?
+https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/
+
 # Как добавить домены в списки?
 Приветствуется добавление новых доменов и удаление неактуальных.
 Есть несколько вариантов:
