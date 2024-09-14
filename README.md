@@ -59,6 +59,10 @@ https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sa
 
 3. Напишите в [чат](https://t.me/itdogchat)
 
+# .dat файлы для Xray
+Реализовано в стороннем репозитории
+https://github.com/unidcml/allow-domains-dat
+
 # Как заблокировать на своём роутере?
 Пример блокировки по списку доменов на роутере с OpenWrt 23.05.
 
