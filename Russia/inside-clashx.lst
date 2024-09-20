@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,att.com
 DOMAIN-SUFFIX,avira.com
 DOMAIN-SUFFIX,azathabar.com
 DOMAIN-SUFFIX,azattyq.org
+DOMAIN-SUFFIX,b-cdn.net
 DOMAIN-SUFFIX,babook.org
 DOMAIN-SUFFIX,baginya.org
 DOMAIN-SUFFIX,bato.to
@@ -69,9 +70,11 @@ DOMAIN-SUFFIX,bosch-home.com
 DOMAIN-SUFFIX,bradyid.com
 DOMAIN-SUFFIX,brave.com
 DOMAIN-SUFFIX,brawlstarsgame.com
+DOMAIN-SUFFIX,buanzo.org
 DOMAIN-SUFFIX,buckaroo.nl
 DOMAIN-SUFFIX,buf.build
 DOMAIN-SUFFIX,bumble.com
+DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,cambiumnetworks.com
 DOMAIN-SUFFIX,canva.com
@@ -88,6 +91,8 @@ DOMAIN-SUFFIX,chess.com
 DOMAIN-SUFFIX,cisco.com
 DOMAIN-SUFFIX,citrix.com
 DOMAIN-SUFFIX,clamav.net
+DOMAIN-SUFFIX,clashofclans.com
+DOMAIN-SUFFIX,clashroyaleapp.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudex.cc
 DOMAIN-SUFFIX,cms-twdigitalassets.com
@@ -192,6 +197,7 @@ DOMAIN-SUFFIX,glpals.com
 DOMAIN-SUFFIX,gnome-look.org
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gofile.io
+DOMAIN-SUFFIX,gofundme.com
 DOMAIN-SUFFIX,golosameriki.com
 DOMAIN-SUFFIX,gonitro.com
 DOMAIN-SUFFIX,goodreads.com
@@ -301,6 +307,7 @@ DOMAIN-SUFFIX,lostfilmtv5.site
 DOMAIN-SUFFIX,m3u.in
 DOMAIN-SUFFIX,macpaw.com
 DOMAIN-SUFFIX,macvendors.com
+DOMAIN-SUFFIX,mailfence.com
 DOMAIN-SUFFIX,mailo.com
 DOMAIN-SUFFIX,malwarebytes.com
 DOMAIN-SUFFIX,mangahub.ru
@@ -429,6 +436,7 @@ DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,protonmail.ch
 DOMAIN-SUFFIX,protonmail.com
 DOMAIN-SUFFIX,provereno.media
+DOMAIN-SUFFIX,prowlarr.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,qt.io
@@ -495,6 +503,7 @@ DOMAIN-SUFFIX,semnasem.org
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,serpstat.com
 DOMAIN-SUFFIX,servarr.com
+DOMAIN-SUFFIX,service-kp.com
 DOMAIN-SUFFIX,severreal.org
 DOMAIN-SUFFIX,sfdcopens.com
 DOMAIN-SUFFIX,shinyhardware.co.uk
@@ -504,6 +513,7 @@ DOMAIN-SUFFIX,simplix.info
 DOMAIN-SUFFIX,singlekey-id.com
 DOMAIN-SUFFIX,site.com
 DOMAIN-SUFFIX,skat.media
+DOMAIN-SUFFIX,skiff.com
 DOMAIN-SUFFIX,skladchik.com
 DOMAIN-SUFFIX,sky.com
 DOMAIN-SUFFIX,skycdp.com
@@ -538,6 +548,7 @@ DOMAIN-SUFFIX,svoboda.org
 DOMAIN-SUFFIX,svoi.kr.ua
 DOMAIN-SUFFIX,svtv.org
 DOMAIN-SUFFIX,swagger.io
+DOMAIN-SUFFIX,swissinfo.ch
 DOMAIN-SUFFIX,sysdig.com
 DOMAIN-SUFFIX,t-ru.org
 DOMAIN-SUFFIX,t.co
