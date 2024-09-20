@@ -424,6 +424,7 @@ nftset=/play.google.com/4#inet#fw4#vpn_domains
 nftset=/plugshare.com/4#inet#fw4#vpn_domains
 nftset=/polit.ru/4#inet#fw4#vpn_domains
 nftset=/politiken.dk/4#inet#fw4#vpn_domains
+nftset=/pornhub.com/4#inet#fw4#vpn_domains
 nftset=/pornolab.net/4#inet#fw4#vpn_domains
 nftset=/porsche.com/4#inet#fw4#vpn_domains
 nftset=/portal.lviv.ua/4#inet#fw4#vpn_domains
