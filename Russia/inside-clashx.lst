@@ -100,6 +100,7 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudex.cc
 DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,cock.li
+DOMAIN-SUFFIX,codeium.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,coursera.org
@@ -143,6 +144,7 @@ DOMAIN-SUFFIX,ej.ru
 DOMAIN-SUFFIX,ekhokavkaza.com
 DOMAIN-SUFFIX,elastic.co
 DOMAIN-SUFFIX,element14.com
+DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,err.ee
 DOMAIN-SUFFIX,etsy.com
 DOMAIN-SUFFIX,euronews.com
@@ -186,7 +188,6 @@ DOMAIN-SUFFIX,fortanga.org
 DOMAIN-SUFFIX,freedomletters.org
 DOMAIN-SUFFIX,freeimages.com
 DOMAIN-SUFFIX,freemedia.io
-DOMAIN-SUFFIX,freemyip.com
 DOMAIN-SUFFIX,gagadget.com
 DOMAIN-SUFFIX,gamesrepack.com
 DOMAIN-SUFFIX,geforcenow.com
@@ -223,6 +224,7 @@ DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,gulagu.net
 DOMAIN-SUFFIX,habr.com
 DOMAIN-SUFFIX,hashicorp.com
+DOMAIN-SUFFIX,hdrezka.ac
 DOMAIN-SUFFIX,hdrezka.ag
 DOMAIN-SUFFIX,healthline.com
 DOMAIN-SUFFIX,hetzner.com
@@ -357,6 +359,7 @@ DOMAIN-SUFFIX,neformat.com.ua
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netlify.com
 DOMAIN-SUFFIX,networksolutions.com
+DOMAIN-SUFFIX,newark.com
 DOMAIN-SUFFIX,newsru.co.il
 DOMAIN-SUFFIX,newsru.com
 DOMAIN-SUFFIX,newstudio.tv
@@ -429,6 +432,7 @@ DOMAIN-SUFFIX,piccy.info
 DOMAIN-SUFFIX,pingdom.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,plab.site
+DOMAIN-SUFFIX,playboy.com
 DOMAIN-SUFFIX,plugshare.com
 DOMAIN-SUFFIX,polit.ru
 DOMAIN-SUFFIX,politiken.dk
@@ -521,6 +525,7 @@ DOMAIN-SUFFIX,servarr.com
 DOMAIN-SUFFIX,service-kp.com
 DOMAIN-SUFFIX,severreal.org
 DOMAIN-SUFFIX,sfdcopens.com
+DOMAIN-SUFFIX,shikimori.me
 DOMAIN-SUFFIX,shinyhardware.co.uk
 DOMAIN-SUFFIX,showip.net
 DOMAIN-SUFFIX,sibreal.org
@@ -659,12 +664,14 @@ DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,vipdrive.net
 DOMAIN-SUFFIX,vndb.org
 DOMAIN-SUFFIX,voanews.com
+DOMAIN-SUFFIX,voidboost.cc
 DOMAIN-SUFFIX,volkswagen-classic-parts.com
 DOMAIN-SUFFIX,vot-tak.tv
 DOMAIN-SUFFIX,voynaplemyon.com
 DOMAIN-SUFFIX,vpngate.net
 DOMAIN-SUFFIX,vpngen.org
 DOMAIN-SUFFIX,vpnlove.me
+DOMAIN-SUFFIX,vpnpay.io
 DOMAIN-SUFFIX,vrv.co
 DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,walmart.com
