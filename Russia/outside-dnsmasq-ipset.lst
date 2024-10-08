@@ -12,6 +12,7 @@ ipset=/onelya.ru/vpn_domains
 ipset=/ozon.ru/vpn_domains
 ipset=/ozone.ru/vpn_domains
 ipset=/ozonusercontent.com/vpn_domains
+ipset=/pesc.ru/vpn_domains
 ipset=/pochta.ru/vpn_domains
 ipset=/refocus.ru/vpn_domains
 ipset=/russianpost.ru/vpn_domains
