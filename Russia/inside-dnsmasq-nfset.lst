@@ -1,3 +1,15 @@
+nftset=/discord.gg/4#inet#fw4#vpn_domains
+nftset=/discord.com/4#inet#fw4#vpn_domains
+nftset=/discordapp.com/4#inet#fw4#vpn_domains
+nftset=/discord.media/4#inet#fw4#vpn_domains
+nftset=/discordapp.net/4#inet#fw4#vpn_domains
+nftset=/discordcdn.com/4#inet#fw4#vpn_domains
+nftset=/discord.dev/4#inet#fw4#vpn_domains
+nftset=/discord.new/4#inet#fw4#vpn_domains
+nftset=/discord.gift/4#inet#fw4#vpn_domains
+nftset=/discordstatus.com/4#inet#fw4#vpn_domains
+nftset=/dis.gd/4#inet#fw4#vpn_domains
+nftset=/discord.co/4#inet#fw4#vpn_domains
 nftset=/.ua/4#inet#fw4#vpn_domains
 nftset=/10minutemail.com/4#inet#fw4#vpn_domains
 nftset=/1337x.to/4#inet#fw4#vpn_domains
