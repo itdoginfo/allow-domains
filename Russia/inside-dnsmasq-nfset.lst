@@ -145,6 +145,7 @@ nftset=/discord.store/4#inet#fw4#vpn_domains
 nftset=/discord.tools/4#inet#fw4#vpn_domains
 nftset=/discordactivities.com/4#inet#fw4#vpn_domains
 nftset=/discordapp.com/4#inet#fw4#vpn_domains
+nftset=/discordapp.io/4#inet#fw4#vpn_domains
 nftset=/discordapp.net/4#inet#fw4#vpn_domains
 nftset=/discordmerch.com/4#inet#fw4#vpn_domains
 nftset=/discordpartygames.com/4#inet#fw4#vpn_domains

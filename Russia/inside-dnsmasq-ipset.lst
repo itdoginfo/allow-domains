@@ -145,6 +145,7 @@ ipset=/discord.store/vpn_domains
 ipset=/discord.tools/vpn_domains
 ipset=/discordactivities.com/vpn_domains
 ipset=/discordapp.com/vpn_domains
+ipset=/discordapp.io/vpn_domains
 ipset=/discordapp.net/vpn_domains
 ipset=/discordmerch.com/vpn_domains
 ipset=/discordpartygames.com/vpn_domains
