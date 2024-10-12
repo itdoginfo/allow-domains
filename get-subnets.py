@@ -14,6 +14,12 @@ AS_TWITTER = '13414'
 META = 'Meta.lst'
 TWITTER = 'Twitter.lst'
 
+# From https://iplist.opencck.org/
+DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
+DISCORD_VOICE_V6='https://iplist.opencck.org/?format=text&data=cidr6&site=discord.gg&site=discord.media'
+
+DISCORD = 'Discord.lst'
+
 subnet_list = []
 
 def subnet_summarization(subnet_list):
@@ -41,6 +47,34 @@ def process_subnets(subnet_list, target_as):
 
     return ipv4_merged, ipv6_merged
 
+def download_ready_subnets(url_v4, url_v6):
+    ipv4_subnets = []
+    ipv6_subnets = []
+
+    urls = [(url_v4, 4), (url_v6, 6)]
+
+    for url, version in urls:
+        req = urllib.request.Request(url)
+        try:
+            with urllib.request.urlopen(req) as response:
+                if response.status == 200:
+                    subnets = response.read().decode('utf-8').splitlines()
+                    for subnet_str in subnets:
+                        try:
+                            subnet = ipaddress.ip_network(subnet_str)
+                            if subnet.version == 4:
+                                ipv4_subnets.append(subnet_str)
+                            elif subnet.version == 6:
+                                ipv6_subnets.append(subnet_str)
+                        except ValueError:
+                            print(f"Invalid subnet: {subnet_str}")
+                            sys.exit(1)
+        except Exception as e:
+            print(f"Query error: {e}")
+
+    return ipv4_subnets, ipv6_subnets
+
+
 def write_subnets_to_file(subnets, filename):
     with open(filename, 'w') as file:
         for subnet in subnets:
@@ -64,3 +98,8 @@ if __name__ == '__main__':
     ipv4_merged_twitter, ipv6_merged_twitter = process_subnets(subnet_list, AS_TWITTER)
     write_subnets_to_file(ipv4_merged_twitter, f'{IPv4_DIR}/{TWITTER}')
     write_subnets_to_file(ipv6_merged_twitter, f'{IPv6_DIR}/{TWITTER}')
+
+    # Discord voice
+    ipv4_discord, ipv6_discord = download_ready_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
+    write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
+    write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
