@@ -165,6 +165,7 @@ ipset=/dorama.live/vpn_domains
 ipset=/doramalive.ru/vpn_domains
 ipset=/doramy.club/vpn_domains
 ipset=/dovod.online/vpn_domains
+ipset=/download.nvidia.com/vpn_domains
 ipset=/doxa.team/vpn_domains
 ipset=/doxajournal.ru/vpn_domains
 ipset=/dpidetector.org/vpn_domains

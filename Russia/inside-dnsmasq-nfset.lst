@@ -165,6 +165,7 @@ nftset=/dorama.live/4#inet#fw4#vpn_domains
 nftset=/doramalive.ru/4#inet#fw4#vpn_domains
 nftset=/doramy.club/4#inet#fw4#vpn_domains
 nftset=/dovod.online/4#inet#fw4#vpn_domains
+nftset=/download.nvidia.com/4#inet#fw4#vpn_domains
 nftset=/doxa.team/4#inet#fw4#vpn_domains
 nftset=/doxajournal.ru/4#inet#fw4#vpn_domains
 nftset=/dpidetector.org/4#inet#fw4#vpn_domains
