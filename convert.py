@@ -1,5 +1,6 @@
 #!/usr/bin/python3.10
 
+import json
 import tldextract
 import urllib.request
 import re
@@ -109,6 +110,46 @@ def kvas(src, out, single=None, remove={'google.com'}):
         for name in domains:
             file.write(f'{name}\n')
 
+def karing(src, out, single=None, remove={'google.com'}):
+    output = {
+        "version": 1,
+        "rules": [
+            {
+                "outbound": "currentSelected",
+                "name": "itdoginfo_allow-domains",
+                "switch": True,
+                "or": True,
+                "domain_suffix": []
+            }
+        ]
+    }
+
+    domains = set()
+    domains_single = set()
+
+    for f in src:
+        with open(f) as infile:
+            for line in infile:
+                if tldextract.extract(line).suffix:
+                    domains.add(line.rstrip())
+
+    if single is not None:
+        with open(single) as infile:
+            for line in infile:
+                if tldextract.extract(line).suffix:
+                    domains_single.add(line.rstrip())
+
+    domains = domains.union(domains_single)
+
+    domains = domains - remove
+    domains = sorted(domains)
+
+    for name in domains:
+        output['rules'][0]['domain_suffix'].append(name)
+
+    with open(f'{out}-karing.json', 'w') as file:
+        json.dump(output, file, indent=2)
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -121,6 +162,7 @@ if __name__ == '__main__':
     dnsmasq(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
     kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
+    karing(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
@@ -129,6 +171,7 @@ if __name__ == '__main__':
     dnsmasq(outside_lists, rusDomainsOutsideOut)
     clashx(outside_lists, rusDomainsOutsideOut)
     kvas(outside_lists, rusDomainsOutsideOut)
+    karing(outside_lists, rusDomainsOutsideOut)
 
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
@@ -141,3 +184,4 @@ if __name__ == '__main__':
     dnsmasq(ua_lists, uaDomainsOut)
     clashx(ua_lists, uaDomainsOut)
     kvas(ua_lists, uaDomainsOut)
+    karing(ua_lists, uaDomainsOut)

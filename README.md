@@ -7,6 +7,7 @@
 - RAW - это список доменов и субдоменов
 - Dnsmasq-ipset - список для Dnsmasq в формате ipset (OpenWrt <= 21.02)
 - Dnsmasq-nfset - список для Dnsmasq в формате nftables set (OpenWrt >=23.05)
+- Karing - список для программы Karing в формате json
 
 Конфигурация для Dnsmasq добавляет все зарезолвенные IP-адреса в set `vpn-domain`. И можно оперировать этим списком. Заблокировать, конечно же, все эти IP к чертям.
 
@@ -24,6 +25,7 @@ Inside:
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-dnsmasq-ipset.lst)
 - [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-clashx.lst)
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-kvas.lst)
+- [Karing](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-karing.json)
 
 Outside:
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-raw.lst)
@@ -31,6 +33,7 @@ Outside:
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-dnsmasq-ipset.lst)
 - [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-clashx.lst)
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-kvas.lst)
+- [Karing](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-karing.json)
 
 ## Украина
 Список заблокированных ресурсов в Украине. Списки берутся с ресурсов https://uablacklist.net/ и https://zaborona.help/.
@@ -43,6 +46,7 @@ Outside:
 - [Dnsmasq ipset](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-dnsmasq-ipset.lst)
 - [ClashX](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-clashx.lst)
 - [KVAS](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-kvas.lst)
+- [Karing](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-karing.json)
 
 # Как найти все-все домены ресурса?
 https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/
