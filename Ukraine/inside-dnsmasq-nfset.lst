@@ -408,6 +408,7 @@ nftset=/inosmi.ru/4#inet#fw4#vpn_domains
 nftset=/insearch.site/4#inet#fw4#vpn_domains
 nftset=/inst.net/4#inet#fw4#vpn_domains
 nftset=/interfax.ru/4#inet#fw4#vpn_domains
+nftset=/internet-lab.ru/4#inet#fw4#vpn_domains
 nftset=/interra.bz/4#inet#fw4#vpn_domains
 nftset=/ints.net/4#inet#fw4#vpn_domains
 nftset=/involta.ru/4#inet#fw4#vpn_domains

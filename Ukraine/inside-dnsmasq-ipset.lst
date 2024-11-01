@@ -408,6 +408,7 @@ ipset=/inosmi.ru/vpn_domains
 ipset=/insearch.site/vpn_domains
 ipset=/inst.net/vpn_domains
 ipset=/interfax.ru/vpn_domains
+ipset=/internet-lab.ru/vpn_domains
 ipset=/interra.bz/vpn_domains
 ipset=/ints.net/vpn_domains
 ipset=/involta.ru/vpn_domains
