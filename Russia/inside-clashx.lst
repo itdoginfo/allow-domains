@@ -46,12 +46,14 @@ DOMAIN-SUFFIX,archiveofourown.org
 DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atn.ua
 DOMAIN-SUFFIX,att.com
+DOMAIN-SUFFIX,autodesk.com
 DOMAIN-SUFFIX,avira.com
 DOMAIN-SUFFIX,azathabar.com
 DOMAIN-SUFFIX,azattyq.org
 DOMAIN-SUFFIX,b-cdn.net
 DOMAIN-SUFFIX,babook.org
 DOMAIN-SUFFIX,baginya.org
+DOMAIN-SUFFIX,baikal-journal.ru
 DOMAIN-SUFFIX,bato.to
 DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbc.com
@@ -87,6 +89,8 @@ DOMAIN-SUFFIX,canva.com
 DOMAIN-SUFFIX,capcut.com
 DOMAIN-SUFFIX,carnegieendowment.org
 DOMAIN-SUFFIX,cats.com
+DOMAIN-SUFFIX,cbilling.eu
+DOMAIN-SUFFIX,cbilling.vip
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,cdw.com
 DOMAIN-SUFFIX,censortracker.org
@@ -230,6 +234,7 @@ DOMAIN-SUFFIX,gelbooru.com
 DOMAIN-SUFFIX,geni.us
 DOMAIN-SUFFIX,genius.com
 DOMAIN-SUFFIX,germania.one
+DOMAIN-SUFFIX,getoutline.com
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gfn.am
 DOMAIN-SUFFIX,ggpht.com
@@ -460,7 +465,6 @@ DOMAIN-SUFFIX,paperpaper.io
 DOMAIN-SUFFIX,paperpaper.ru
 DOMAIN-SUFFIX,paraplan.net
 DOMAIN-SUFFIX,paraswap.io
-DOMAIN-SUFFIX,parsec.app
 DOMAIN-SUFFIX,patreon.com
 DOMAIN-SUFFIX,patriot.dp.ua
 DOMAIN-SUFFIX,paypal.com
@@ -733,6 +737,7 @@ DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,weather.com
+DOMAIN-SUFFIX,web-platform.io
 DOMAIN-SUFFIX,weblance.com.ua
 DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,weebly.com
