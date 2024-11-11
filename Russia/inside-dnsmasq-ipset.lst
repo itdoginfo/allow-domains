@@ -651,6 +651,7 @@ ipset=/t.co/vpn_domains
 ipset=/tableau.com/vpn_domains
 ipset=/tayga.info/vpn_domains
 ipset=/te-st.org/vpn_domains
+ipset=/teamviewer.com/vpn_domains
 ipset=/telegraf.by/vpn_domains
 ipset=/telegraf.news/vpn_domains
 ipset=/telemetr.io/vpn_domains

@@ -651,6 +651,7 @@ nftset=/t.co/4#inet#fw4#vpn_domains
 nftset=/tableau.com/4#inet#fw4#vpn_domains
 nftset=/tayga.info/4#inet#fw4#vpn_domains
 nftset=/te-st.org/4#inet#fw4#vpn_domains
+nftset=/teamviewer.com/4#inet#fw4#vpn_domains
 nftset=/telegraf.by/4#inet#fw4#vpn_domains
 nftset=/telegraf.news/4#inet#fw4#vpn_domains
 nftset=/telemetr.io/4#inet#fw4#vpn_domains
