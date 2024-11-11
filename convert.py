@@ -93,6 +93,8 @@ def kvas(src, out, single=None, remove={'google.com'}):
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
                             domains.add("*." + tldextract.extract(line.rstrip()).suffix)
 
+    domains -= {f"*{domains}" for domains in removeDomainsKvas}
+
     if single is not None:
         with open(single) as infile:
             for line in infile:
@@ -100,7 +102,6 @@ def kvas(src, out, single=None, remove={'google.com'}):
                     if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
                         domains_single.add(tldextract.extract(line.rstrip()).fqdn)
 
-    domains -= {f"*{domains}" for domains in removeDomains}
     domains = domains.union(domains_single)
 
     domains = sorted(domains)
@@ -114,13 +115,15 @@ if __name__ == '__main__':
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
     removeDomains = {'google.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
+    removeDomainsKvas = {'google.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co' }
+
     urllib.request.urlretrieve("https://community.antifilter.download/list/domains.lst", "antifilter-domains.lst")
     inside_lists = ['antifilter-domains.lst', rusDomainsInsideSrc]
 
     raw(inside_lists, rusDomainsInsideOut)
     dnsmasq(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
-    kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
+    kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomainsKvas)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
