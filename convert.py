@@ -132,12 +132,14 @@ def mikrotik_fwd(src, out, single=None, remove={'google.com'}):
                     if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
                         domains_single.add(tldextract.extract(line.rstrip()).fqdn)
 
-    domains = domains.union(domains_single)
+    #domains = domains.union(domains_single)
     domains = sorted(domains)
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
             file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
+        for name in domains_single:
+            file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=no forward-to=localhost\n')        
 
 if __name__ == '__main__':
     # Russia inside
