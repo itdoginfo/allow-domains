@@ -110,6 +110,35 @@ def kvas(src, out, single=None, remove={'google.com'}):
         for name in domains:
             file.write(f'{name}\n')
 
+def mikrotik_fwd(src, out, single=None, remove={'google.com'}):
+    domains = set()
+    domains_single = set()
+
+    for f in src:
+        with open(f) as infile:
+                for line in infile:
+                    if tldextract.extract(line).suffix:
+                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
+                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
+                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
+
+    domains = domains - remove
+
+    if single is not None:
+        with open(single) as infile:
+            for line in infile:
+                if tldextract.extract(line).suffix:
+                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
+
+    domains = domains.union(domains_single)
+    domains = sorted(domains)
+
+    with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
+        for name in domains:
+            file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -124,6 +153,7 @@ if __name__ == '__main__':
     dnsmasq(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
     kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomainsKvas)
+    mikrotik_fwd(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
@@ -132,6 +162,7 @@ if __name__ == '__main__':
     dnsmasq(outside_lists, rusDomainsOutsideOut)
     clashx(outside_lists, rusDomainsOutsideOut)
     kvas(outside_lists, rusDomainsOutsideOut)
+    mikrotik_fwd(outside_lists, rusDomainsOutsideOut)
 
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
@@ -144,3 +175,4 @@ if __name__ == '__main__':
     dnsmasq(ua_lists, uaDomainsOut)
     clashx(ua_lists, uaDomainsOut)
     kvas(ua_lists, uaDomainsOut)
+    mikrotik_fwd(ua_lists, uaDomainsOut)
