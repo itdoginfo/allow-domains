@@ -264,6 +264,7 @@
 /ip dns static add name=exesniper.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=exist.parts type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=f1news.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=facct.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fanfics.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fansubs.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=farmanager.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -351,6 +352,7 @@
 /ip dns static add name=gpdnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gplnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=grandx.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=group-ib.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=group-ib.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gs-corp.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gsdsd-dnr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
