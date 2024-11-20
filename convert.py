@@ -145,8 +145,8 @@ if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
-    removeDomains = {'google.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
-    removeDomainsKvas = {'google.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co' }
+    removeDomains = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
+    removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co' }
 
     urllib.request.urlretrieve("https://community.antifilter.download/list/domains.lst", "antifilter-domains.lst")
     inside_lists = ['antifilter-domains.lst', rusDomainsInsideSrc]
