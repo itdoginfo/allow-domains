@@ -515,6 +515,7 @@ nftset=/pimpletv.ru/4#inet#fw4#vpn_domains
 nftset=/pingdom.com/4#inet#fw4#vpn_domains
 nftset=/piratbit.top/4#inet#fw4#vpn_domains
 nftset=/pixiv.net/4#inet#fw4#vpn_domains
+nftset=/pkgs.tailscale.com/4#inet#fw4#vpn_domains
 nftset=/plab.site/4#inet#fw4#vpn_domains
 nftset=/playboy.com/4#inet#fw4#vpn_domains
 nftset=/plugshare.com/4#inet#fw4#vpn_domains

@@ -515,6 +515,7 @@ ipset=/pimpletv.ru/vpn_domains
 ipset=/pingdom.com/vpn_domains
 ipset=/piratbit.top/vpn_domains
 ipset=/pixiv.net/vpn_domains
+ipset=/pkgs.tailscale.com/vpn_domains
 ipset=/plab.site/vpn_domains
 ipset=/playboy.com/vpn_domains
 ipset=/plugshare.com/vpn_domains
