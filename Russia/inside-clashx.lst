@@ -28,15 +28,18 @@ DOMAIN-SUFFIX,ahrefs.com
 DOMAIN-SUFFIX,alberta.ca
 DOMAIN-SUFFIX,allegro.pl
 DOMAIN-SUFFIX,alphacoders.com
+DOMAIN-SUFFIX,alza.hu
 DOMAIN-SUFFIX,amazfitwatchfaces.com
 DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,amd.com
 DOMAIN-SUFFIX,amdm.ru
+DOMAIN-SUFFIX,amedia.site
 DOMAIN-SUFFIX,amnezia.org
 DOMAIN-SUFFIX,amx.com
 DOMAIN-SUFFIX,analog.com
 DOMAIN-SUFFIX,anidub.com
 DOMAIN-SUFFIX,anilibria.tv
+DOMAIN-SUFFIX,animego.org
 DOMAIN-SUFFIX,annas-archive.org
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,aol.com
@@ -108,6 +111,7 @@ DOMAIN-SUFFIX,chess.com
 DOMAIN-SUFFIX,cisco.com
 DOMAIN-SUFFIX,citrix.com
 DOMAIN-SUFFIX,clamav.net
+DOMAIN-SUFFIX,clarity.ms
 DOMAIN-SUFFIX,clashofclans.com
 DOMAIN-SUFFIX,clashroyaleapp.com
 DOMAIN-SUFFIX,claude.ai
@@ -116,6 +120,7 @@ DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,cnd2exp.online
 DOMAIN-SUFFIX,cock.li
 DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,coingate.com
 DOMAIN-SUFFIX,coinpayments.net
 DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.xyz
@@ -298,6 +303,7 @@ DOMAIN-SUFFIX,hyperhost.ua
 DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,idelreal.org
+DOMAIN-SUFFIX,iedb.org
 DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,ign.com
 DOMAIN-SUFFIX,iherb.com
@@ -328,8 +334,10 @@ DOMAIN-SUFFIX,jabra.com
 DOMAIN-SUFFIX,jamf.com
 DOMAIN-SUFFIX,jauns.lv
 DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jut.su
 DOMAIN-SUFFIX,kaktus.media
 DOMAIN-SUFFIX,kamatera.com
+DOMAIN-SUFFIX,kara.su
 DOMAIN-SUFFIX,kasparov.ru
 DOMAIN-SUFFIX,kavkaz-uzel.eu
 DOMAIN-SUFFIX,kavkazr.com
@@ -345,7 +353,9 @@ DOMAIN-SUFFIX,kinovod.net
 DOMAIN-SUFFIX,kinozal.guru
 DOMAIN-SUFFIX,kinozal.me
 DOMAIN-SUFFIX,kinozal.tv
+DOMAIN-SUFFIX,kmail-lists.com
 DOMAIN-SUFFIX,knews.kg
+DOMAIN-SUFFIX,knowyourmeme.com
 DOMAIN-SUFFIX,kolsar.org
 DOMAIN-SUFFIX,korrespondent.net
 DOMAIN-SUFFIX,kovcheg.live
@@ -358,6 +368,7 @@ DOMAIN-SUFFIX,ldoceonline.com
 DOMAIN-SUFFIX,leafletjs.com
 DOMAIN-SUFFIX,leica-geosystems.com
 DOMAIN-SUFFIX,lenovo.com
+DOMAIN-SUFFIX,libgen.li
 DOMAIN-SUFFIX,libgen.rs
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,lidarr.audio
@@ -426,6 +437,7 @@ DOMAIN-SUFFIX,nasvsehtoshnit.ru
 DOMAIN-SUFFIX,navalny.com
 DOMAIN-SUFFIX,nba.com
 DOMAIN-SUFFIX,neformat.com.ua
+DOMAIN-SUFFIX,neo4j.com
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netlify.com
 DOMAIN-SUFFIX,networksolutions.com
@@ -442,6 +454,7 @@ DOMAIN-SUFFIX,ngrok.com
 DOMAIN-SUFFIX,nhentai.com
 DOMAIN-SUFFIX,nih.gov
 DOMAIN-SUFFIX,nike.com
+DOMAIN-SUFFIX,nippon.com
 DOMAIN-SUFFIX,nitropdf.com
 DOMAIN-SUFFIX,nnmclub.to
 DOMAIN-SUFFIX,nnmstatic.win
@@ -522,6 +535,7 @@ DOMAIN-SUFFIX,portal.lviv.ua
 DOMAIN-SUFFIX,posle.media
 DOMAIN-SUFFIX,postfix.org
 DOMAIN-SUFFIX,postimees.ee
+DOMAIN-SUFFIX,pravda.com
 DOMAIN-SUFFIX,pravda.com.ua
 DOMAIN-SUFFIX,premierleague.com
 DOMAIN-SUFFIX,privatekeys.pw
@@ -560,6 +574,7 @@ DOMAIN-SUFFIX,refactoring.guru
 DOMAIN-SUFFIX,refinitiv.com
 DOMAIN-SUFFIX,remove.bg
 DOMAIN-SUFFIX,render-state.to
+DOMAIN-SUFFIX,rentry.co
 DOMAIN-SUFFIX,republic.ru
 DOMAIN-SUFFIX,resp.app
 DOMAIN-SUFFIX,returnyoutubedislikeapi.com
@@ -645,6 +660,7 @@ DOMAIN-SUFFIX,soapui.org
 DOMAIN-SUFFIX,sobesednik.com
 DOMAIN-SUFFIX,sobesednik.ru
 DOMAIN-SUFFIX,solarwinds.com
+DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,spacelift.io
 DOMAIN-SUFFIX,spektr.press
@@ -810,6 +826,7 @@ DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,yting.com
+DOMAIN-SUFFIX,yummyani.me
 DOMAIN-SUFFIX,zahav.ru
 DOMAIN-SUFFIX,zannn.top
 DOMAIN-SUFFIX,zbigz.com
