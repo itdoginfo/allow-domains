@@ -62,6 +62,7 @@ DOMAIN-SUFFIX,b-cdn.net
 DOMAIN-SUFFIX,babook.org
 DOMAIN-SUFFIX,baginya.org
 DOMAIN-SUFFIX,baikal-journal.ru
+DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,bato.to
 DOMAIN-SUFFIX,bbc.co.uk
 DOMAIN-SUFFIX,bbc.com
@@ -89,6 +90,7 @@ DOMAIN-SUFFIX,btdig.com
 DOMAIN-SUFFIX,buanzo.org
 DOMAIN-SUFFIX,buckaroo.nl
 DOMAIN-SUFFIX,buf.build
+DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,bumble.com
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
@@ -125,6 +127,7 @@ DOMAIN-SUFFIX,coinpayments.net
 DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
+DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coursera.org
 DOMAIN-SUFFIX,cpu-monkey.com
 DOMAIN-SUFFIX,credly.com
@@ -145,6 +148,7 @@ DOMAIN-SUFFIX,delfi.lv
 DOMAIN-SUFFIX,dell.com
 DOMAIN-SUFFIX,dellcdn.com
 DOMAIN-SUFFIX,depositphotos.com
+DOMAIN-SUFFIX,designer.microsoft.com
 DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,devops.com
 DOMAIN-SUFFIX,digikey.com
@@ -152,6 +156,7 @@ DOMAIN-SUFFIX,digitalcontent.sky
 DOMAIN-SUFFIX,digitalocean.com
 DOMAIN-SUFFIX,dis.gd
 DOMAIN-SUFFIX,discord-activities.com
+DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
 DOMAIN-SUFFIX,discord.co
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discord.design
@@ -250,6 +255,7 @@ DOMAIN-SUFFIX,gameloft.com
 DOMAIN-SUFFIX,gamesrepack.com
 DOMAIN-SUFFIX,geforcenow.com
 DOMAIN-SUFFIX,gelbooru.com
+DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,geni.us
 DOMAIN-SUFFIX,genius.com
 DOMAIN-SUFFIX,germania.one
@@ -384,6 +390,7 @@ DOMAIN-SUFFIX,liveuamap.com
 DOMAIN-SUFFIX,localbitcoins.com
 DOMAIN-SUFFIX,locals.md
 DOMAIN-SUFFIX,lolz.guru
+DOMAIN-SUFFIX,lookerstudio.google.com
 DOMAIN-SUFFIX,lostfilm.run
 DOMAIN-SUFFIX,lostfilm.top
 DOMAIN-SUFFIX,lostfilm.tv
@@ -442,6 +449,7 @@ DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netlify.com
 DOMAIN-SUFFIX,networksolutions.com
 DOMAIN-SUFFIX,newark.com
+DOMAIN-SUFFIX,news.google.com
 DOMAIN-SUFFIX,newsru.co.il
 DOMAIN-SUFFIX,newsru.com
 DOMAIN-SUFFIX,newstudio.tv
@@ -522,6 +530,7 @@ DOMAIN-SUFFIX,pimpletv.ru
 DOMAIN-SUFFIX,pingdom.com
 DOMAIN-SUFFIX,piratbit.top
 DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pkgs.tailscale.com
 DOMAIN-SUFFIX,plab.site
 DOMAIN-SUFFIX,playboy.com
 DOMAIN-SUFFIX,plugshare.com
@@ -551,6 +560,7 @@ DOMAIN-SUFFIX,provereno.media
 DOMAIN-SUFFIX,prowlarr.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
+DOMAIN-SUFFIX,public.parsec.app
 DOMAIN-SUFFIX,pulselive.com
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qualcomm.com
@@ -673,6 +683,7 @@ DOMAIN-SUFFIX,strana.news
 DOMAIN-SUFFIX,strana.today
 DOMAIN-SUFFIX,strava.com
 DOMAIN-SUFFIX,stulchik.net
+DOMAIN-SUFFIX,suggestqueries.google.com
 DOMAIN-SUFFIX,supercell.com
 DOMAIN-SUFFIX,surveymonkey.com
 DOMAIN-SUFFIX,suspilne.media
@@ -800,6 +811,7 @@ DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
 DOMAIN-SUFFIX,wetransfer.com
 DOMAIN-SUFFIX,wheather.com
+DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,wikiart.org
 DOMAIN-SUFFIX,wikidot.com
 DOMAIN-SUFFIX,wilsoncenter.org
@@ -814,6 +826,7 @@ DOMAIN-SUFFIX,xerox.com
 DOMAIN-SUFFIX,xhamster.com
 DOMAIN-SUFFIX,xhamsterlive.com
 DOMAIN-SUFFIX,xnxx.com
+DOMAIN-SUFFIX,xsts.auth.xboxlive.com
 DOMAIN-SUFFIX,xtracloud.net
 DOMAIN-SUFFIX,xv-ru.com
 DOMAIN-SUFFIX,xvideos-cdn.com
@@ -822,9 +835,14 @@ DOMAIN-SUFFIX,yaoilib.me
 DOMAIN-SUFFIX,yle.fi
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtube-ui.l.google.com
 DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
+DOMAIN-SUFFIX,youtubei.googleapis.com
 DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,yt-video-upload.l.google.com
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,ytimg.l.google.com
 DOMAIN-SUFFIX,yting.com
 DOMAIN-SUFFIX,yummyani.me
 DOMAIN-SUFFIX,zahav.ru
