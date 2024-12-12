@@ -229,6 +229,7 @@ nftset=/flibusta.net/4#inet#fw4#vpn_domains
 nftset=/flipboard.com/4#inet#fw4#vpn_domains
 nftset=/flir.com/4#inet#fw4#vpn_domains
 nftset=/flir.eu/4#inet#fw4#vpn_domains
+nftset=/flourish.studio/4#inet#fw4#vpn_domains
 nftset=/fls.guru/4#inet#fw4#vpn_domains
 nftset=/fluke.com/4#inet#fw4#vpn_domains
 nftset=/flukenetworks.com/4#inet#fw4#vpn_domains
