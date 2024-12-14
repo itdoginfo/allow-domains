@@ -784,6 +784,7 @@ ipset=/verstka.media/vpn_domains
 ipset=/vesma.one/vpn_domains
 ipset=/vesma.today/vpn_domains
 ipset=/vesty.co.il/vpn_domains
+ipset=/viber.com/vpn_domains
 ipset=/vice.com/vpn_domains
 ipset=/vine.co/vpn_domains
 ipset=/vipdrive.net/vpn_domains
