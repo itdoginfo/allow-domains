@@ -13,10 +13,9 @@ on:
 jobs:
   convert-and-release:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.1.7
 
       - name: Convert file to srs
         uses: itdoginfo/plain2srs-action@0.1
