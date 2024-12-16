@@ -26,5 +26,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2.2.0
         with:
-          files: "/github/workspace/${{ inputs.output_name }}.srs"
+          files: "/github/workspace/russia-inside.srs"
           tag_name: latest
