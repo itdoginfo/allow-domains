@@ -17,11 +17,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.7
 
-      - name: Convert file to srs
-        uses: itdoginfo/plain2srs-action@0.1
-        with:
-          input_file: Russia/inside-raw.lst
-          output_name: russia-inside
+      - name: Run Plain2srs Docker Container
+        run: |
+          docker run --name plain2srs-container \
+            -v "${{ github.workspace }}:/workspace" \
+            itdoginfo/plain2srs-action:20241216 \
+            -i /workspace/Russia/inside-raw.lst \
+            -o russia-inside \
+            -c
+          docker cp plain2srs-container:/app/plain2srs/output/russia-inside.srs ${{ github.workspace }}/russia-inside.srs
 
       - name: Release
         uses: softprops/action-gh-release@v2.2.0
