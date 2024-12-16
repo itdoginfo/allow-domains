@@ -1,0 +1,30 @@
+name: Convert to srs
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - .github/workflows/create-srs.yml
+      - src/**
+      - convert.py
+  # schedule:
+  #   - cron: '33 */8 * * *'
+
+jobs:
+  convert-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v4.1.7
+
+      - name: Convert file to srs
+        uses: itdoginfo/plain2srs-action@0.1
+        with:
+          input_file: Russia/inside-raw.lst
+          output_name: russia-inside
+
+      - name: Release
+        uses: softprops/action-gh-release@v2.0.8
+        with:
+          files: ./russia-inside.srs
