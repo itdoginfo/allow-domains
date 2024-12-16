@@ -5,8 +5,8 @@ on:
     branches: [ "main" ]
     paths:
       - .github/workflows/create-srs.yml
-      - src/**
-      - convert.py
+      # - src/**
+      # - convert.py
   # schedule:
   #   - cron: '33 */8 * * *'
 
@@ -26,9 +26,6 @@ jobs:
             -o russia-inside \
             -c
           docker cp plain2srs-container:/app/plain2srs/output/russia-inside.srs ${{ github.workspace }}/russia-inside.srs
-
-      - name: Remove tag
-        run: git tag -d latest && git push origin --delete latest
 
       - name: Release
         uses: softprops/action-gh-release@v2.2.0
