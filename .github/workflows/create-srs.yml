@@ -28,7 +28,7 @@ jobs:
           docker cp plain2srs-container:/app/plain2srs/output/russia-inside.srs ${{ github.workspace }}/russia-inside.srs
 
       - name: Release
-        uses: softprops/action-gh-release@v2.2.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           files: "${{ github.workspace }}/russia-inside.srs"
           tag_name: latest
