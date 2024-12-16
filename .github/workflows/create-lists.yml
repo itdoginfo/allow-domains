@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  generate-lists:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4.1.4
