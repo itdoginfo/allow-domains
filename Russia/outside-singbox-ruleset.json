@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "avtodor-tr.ru",
+                "bitrix.info",
+                "bkvet.ru",
+                "cdn77.org",
+                "dzvr.ru",
+                "kinopoisk.ru",
+                "lemanapro.ru",
+                "leroymerlin.ru",
+                "mos.ru",
+                "mosenergosbyt.ru",
+                "onelya.ru",
+                "ozon.ru",
+                "ozone.ru",
+                "ozonusercontent.com",
+                "pesc.ru",
+                "pochta.ru",
+                "refocus.ru",
+                "russianpost.ru",
+                "rzd-bonus.ru",
+                "rzd.ru",
+                "showip.net",
+                "ttk.ru",
+                "yadro.ru",
+                "yandex.net",
+                "yandex.ru"
+            ]
+        }
+    ]
+}

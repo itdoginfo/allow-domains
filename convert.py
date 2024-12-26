@@ -2,6 +2,7 @@
 
 import tldextract
 import urllib.request
+import json
 import re
 from pathlib import Path
 
@@ -27,6 +28,42 @@ def raw(src, out):
     with open(f'{out}-raw.lst', 'w') as file:
         for name in domains_raw:
             file.write(f'{name}\n')
+
+def singbox(src, out, single=None, remove={'google.com'}):
+    domains = set()
+    domains_single = set()
+
+    for f in src:
+        with open(f) as infile:
+                for line in infile:
+                    if tldextract.extract(line).suffix:
+                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
+                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
+                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
+
+    if single is not None:
+        with open(single) as infile:
+            for line in infile:
+                if tldextract.extract(line).suffix:
+                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
+
+    domains = domains.union(domains_single)
+
+    domains = domains - remove
+    domains = sorted(domains)
+    data = {
+        "version": 1,
+        "rules": [
+            {
+                "domain_suffix": domains
+            }
+        ]
+    }
+
+    with open(f'{out}-singbox-ruleset.json', 'w') as file:
+        json.dump(data, file, indent=4)
 
 def dnsmasq(src, out, single=None, remove={'google.com'}):
     domains = set()
@@ -166,6 +203,7 @@ if __name__ == '__main__':
     clashx(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
     kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomainsKvas)
     mikrotik_fwd(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
+    singbox(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
@@ -175,6 +213,7 @@ if __name__ == '__main__':
     clashx(outside_lists, rusDomainsOutsideOut)
     kvas(outside_lists, rusDomainsOutsideOut)
     mikrotik_fwd(outside_lists, rusDomainsOutsideOut)
+    singbox(outside_lists, rusDomainsOutsideOut)
 
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
@@ -188,3 +227,4 @@ if __name__ == '__main__':
     clashx(ua_lists, uaDomainsOut)
     kvas(ua_lists, uaDomainsOut)
     mikrotik_fwd(ua_lists, uaDomainsOut)
+    singbox(ua_lists, uaDomainsOut)
