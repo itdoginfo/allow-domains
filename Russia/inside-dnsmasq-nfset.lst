@@ -347,6 +347,7 @@ nftset=/jabra.com/4#inet#fw4#vpn_domains
 nftset=/jamf.com/4#inet#fw4#vpn_domains
 nftset=/jauns.lv/4#inet#fw4#vpn_domains
 nftset=/jetbrains.com/4#inet#fw4#vpn_domains
+nftset=/jut-su.net/4#inet#fw4#vpn_domains
 nftset=/jut.su/4#inet#fw4#vpn_domains
 nftset=/kaktus.media/4#inet#fw4#vpn_domains
 nftset=/kamatera.com/4#inet#fw4#vpn_domains

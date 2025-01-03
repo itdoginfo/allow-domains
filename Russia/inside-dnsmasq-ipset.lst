@@ -347,6 +347,7 @@ ipset=/jabra.com/vpn_domains
 ipset=/jamf.com/vpn_domains
 ipset=/jauns.lv/vpn_domains
 ipset=/jetbrains.com/vpn_domains
+ipset=/jut-su.net/vpn_domains
 ipset=/jut.su/vpn_domains
 ipset=/kaktus.media/vpn_domains
 ipset=/kamatera.com/vpn_domains
