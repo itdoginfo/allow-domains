@@ -358,6 +358,7 @@ nftset=/kemono.party/4#inet#fw4#vpn_domains
 nftset=/keysight.com/4#inet#fw4#vpn_domains
 nftset=/kino.pub/4#inet#fw4#vpn_domains
 nftset=/kinobase.org/4#inet#fw4#vpn_domains
+nftset=/kinogo.ec/4#inet#fw4#vpn_domains
 nftset=/kinogo.la/4#inet#fw4#vpn_domains
 nftset=/kinogo.uk/4#inet#fw4#vpn_domains
 nftset=/kinokopilka.pro/4#inet#fw4#vpn_domains

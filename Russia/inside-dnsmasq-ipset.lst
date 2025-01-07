@@ -358,6 +358,7 @@ ipset=/kemono.party/vpn_domains
 ipset=/keysight.com/vpn_domains
 ipset=/kino.pub/vpn_domains
 ipset=/kinobase.org/vpn_domains
+ipset=/kinogo.ec/vpn_domains
 ipset=/kinogo.la/vpn_domains
 ipset=/kinogo.uk/vpn_domains
 ipset=/kinokopilka.pro/vpn_domains
