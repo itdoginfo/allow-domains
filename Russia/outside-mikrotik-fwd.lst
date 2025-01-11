@@ -3,6 +3,7 @@
 /ip dns static add name=bkvet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cdn77.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dzvr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=gov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kinopoisk.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lemanapro.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=leroymerlin.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -20,6 +21,7 @@
 /ip dns static add name=rzd.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=showip.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ttk.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=xn--90aijkdmaud0d.xn--p1ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=yadro.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=yandex.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=yandex.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
