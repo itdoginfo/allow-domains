@@ -601,6 +601,7 @@ ipset=/qualcomm.com/vpn_domains
 ipset=/quickconnect.to/vpn_domains
 ipset=/quietpc.com/vpn_domains
 ipset=/quora.com/vpn_domains
+ipset=/quora.com.cdn.cloudflare.net/vpn_domains
 ipset=/radarr.video/vpn_domains
 ipset=/radiosakharov.org/vpn_domains
 ipset=/radiosvoboda.org/vpn_domains

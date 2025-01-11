@@ -601,6 +601,7 @@ nftset=/qualcomm.com/4#inet#fw4#vpn_domains
 nftset=/quickconnect.to/4#inet#fw4#vpn_domains
 nftset=/quietpc.com/4#inet#fw4#vpn_domains
 nftset=/quora.com/4#inet#fw4#vpn_domains
+nftset=/quora.com.cdn.cloudflare.net/4#inet#fw4#vpn_domains
 nftset=/radarr.video/4#inet#fw4#vpn_domains
 nftset=/radiosakharov.org/4#inet#fw4#vpn_domains
 nftset=/radiosvoboda.org/4#inet#fw4#vpn_domains
