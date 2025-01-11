@@ -29,5 +29,8 @@ public.parsec.app
 # twiiter
 t.co
 
+# quora
+quora.com.cdn.cloudflare.net
+
 # Other
 pkgs.tailscale.com
