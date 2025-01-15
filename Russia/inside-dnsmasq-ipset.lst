@@ -213,6 +213,7 @@ ipset=/ekhokavkaza.com/vpn_domains
 ipset=/elastic.co/vpn_domains
 ipset=/element14.com/vpn_domains
 ipset=/elevenlabs.io/vpn_domains
+ipset=/envato.com/vpn_domains
 ipset=/err.ee/vpn_domains
 ipset=/etsy.com/vpn_domains
 ipset=/euronews.com/vpn_domains
