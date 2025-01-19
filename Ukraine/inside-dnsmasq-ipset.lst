@@ -82,6 +82,7 @@ ipset=/au-donetsk.ru/vpn_domains
 ipset=/auto.ru/vpn_domains
 ipset=/autobook.one/vpn_domains
 ipset=/avtopribor.ru/vpn_domains
+ipset=/azbyka.ru/vpn_domains
 ipset=/bafista.ru/vpn_domains
 ipset=/baltbet.ru/vpn_domains
 ipset=/bdocodex.com/vpn_domains

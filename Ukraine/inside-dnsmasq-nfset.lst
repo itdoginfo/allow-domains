@@ -82,6 +82,7 @@ nftset=/au-donetsk.ru/4#inet#fw4#vpn_domains
 nftset=/auto.ru/4#inet#fw4#vpn_domains
 nftset=/autobook.one/4#inet#fw4#vpn_domains
 nftset=/avtopribor.ru/4#inet#fw4#vpn_domains
+nftset=/azbyka.ru/4#inet#fw4#vpn_domains
 nftset=/bafista.ru/4#inet#fw4#vpn_domains
 nftset=/baltbet.ru/4#inet#fw4#vpn_domains
 nftset=/bdocodex.com/4#inet#fw4#vpn_domains

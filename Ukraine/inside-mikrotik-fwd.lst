@@ -82,6 +82,7 @@
 /ip dns static add name=auto.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=autobook.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=avtopribor.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=azbyka.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bafista.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=baltbet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bdocodex.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
