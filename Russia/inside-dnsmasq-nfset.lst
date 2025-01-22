@@ -243,6 +243,7 @@ nftset=/filmix.biz/4#inet#fw4#vpn_domains
 nftset=/filmix.day/4#inet#fw4#vpn_domains
 nftset=/filmix.fm/4#inet#fw4#vpn_domains
 nftset=/filmix.la/4#inet#fw4#vpn_domains
+nftset=/flashscore.com/4#inet#fw4#vpn_domains
 nftset=/flibusta.is/4#inet#fw4#vpn_domains
 nftset=/flibusta.net/4#inet#fw4#vpn_domains
 nftset=/flipboard.com/4#inet#fw4#vpn_domains
