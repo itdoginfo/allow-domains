@@ -82,7 +82,6 @@ DOMAIN-SUFFIX,au-donetsk.ru
 DOMAIN-SUFFIX,auto.ru
 DOMAIN-SUFFIX,autobook.one
 DOMAIN-SUFFIX,avtopribor.ru
-DOMAIN-SUFFIX,azbyka.ru
 DOMAIN-SUFFIX,bafista.ru
 DOMAIN-SUFFIX,baltbet.ru
 DOMAIN-SUFFIX,bdocodex.com
@@ -142,6 +141,7 @@ DOMAIN-SUFFIX,cdnland.in
 DOMAIN-SUFFIX,cdnvideo.ru
 DOMAIN-SUFFIX,changamireltd.com
 DOMAIN-SUFFIX,chat.ru
+DOMAIN-SUFFIX,chernayamagiya.com
 DOMAIN-SUFFIX,chipmaker.ru
 DOMAIN-SUFFIX,chto-eto-takoe.ru
 DOMAIN-SUFFIX,cikdnr.su
@@ -452,6 +452,8 @@ DOMAIN-SUFFIX,khogov.ru
 DOMAIN-SUFFIX,kianews24.ru
 DOMAIN-SUFFIX,kini24.ru
 DOMAIN-SUFFIX,kino-teatr.ru
+DOMAIN-SUFFIX,kinoafisha.ru
+DOMAIN-SUFFIX,kinokong.pro
 DOMAIN-SUFFIX,kinopoisk.ru
 DOMAIN-SUFFIX,kinzhal.media
 DOMAIN-SUFFIX,kiozk.ru

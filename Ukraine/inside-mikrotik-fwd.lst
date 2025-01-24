@@ -82,7 +82,6 @@
 /ip dns static add name=auto.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=autobook.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=avtopribor.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=azbyka.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bafista.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=baltbet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bdocodex.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -142,6 +141,7 @@
 /ip dns static add name=cdnvideo.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=changamireltd.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chat.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=chernayamagiya.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chipmaker.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chto-eto-takoe.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cikdnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -452,6 +452,8 @@
 /ip dns static add name=kianews24.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kini24.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kino-teatr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=kinoafisha.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=kinokong.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kinopoisk.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kinzhal.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kiozk.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
