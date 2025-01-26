@@ -5,6 +5,8 @@ on:
     branches: [ "main", "categorize" ]
     paths:
       - .github/workflows/create-lists.yml
+      - Categories/**
+      - Services/**
       - src/**
       - convert.py
   schedule:
