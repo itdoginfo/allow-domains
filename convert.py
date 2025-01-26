@@ -5,9 +5,10 @@ import urllib.request
 import re
 from pathlib import Path
 
-rusDomainsInsideSrc='src/Russia-domains-inside.lst'
 rusDomainsInsideOut='Russia/inside'
 rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
+rusDomainsInsideCategories='Categories'
+rusDomainsInsideServices='Services'
 rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
 uaDomainsSrc='src/Ukraine-domains-inside.lst'
@@ -15,8 +16,17 @@ uaDomainsOut='Ukraine/inside'
 
 def raw(src, out):
     domains_raw = set()
+    files = []
 
-    for f in src:
+    if isinstance(src, list):
+        for dir_path in src:
+            path = Path(dir_path)
+            if path.is_dir():
+                files.extend(path.glob('*'))
+            elif path.is_file():
+                files.append(path)
+
+    for f in files:
         with open(f) as infile:
                 for line in infile:
                     if tldextract.extract(line).suffix:
@@ -28,27 +38,28 @@ def raw(src, out):
         for name in domains_raw:
             file.write(f'{name}\n')
 
-def dnsmasq(src, out, single=None, remove={'google.com'}):
+def dnsmasq(src, out, remove={'google.com'}):
     domains = set()
     domains_single = set()
+    files = []
 
-    for f in src:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
+    if isinstance(src, list):
+        for dir_path in src:
+            path = Path(dir_path)
+            if path.is_dir():
+                files.extend(path.glob('*'))
+            elif path.is_file():
+                files.append(path)
 
-    if single is not None:
-        with open(single) as infile:
-            for line in infile:
-                if tldextract.extract(line).suffix:
-                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
-
-    domains = domains.union(domains_single)
+    for f in files:
+        if f.is_file():
+            with open(f) as infile:
+                    for line in infile:
+                        if tldextract.extract(line).suffix:
+                            if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
+                                domains.add(tldextract.extract(line.rstrip()).fqdn)
+                            if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
+                                domains.add("." + tldextract.extract(line.rstrip()).suffix)
 
     domains = domains - remove
     domains = sorted(domains)
@@ -61,27 +72,27 @@ def dnsmasq(src, out, single=None, remove={'google.com'}):
         for name in domains:
             file.write(f'ipset=/{name}/vpn_domains\n')
 
-def clashx(src, out, single=None, remove={'google.com'}):
+def clashx(src, out, remove={'google.com'}):
     domains = set()
     domains_single = set()
+    files = []
 
-    for f in src:
+    if isinstance(src, list):
+        for dir_path in src:
+            path = Path(dir_path)
+            if path.is_dir():
+                files.extend(path.glob('*'))
+            elif path.is_file():
+                files.append(path)
+
+    for f in files:
         with open(f) as infile:
                 for line in infile:
                     if tldextract.extract(line).suffix:
                         if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
+                            domains.add(tldextract.extract(line.rstrip()).fqdn)
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
                             domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    if single is not None:
-        with open(single) as infile:
-            for line in infile:
-                if tldextract.extract(line).suffix:
-                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
-
-    domains = domains.union(domains_single)
 
     domains = domains - remove
     domains = sorted(domains)
@@ -90,29 +101,27 @@ def clashx(src, out, single=None, remove={'google.com'}):
         for name in domains:
             file.write(f'DOMAIN-SUFFIX,{name}\n')
 
-def kvas(src, out, single=None, remove={'google.com'}):
+def kvas(src, out, remove={'google.com'}):
     domains = set()
     domains_single = set()
+    files = []
 
-    for f in src:
+    if isinstance(src, list):
+        for dir_path in src:
+            path = Path(dir_path)
+            if path.is_dir():
+                files.extend(path.glob('*'))
+            elif path.is_file():
+                files.append(path)
+
+    for f in files:
         with open(f) as infile:
                 for line in infile:
                     if tldextract.extract(line).suffix:
                         if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add("*" + tldextract.extract(line.rstrip()).registered_domain)
+                            domains.add(tldextract.extract(line.rstrip()).fqdn)
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("*." + tldextract.extract(line.rstrip()).suffix)
-
-    domains -= {f"*{domains}" for domains in removeDomainsKvas}
-
-    if single is not None:
-        with open(single) as infile:
-            for line in infile:
-                if tldextract.extract(line).suffix:
-                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
-
-    domains = domains.union(domains_single)
+                            domains.add(tldextract.extract(line.rstrip()).suffix)
 
     domains = sorted(domains)
 
@@ -120,36 +129,34 @@ def kvas(src, out, single=None, remove={'google.com'}):
         for name in domains:
             file.write(f'{name}\n')
 
-def mikrotik_fwd(src, out, single=None, remove={'google.com'}):
+def mikrotik_fwd(src, out, remove={'google.com'}):
     domains = set()
     domains_single = set()
+    files = []
 
-    for f in src:
+    if isinstance(src, list):
+        for dir_path in src:
+            path = Path(dir_path)
+            if path.is_dir():
+                files.extend(path.glob('*'))
+            elif path.is_file():
+                files.append(path)
+
+    for f in files:
         with open(f) as infile:
                 for line in infile:
                     if tldextract.extract(line).suffix:
                         if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).registered_domain)
+                            domains.add(tldextract.extract(line.rstrip()).fqdn)
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
                             domains.add("." + tldextract.extract(line.rstrip()).suffix)
 
     domains = domains - remove
-
-    if single is not None:
-        with open(single) as infile:
-            for line in infile:
-                if tldextract.extract(line).suffix:
-                    if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                        domains_single.add(tldextract.extract(line.rstrip()).fqdn)
-
-    #domains = domains.union(domains_single)
     domains = sorted(domains)
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
             file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
-        for name in domains_single:
-            file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=no forward-to=localhost\n')        
 
 if __name__ == '__main__':
     # Russia inside
@@ -157,15 +164,14 @@ if __name__ == '__main__':
 
     removeDomains = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
     removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co' }
-
-    urllib.request.urlretrieve("https://community.antifilter.download/list/domains.lst", "antifilter-domains.lst")
-    inside_lists = ['antifilter-domains.lst', rusDomainsInsideSrc]
+    
+    inside_lists = [rusDomainsInsideCategories, rusDomainsInsideServices]
 
     raw(inside_lists, rusDomainsInsideOut)
-    dnsmasq(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
-    clashx(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
-    kvas(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomainsKvas)
-    mikrotik_fwd(inside_lists, rusDomainsInsideOut, rusDomainsInsideSrcSingle, removeDomains)
+    dnsmasq(inside_lists, rusDomainsInsideOut, removeDomains)
+    clashx(inside_lists, rusDomainsInsideOut, removeDomains)
+    kvas(inside_lists, rusDomainsInsideOut, removeDomainsKvas)
+    mikrotik_fwd(inside_lists, rusDomainsInsideOut, removeDomains)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
@@ -188,3 +194,6 @@ if __name__ == '__main__':
     clashx(ua_lists, uaDomainsOut)
     kvas(ua_lists, uaDomainsOut)
     mikrotik_fwd(ua_lists, uaDomainsOut)
+
+    for temp_file in ['uablacklist-domains.lst', 'zaboronahelp-domains.lst']:
+        Path(temp_file).unlink()
