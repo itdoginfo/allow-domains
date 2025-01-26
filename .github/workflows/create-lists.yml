@@ -2,7 +2,7 @@ name: Create lists
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "categorize" ]
     paths:
       - .github/workflows/create-lists.yml
       - src/**
