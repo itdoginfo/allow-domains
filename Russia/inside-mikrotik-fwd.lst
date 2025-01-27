@@ -429,6 +429,7 @@
 /ip dns static add name=paperpaper.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=patriot.dp.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pcgamesn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=pcmag.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=periscope.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pexels.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=phncdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
