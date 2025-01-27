@@ -9,8 +9,6 @@ on:
       - Services/**
       - src/**
       - Sing-box-compile-srs/**
-  # schedule:
-  #   - cron: '33 */8 * * *'
 
 jobs:
   compile-and-release:
