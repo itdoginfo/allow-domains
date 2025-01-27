@@ -168,7 +168,6 @@ ipset=/euronews.com/vpn_domains
 ipset=/euroradio.fm/vpn_domains
 ipset=/eutrp.eu/vpn_domains
 ipset=/everand.com/vpn_domains
-ipset=/example.com/vpn_domains
 ipset=/expres.online/vpn_domains
 ipset=/extremetech.com/vpn_domains
 ipset=/f1.com/vpn_domains

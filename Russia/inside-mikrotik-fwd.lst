@@ -168,7 +168,6 @@
 /ip dns static add name=euroradio.fm type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=eutrp.eu type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=everand.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=example.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=expres.online type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=extremetech.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=f1.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
