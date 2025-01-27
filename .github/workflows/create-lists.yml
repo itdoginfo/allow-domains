@@ -24,6 +24,7 @@ jobs:
       run: |
         docker run --rm \
         -v ${{ github.workspace }}/src:/app/src \
+        -v ${{ github.workspace }}/Subnets:/app/Subnets \
         -v ${{ github.workspace }}/Russia:/app/Russia \
         -v ${{ github.workspace }}/Ukraine:/app/Ukraine \
         -v ${{ github.workspace }}/Categories:/app/Categories \
