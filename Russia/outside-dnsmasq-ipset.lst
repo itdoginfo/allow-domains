@@ -7,6 +7,7 @@ ipset=/cdn1.ozonusercontent.com/vpn_domains
 ipset=/cms1.dzvr.ru/vpn_domains
 ipset=/counter.yadro.ru/vpn_domains
 ipset=/dzvr.ru/vpn_domains
+ipset=/example.ru/vpn_domains
 ipset=/fairplay-proxy.ott.yandex.ru/vpn_domains
 ipset=/fssp.gov.ru/vpn_domains
 ipset=/gov.ru/vpn_domains
