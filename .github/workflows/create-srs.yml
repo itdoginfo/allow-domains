@@ -25,8 +25,11 @@ jobs:
           -v ${{ github.workspace }}/SRS:/app/SRS \
           itdoginfo/compilesrs:0.1
 
+      - name: Set release tag
+        run: echo "TAG_NAME=$(date +'%Y-%m-%d_%H-%M')" >> $GITHUB_ENV
+
       - name: Release
         uses: softprops/action-gh-release@v2.1.0
         with:
           files: "${{ github.workspace }}/SRS/*.srs"
-          tag_name: latest
+          tag_name: ${{ env.TAG_NAME }}
