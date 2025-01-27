@@ -558,6 +558,7 @@ ipset=/statology.org/vpn_domains
 ipset=/steamstat.info/vpn_domains
 ipset=/strana.news/vpn_domains
 ipset=/strana.today/vpn_domains
+ipset=/strava.com/vpn_domains
 ipset=/suggestqueries.google.com/vpn_domains
 ipset=/supercell.com/vpn_domains
 ipset=/surfshark.com/vpn_domains
