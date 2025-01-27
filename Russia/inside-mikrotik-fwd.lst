@@ -69,6 +69,7 @@
 /ip dns static add name=broadcom.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=broncosportforum.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=btdig.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=btod.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=buanzo.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=buf.build type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=builds.parsec.app type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -153,6 +154,7 @@
 /ip dns static add name=doxa.team type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dpidetector.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dreamhost.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=ducati.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dw.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=e621.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=echofm.online type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -688,6 +690,7 @@
 /ip dns static add name=ytimg.l.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=yummyani.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zahav.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=zapier.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zbigz.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zedge.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zendesk.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

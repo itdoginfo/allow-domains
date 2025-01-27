@@ -2,7 +2,7 @@ name: Create lists
 
 on:
   push:
-    branches: [ "main", "categorize" ]
+    branches: [ "main", "srs" ]
     paths:
       - .github/workflows/create-lists.yml
       - Categories/**
@@ -19,14 +19,18 @@ jobs:
   generate-lists:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v4.1.4
-    - name: Generate lists
-      uses: actions/setup-python@v5.1.0
-      with:
-        python-version: '3.10' 
-    - run: |
-        pip install tldextract
-        python  convert.py
+    - uses: actions/checkout@4.1.7
+    - name: Compile ruleset srs
+      run: |
+        docker run --rm \
+        -v ${{ github.workspace }}/src:/app/src \
+        -v ${{ github.workspace }}/Russia:/app/Russia \
+        -v ${{ github.workspace }}/Ukraine:/app/Ukraine \
+        -v ${{ github.workspace }}/Categories:/app/Categories \
+        -v ${{ github.workspace }}/Services:/app/Services \
+        -v ${{ github.workspace }}/SRS:/app/SRS \
+        itdoginfo/compilesrs:0.1.1
+
     - name: Check Russia/inside-dnsmasq-ipset
       uses: itdoginfo/dnsmasq-action@0.1
       with:
@@ -57,6 +61,7 @@ jobs:
       with:
         file: "Ukraine/inside-dnsmasq-nfset.lst"
         version: 2.89
+
     - name: Push lists
       uses: EndBug/add-and-commit@v9
       with:
@@ -65,3 +70,12 @@ jobs:
         author_email: githubaction@githubaction.com
         message: 'Update lists'
         push: true
+
+    - name: Set release tag
+      run: echo "TAG_NAME=$(date +'%Y-%m-%d_%H-%M')" >> $GITHUB_ENV
+
+    - name: Release
+      uses: softprops/action-gh-release@v2.1.0
+      with:
+        files: "${{ github.workspace }}/SRS/*.srs"
+        tag_name: ${{ env.TAG_NAME }}
