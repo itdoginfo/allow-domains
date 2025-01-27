@@ -11,5 +11,3 @@ COPY compile-srs.py /app/compile-srs.py
 VOLUME ["/app/Categories", "/app/Services"]
 
 CMD ["python3", "compile-srs.py"]
-
-# docker run --rm -v ./Categories:/app/Categories -v ./Services:/app/Services -v ./json:/app/json py-sg:1
