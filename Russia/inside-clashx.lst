@@ -86,6 +86,7 @@ DOMAIN-SUFFIX,cdnbunny.org
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,cdw.com
 DOMAIN-SUFFIX,censortracker.org
+DOMAIN-SUFFIX,chaos.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,cherta.media
@@ -102,6 +103,7 @@ DOMAIN-SUFFIX,coinpayments.net
 DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
+DOMAIN-SUFFIX,community.sophos.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coursera.org
 DOMAIN-SUFFIX,cpu-monkey.com
@@ -114,12 +116,14 @@ DOMAIN-SUFFIX,cyberghostvpn.com
 DOMAIN-SUFFIX,cyxymu.info
 DOMAIN-SUFFIX,daemon-tools.cc
 DOMAIN-SUFFIX,danbooru.donmai.us
+DOMAIN-SUFFIX,data-cdn.mbamupdates.com
 DOMAIN-SUFFIX,decrypt.day
 DOMAIN-SUFFIX,deepstatemap.live
 DOMAIN-SUFFIX,delfi.lt
 DOMAIN-SUFFIX,delfi.lv
 DOMAIN-SUFFIX,designer.microsoft.com
 DOMAIN-SUFFIX,designify.com
+DOMAIN-SUFFIX,developer.nvidia.com
 DOMAIN-SUFFIX,digikey.com
 DOMAIN-SUFFIX,digitalcontent.sky
 DOMAIN-SUFFIX,digitalocean.com
@@ -234,6 +238,7 @@ DOMAIN-SUFFIX,grani.ru
 DOMAIN-SUFFIX,graty.me
 DOMAIN-SUFFIX,graylog.org
 DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,groupon.com
 DOMAIN-SUFFIX,guilded.gg
 DOMAIN-SUFFIX,habr.com
 DOMAIN-SUFFIX,hackernoon.com
@@ -271,9 +276,11 @@ DOMAIN-SUFFIX,important-stories.com
 DOMAIN-SUFFIX,indiehackers.com
 DOMAIN-SUFFIX,infineon.com
 DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,install.launcher.omniverse.nvidia.com
 DOMAIN-SUFFIX,intel.com
 DOMAIN-SUFFIX,intel.de
 DOMAIN-SUFFIX,intel.nl
+DOMAIN-SUFFIX,intelix.sophos.com
 DOMAIN-SUFFIX,interactivebrokers.co.uk
 DOMAIN-SUFFIX,interfax.com.ua
 DOMAIN-SUFFIX,internalfb.com
@@ -414,6 +421,7 @@ DOMAIN-SUFFIX,ohmyswift.ru
 DOMAIN-SUFFIX,oi.legal
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,olx.ua
+DOMAIN-SUFFIX,onfastspring.com
 DOMAIN-SUFFIX,onlinesim.io
 DOMAIN-SUFFIX,onshape.com
 DOMAIN-SUFFIX,openai.com
@@ -439,6 +447,7 @@ DOMAIN-SUFFIX,pimpletv.ru
 DOMAIN-SUFFIX,pingdom.com
 DOMAIN-SUFFIX,piratbit.top
 DOMAIN-SUFFIX,pkgs.tailscale.com
+DOMAIN-SUFFIX,platform.activestate.com
 DOMAIN-SUFFIX,playboy.com
 DOMAIN-SUFFIX,plugshare.com
 DOMAIN-SUFFIX,polit.ru
@@ -465,6 +474,7 @@ DOMAIN-SUFFIX,prowlarr.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
+DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quickconnect.to
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quora.com.cdn.cloudflare.net
@@ -530,6 +540,7 @@ DOMAIN-SUFFIX,simplex.im
 DOMAIN-SUFFIX,simplix.info
 DOMAIN-SUFFIX,site.com
 DOMAIN-SUFFIX,skat.media
+DOMAIN-SUFFIX,sketchup.com
 DOMAIN-SUFFIX,skiff.com
 DOMAIN-SUFFIX,skladchik.com
 DOMAIN-SUFFIX,sklatchiki.ru
@@ -558,6 +569,7 @@ DOMAIN-SUFFIX,statology.org
 DOMAIN-SUFFIX,steamstat.info
 DOMAIN-SUFFIX,strana.news
 DOMAIN-SUFFIX,strana.today
+DOMAIN-SUFFIX,strava.com
 DOMAIN-SUFFIX,suggestqueries.google.com
 DOMAIN-SUFFIX,supercell.com
 DOMAIN-SUFFIX,surfshark.com
@@ -660,6 +672,7 @@ DOMAIN-SUFFIX,vpngate.net
 DOMAIN-SUFFIX,vpngen.org
 DOMAIN-SUFFIX,vpnlove.me
 DOMAIN-SUFFIX,vpnpay.io
+DOMAIN-SUFFIX,w.atwiki.jp
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
@@ -672,6 +685,7 @@ DOMAIN-SUFFIX,wilsoncenter.org
 DOMAIN-SUFFIX,windows10spotlight.com
 DOMAIN-SUFFIX,wonderzine.com
 DOMAIN-SUFFIX,wpengine.com
+DOMAIN-SUFFIX,www3.corsair.com
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xsts.auth.xboxlive.com
 DOMAIN-SUFFIX,xtracloud.net
