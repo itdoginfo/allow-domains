@@ -17,9 +17,9 @@ permissions:
 
 jobs:
   generate-lists:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@4.1.7
+    - uses: actions/checkout@4.2.2
     - name: Compile ruleset srs
       run: |
         docker run --rm \
