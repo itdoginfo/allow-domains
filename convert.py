@@ -16,6 +16,7 @@ rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
 uaDomainsSrc='src/Ukraine-domains-inside.lst'
 uaDomainsOut='Ukraine/inside'
+DiscordSubnets = 'Subnets/IPv4/Discord.lst'
 
 def raw(src, out):
     domains = set()
@@ -177,7 +178,7 @@ def domains_from_file(filepath):
         print(f"File not found: {filepath}")
     return domains
 
-def generate_srs(domains, output_name):
+def generate_srs_domains(domains, output_name):
     output_directory = 'JSON'
     compiled_output_directory = 'SRS'
 
@@ -253,6 +254,45 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
             except subprocess.CalledProcessError as e:
                 print(f"Compile error {json_file_path}: {e}")
 
+def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_output_directory='SRS'):
+    os.makedirs(output_json_directory, exist_ok=True)
+    os.makedirs(compiled_output_directory, exist_ok=True)
+
+    subnets = []
+    with open(input_file, 'r', encoding='utf-8') as file:
+        for line in file:
+            subnet = line.strip()
+            if subnet:
+                subnets.append(subnet)
+
+    data = {
+        "version": 2,
+        "rules": [
+            {
+                "network": ["udp"],
+                "ip_cidr": subnets,
+                "port_range": ["50000:65535"]
+            }
+        ]
+    }
+
+    filename = os.path.splitext(os.path.basename(input_file))[0]
+    output_file_path = os.path.join(output_json_directory, f"{filename}-subnets.json")
+
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        json.dump(data, output_file, indent=4)
+
+    print(f"JSON file generated: {output_file_path}")
+
+    srs_file_path = os.path.join(compiled_output_directory, f"{filename}-subnets.srs")
+    try:
+        subprocess.run(
+            ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
+        )
+        print(f"Compiled .srs file: {srs_file_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"Compile error {output_file_path}: {e}")
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -298,10 +338,13 @@ if __name__ == '__main__':
     russia_inside = domains_from_file('Russia/inside-raw.lst')
     russia_outside = domains_from_file('Russia/outside-raw.lst')
     ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
-    generate_srs(russia_inside, 'russia-inside')
-    generate_srs(russia_outside, 'russia-outside')
-    generate_srs(ukraine_inside, 'ukraine-inside')
+    generate_srs_domains(russia_inside, 'russia-inside')
+    generate_srs_domains(russia_outside, 'russia-outside')
+    generate_srs_domains(ukraine_inside, 'ukraine-inside')
 
     # Sing-box categories
     directories = ['Categories', 'Services']
     generate_srs_for_categories(directories)
+
+    # Sing-box subnets
+    generate_srs_subnets(DiscordSubnets)
