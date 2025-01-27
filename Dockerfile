@@ -4,12 +4,10 @@ FROM python:3.10.16-alpine3.21
 
 COPY --from=sing-box /usr/local/bin/sing-box /bin/sing-box
 
+RUN pip install --no-cache-dir tldextract
+
 WORKDIR /app
 
-COPY compile-srs.py /app/compile-srs.py
+COPY convert.py /app/convert.py
 
-VOLUME ["/app/Categories", "/app/Services"]
-
-CMD ["python3", "compile-srs.py"]
-
-# docker run --rm -v ./Categories:/app/Categories -v ./Services:/app/Services -v ./json:/app/json py-sg:1
+CMD ["python3", "convert.py"]
