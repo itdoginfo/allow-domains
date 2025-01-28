@@ -19,6 +19,7 @@ DOMAIN-SUFFIX,adultmult.tv
 DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,ahrefs.com
 DOMAIN-SUFFIX,ai-chat.bsg.brave.com
+DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,allegro.pl
 DOMAIN-SUFFIX,alphacoders.com
 DOMAIN-SUFFIX,alza.hu
@@ -75,6 +76,8 @@ DOMAIN-SUFFIX,buf.build
 DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,canva.com
+DOMAIN-SUFFIX,canva.dev
 DOMAIN-SUFFIX,capcut.com
 DOMAIN-SUFFIX,carnegieendowment.org
 DOMAIN-SUFFIX,carrefouruae.com
@@ -87,6 +90,8 @@ DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,cdw.com
 DOMAIN-SUFFIX,censortracker.org
 DOMAIN-SUFFIX,chaos.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,cherta.media
@@ -443,6 +448,7 @@ DOMAIN-SUFFIX,pcmag.com
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pexels.com
 DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,phncdn.com.sds.rncdn7.com
 DOMAIN-SUFFIX,pimpletv.ru
 DOMAIN-SUFFIX,pingdom.com
 DOMAIN-SUFFIX,piratbit.top
@@ -454,6 +460,7 @@ DOMAIN-SUFFIX,polit.ru
 DOMAIN-SUFFIX,politiken.dk
 DOMAIN-SUFFIX,polymarket.com
 DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhub.org
 DOMAIN-SUFFIX,portal.lviv.ua
 DOMAIN-SUFFIX,posle.media
 DOMAIN-SUFFIX,postimees.ee
