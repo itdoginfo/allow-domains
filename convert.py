@@ -17,6 +17,8 @@ rusDomainsOutsideOut='Russia/outside'
 uaDomainsSrc='src/Ukraine-domains-inside.lst'
 uaDomainsOut='Ukraine/inside'
 DiscordSubnets = 'Subnets/IPv4/Discord.lst'
+MetaSubnets = 'Subnets/IPv4/Meta.lst'
+TwitterSubnets = 'Subnets/IPv4/Twitter.lst'
 
 def raw(src, out):
     domains = set()
@@ -265,16 +267,27 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
             if subnet:
                 subnets.append(subnet)
 
-    data = {
-        "version": 2,
-        "rules": [
-            {
-                "network": ["udp"],
-                "ip_cidr": subnets,
-                "port_range": ["50000:65535"]
-            }
-        ]
-    }
+    if input_file == "Subnets/IPv4/Discord.lst":
+        data = {
+            "version": 2,
+            "rules": [
+                {
+                    "network": ["udp"],
+                    "ip_cidr": subnets,
+                    "port_range": ["50000:65535"]
+                }
+            ]
+        }
+
+    else:
+        data = {
+            "version": 2,
+            "rules": [
+                {
+                    "ip_cidr": subnets
+                }
+            ]
+        }
 
     filename = os.path.splitext(os.path.basename(input_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}-subnets.json")
@@ -348,3 +361,5 @@ if __name__ == '__main__':
 
     # Sing-box subnets
     generate_srs_subnets(DiscordSubnets)
+    generate_srs_subnets(TwitterSubnets)
+    generate_srs_subnets(MetaSubnets)
