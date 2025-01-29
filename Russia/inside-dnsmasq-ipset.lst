@@ -613,6 +613,7 @@ ipset=/thetruestory.news/vpn_domains
 ipset=/threads.net/vpn_domains
 ipset=/threema.ch/vpn_domains
 ipset=/ti.com/vpn_domains
+ipset=/tidal.com/vpn_domains
 ipset=/tik-tokapi.com/vpn_domains
 ipset=/tiktok.com/vpn_domains
 ipset=/tiktokcdn-eu.com/vpn_domains

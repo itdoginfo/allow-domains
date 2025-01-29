@@ -613,6 +613,7 @@
 /ip dns static add name=threads.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=threema.ch type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ti.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=tidal.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tik-tokapi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tiktok.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tiktokcdn-eu.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
