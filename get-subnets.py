@@ -2,6 +2,8 @@
 
 import ipaddress
 import urllib.request
+import os
+import shutil
 
 BGP_TOOLS_URL = 'https://bgp.tools/table.txt'
 USER_AGENT = 'itdog.info - hi@itdog.info'
@@ -11,14 +13,14 @@ IPv6_DIR = 'Subnets/IPv6'
 
 AS_META = '32934'
 AS_TWITTER = '13414'
-META = 'Meta.lst'
-TWITTER = 'Twitter.lst'
+META = 'meta.lst'
+TWITTER = 'twitter.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
 DISCORD_VOICE_V6='https://iplist.opencck.org/?format=text&data=cidr6&site=discord.gg&site=discord.media'
 
-DISCORD = 'Discord.lst'
+DISCORD = 'discord.lst'
 
 subnet_list = []
 
@@ -80,6 +82,11 @@ def write_subnets_to_file(subnets, filename):
         for subnet in subnets:
             file.write(f'{subnet}\n')
 
+def copy_file_legacy(src_filename):
+    base_filename = os.path.basename(src_filename)
+    new_filename = base_filename.capitalize()
+    shutil.copy(src_filename, os.path.join(os.path.dirname(src_filename), new_filename))
+
 if __name__ == '__main__':
     request = urllib.request.Request(BGP_TOOLS_URL, headers={'User-Agent': USER_AGENT})
     
@@ -103,3 +110,11 @@ if __name__ == '__main__':
     ipv4_discord, ipv6_discord = download_ready_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
     write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
     write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
+
+    # Legacy name
+    copy_file_legacy(f'{IPv4_DIR}/{META}')
+    copy_file_legacy(f'{IPv6_DIR}/{META}')
+    copy_file_legacy(f'{IPv4_DIR}/{TWITTER}')
+    copy_file_legacy(f'{IPv6_DIR}/{TWITTER}')
+    copy_file_legacy(f'{IPv4_DIR}/{DISCORD}')
+    copy_file_legacy(f'{IPv6_DIR}/{DISCORD}')

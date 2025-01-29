@@ -2,7 +2,7 @@ name: Create lists
 
 on:
   push:
-    branches: [ "main", "srs" ]
+    branches: [ "main" ]
     paths:
       - .github/workflows/create-lists.yml
       - Categories/**
@@ -10,7 +10,7 @@ on:
       - src/**
       - convert.py
   schedule:
-    - cron: '29 */8 * * *'
+    - cron: '29 8 * * 1'
 
 permissions:
   contents: write
@@ -30,7 +30,7 @@ jobs:
         -v ${{ github.workspace }}/Categories:/app/Categories \
         -v ${{ github.workspace }}/Services:/app/Services \
         -v ${{ github.workspace }}/SRS:/app/SRS \
-        itdoginfo/compilesrs:0.1.3
+        itdoginfo/compilesrs:0.1.4
 
     - name: Check Russia/inside-dnsmasq-ipset
       uses: itdoginfo/dnsmasq-action@0.1

@@ -16,9 +16,9 @@ rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
 uaDomainsSrc='src/Ukraine-domains-inside.lst'
 uaDomainsOut='Ukraine/inside'
-DiscordSubnets = 'Subnets/IPv4/Discord.lst'
-MetaSubnets = 'Subnets/IPv4/Meta.lst'
-TwitterSubnets = 'Subnets/IPv4/Twitter.lst'
+DiscordSubnets = 'Subnets/IPv4/discord.lst'
+MetaSubnets = 'Subnets/IPv4/meta.lst'
+TwitterSubnets = 'Subnets/IPv4/twitter.lst'
 
 def raw(src, out):
     domains = set()
@@ -267,7 +267,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
             if subnet:
                 subnets.append(subnet)
 
-    if input_file == "Subnets/IPv4/Discord.lst":
+    if input_file == "Subnets/IPv4/discord.lst":
         data = {
             "version": 2,
             "rules": [
@@ -290,14 +290,14 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
         }
 
     filename = os.path.splitext(os.path.basename(input_file))[0]
-    output_file_path = os.path.join(output_json_directory, f"{filename}-subnets.json")
+    output_file_path = os.path.join(output_json_directory, f"{filename}_subnets.json")
 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         json.dump(data, output_file, indent=4)
 
     print(f"JSON file generated: {output_file_path}")
 
-    srs_file_path = os.path.join(compiled_output_directory, f"{filename}-subnets.srs")
+    srs_file_path = os.path.join(compiled_output_directory, f"{filename}_subnets.srs")
     try:
         subprocess.run(
             ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
@@ -351,9 +351,9 @@ if __name__ == '__main__':
     russia_inside = domains_from_file('Russia/inside-raw.lst')
     russia_outside = domains_from_file('Russia/outside-raw.lst')
     ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
-    generate_srs_domains(russia_inside, 'russia-inside')
-    generate_srs_domains(russia_outside, 'russia-outside')
-    generate_srs_domains(ukraine_inside, 'ukraine-inside')
+    generate_srs_domains(russia_inside, 'russia_inside')
+    generate_srs_domains(russia_outside, 'russia_outside')
+    generate_srs_domains(ukraine_inside, 'ukraine_inside')
 
     # Sing-box categories
     directories = ['Categories', 'Services']
