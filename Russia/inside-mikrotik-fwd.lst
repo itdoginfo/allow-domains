@@ -57,6 +57,7 @@
 /ip dns static add name=baikal-journal.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bato.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bbc.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=bcbits.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bell-sw.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bellingcat.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bestbuy.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -115,6 +116,7 @@
 /ip dns static add name=cpu-monkey.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=credly.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=csskor.ill.in.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=cub.red type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=currenttime.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cursorinfo.co.il type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cvedetails.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -516,7 +518,9 @@
 /ip dns static add name=rus.delfi.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.jauns.lv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutor.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rutor.is type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutor.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rutracker.cc type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutracker.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutracker.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutracker.wiki type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
