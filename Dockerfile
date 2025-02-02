@@ -14,7 +14,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN pip install --no-cache-dir tldextract
 
-COPY src/xray-geosite /app/xray-geosite
+COPY xray-geosite /app/xray-geosite
 
 WORKDIR /app/xray-geosite
 
