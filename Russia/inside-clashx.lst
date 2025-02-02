@@ -57,6 +57,7 @@ DOMAIN-SUFFIX,baginya.org
 DOMAIN-SUFFIX,baikal-journal.ru
 DOMAIN-SUFFIX,bato.to
 DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,bcbits.com
 DOMAIN-SUFFIX,bell-sw.com
 DOMAIN-SUFFIX,bellingcat.com
 DOMAIN-SUFFIX,bestbuy.com
@@ -115,6 +116,7 @@ DOMAIN-SUFFIX,coursera.org
 DOMAIN-SUFFIX,cpu-monkey.com
 DOMAIN-SUFFIX,credly.com
 DOMAIN-SUFFIX,csskor.ill.in.ua
+DOMAIN-SUFFIX,cub.red
 DOMAIN-SUFFIX,currenttime.tv
 DOMAIN-SUFFIX,cursorinfo.co.il
 DOMAIN-SUFFIX,cvedetails.com
@@ -516,7 +518,9 @@ DOMAIN-SUFFIX,rule34.art
 DOMAIN-SUFFIX,rus.delfi.ee
 DOMAIN-SUFFIX,rus.jauns.lv
 DOMAIN-SUFFIX,rutor.info
+DOMAIN-SUFFIX,rutor.is
 DOMAIN-SUFFIX,rutor.org
+DOMAIN-SUFFIX,rutracker.cc
 DOMAIN-SUFFIX,rutracker.net
 DOMAIN-SUFFIX,rutracker.org
 DOMAIN-SUFFIX,rutracker.wiki
@@ -613,6 +617,7 @@ DOMAIN-SUFFIX,thetruestory.news
 DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,threema.ch
 DOMAIN-SUFFIX,ti.com
+DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokcdn-eu.com
