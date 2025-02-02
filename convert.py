@@ -307,8 +307,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
         print(f"Compile error {output_file_path}: {e}")
 
 def prepare_dat_domains(domains_or_dirs, output_name):
-    compiler_directory = 'xray-geosite'
-    output_lists_directory = os.path.join(compiler_directory, 'data')
+    output_lists_directory = 'data'
 
     os.makedirs(output_lists_directory, exist_ok=True)
 
@@ -330,19 +329,13 @@ def prepare_dat_domains(domains_or_dirs, output_name):
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.writelines(f"{name}\n" for name in extracted_domains)
  
-def generate_dat_domains(compiled_output_directory='DAT'):
-    working_directory = os.getcwd()
-    compiler_directory = os.path.join(working_directory, 'xray-geosite')
-    data_path = os.path.join(compiler_directory, 'data')
-    output_directory = os.path.abspath(compiled_output_directory)
-
-    os.makedirs(compiled_output_directory, exist_ok=True)
+def generate_dat_domains(output_name='geosite.dat', output_directory='DAT'):
+    os.makedirs(output_directory, exist_ok=True)
 
     try:
         subprocess.run(
-            ["go", "run", compiler_directory, f"--datapath={data_path}", "--outputname=geosite.dat", f"--outputdir={output_directory}"],
-            check=True,
-            cwd=compiler_directory
+            ["geosite-compiler", f"-outputname={output_name}", f"-outputdir={output_directory}"],
+            check=True
         )
     except subprocess.CalledProcessError as e:
         print(f"Compile error geosite.dat: {e}")
