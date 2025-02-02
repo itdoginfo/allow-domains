@@ -314,11 +314,10 @@ def prepare_dat_domains(domains_or_dirs, output_name):
 
     extracted_domains = []
 
-    if all(os.path.isdir(os.path.abspath(d)) for d in domains_or_dirs):
+    if all(os.path.isdir(d) for d in domains_or_dirs):
         for directory in domains_or_dirs:
-            abs_directory = os.path.abspath(directory)
-            for filename in os.listdir(abs_directory):
-                file_path = os.path.join(abs_directory, filename)
+            for filename in os.listdir(directory):
+                file_path = os.path.join(directory, filename)
 
                 if os.path.isfile(file_path):
                     with open(file_path, 'r', encoding='utf-8') as file:
