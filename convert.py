@@ -306,6 +306,48 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
     except subprocess.CalledProcessError as e:
         print(f"Compile error {output_file_path}: {e}")
 
+def prepare_dat_domains(domains_or_dirs, output_name):
+    compiler_directory = 'xray-geosite'
+    output_lists_directory = os.path.join(compiler_directory, 'data')
+
+    os.makedirs(output_lists_directory, exist_ok=True)
+
+    extracted_domains = []
+
+    if all(os.path.isdir(os.path.abspath(d)) for d in domains_or_dirs):
+        for directory in domains_or_dirs:
+            abs_directory = os.path.abspath(directory)
+            for filename in os.listdir(abs_directory):
+                file_path = os.path.join(abs_directory, filename)
+
+                if os.path.isfile(file_path):
+                    with open(file_path, 'r', encoding='utf-8') as file:
+                        attribute = os.path.splitext(filename)[0]
+                        extracted_domains.extend(f"{line.strip()} @{attribute}" for line in file if line.strip())
+    else:
+        extracted_domains = domains_or_dirs
+
+    output_file_path = os.path.join(output_lists_directory, output_name)
+    with open(output_file_path, 'w', encoding='utf-8') as file:
+        file.writelines(f"{name}\n" for name in extracted_domains)
+ 
+def generate_dat_domains(compiled_output_directory='DAT'):
+    working_directory = os.getcwd()
+    compiler_directory = os.path.join(working_directory, 'xray-geosite')
+    data_path = os.path.join(compiler_directory, 'data')
+    output_directory = os.path.abspath(compiled_output_directory)
+
+    os.makedirs(compiled_output_directory, exist_ok=True)
+
+    try:
+        subprocess.run(
+            ["go", "run", compiler_directory, f"--datapath={data_path}", "--outputname=geosite.dat", f"--outputdir={output_directory}"],
+            check=True,
+            cwd=compiler_directory
+        )
+    except subprocess.CalledProcessError as e:
+        print(f"Compile error geosite.dat: {e}")
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -363,3 +405,9 @@ if __name__ == '__main__':
     generate_srs_subnets(DiscordSubnets)
     generate_srs_subnets(TwitterSubnets)
     generate_srs_subnets(MetaSubnets)
+
+    # Xray domains
+    prepare_dat_domains(directories, 'russia_inside')
+    prepare_dat_domains(russia_outside, 'russia_outside')
+    prepare_dat_domains(ukraine_inside, 'ukraine_inside')
+    generate_dat_domains()
