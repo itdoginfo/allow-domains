@@ -407,7 +407,7 @@ if __name__ == '__main__':
     generate_srs_subnets(MetaSubnets)
 
     # Xray domains
-    prepare_dat_domains(directories, 'russia_inside')
-    prepare_dat_domains(russia_outside, 'russia_outside')
-    prepare_dat_domains(ukraine_inside, 'ukraine_inside')
+    prepare_dat_domains(directories, 'russia-inside')
+    prepare_dat_domains(russia_outside, 'russia-outside')
+    prepare_dat_domains(ukraine_inside, 'ukraine-inside')
     generate_dat_domains()
