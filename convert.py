@@ -307,7 +307,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
         print(f"Compile error {output_file_path}: {e}")
 
 def prepare_dat_domains(domains_or_dirs, output_name):
-    output_lists_directory = 'data'
+    output_lists_directory = 'geosite_data'
 
     os.makedirs(output_lists_directory, exist_ok=True)
 
@@ -329,12 +329,12 @@ def prepare_dat_domains(domains_or_dirs, output_name):
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.writelines(f"{name}\n" for name in extracted_domains)
  
-def generate_dat_domains(output_name='geosite.dat', output_directory='DAT'):
+def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', output_directory='DAT'):
     os.makedirs(output_directory, exist_ok=True)
 
     try:
         subprocess.run(
-            ["geosite-compiler", f"-outputname={output_name}", f"-outputdir={output_directory}"],
+            ["domain-list-community", f"-datapath={data_path}", f"-outputname={output_name}", f"-outputdir={output_directory}"],
             check=True
         )
     except subprocess.CalledProcessError as e:
