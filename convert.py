@@ -306,6 +306,40 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
     except subprocess.CalledProcessError as e:
         print(f"Compile error {output_file_path}: {e}")
 
+def prepare_dat_domains(domains_or_dirs, output_name):
+    output_lists_directory = 'geosite_data'
+
+    os.makedirs(output_lists_directory, exist_ok=True)
+
+    extracted_domains = []
+
+    if all(os.path.isdir(d) for d in domains_or_dirs):
+        for directory in domains_or_dirs:
+            for filename in os.listdir(directory):
+                file_path = os.path.join(directory, filename)
+
+                if os.path.isfile(file_path):
+                    with open(file_path, 'r', encoding='utf-8') as file:
+                        attribute = os.path.splitext(filename)[0]
+                        extracted_domains.extend(f"{line.strip()} @{attribute}" for line in file if line.strip())
+    else:
+        extracted_domains = domains_or_dirs
+
+    output_file_path = os.path.join(output_lists_directory, output_name)
+    with open(output_file_path, 'w', encoding='utf-8') as file:
+        file.writelines(f"{name}\n" for name in extracted_domains)
+ 
+def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', output_directory='DAT'):
+    os.makedirs(output_directory, exist_ok=True)
+
+    try:
+        subprocess.run(
+            ["domain-list-community", f"-datapath={data_path}", f"-outputname={output_name}", f"-outputdir={output_directory}"],
+            check=True
+        )
+    except subprocess.CalledProcessError as e:
+        print(f"Compile error geosite.dat: {e}")
+
 if __name__ == '__main__':
     # Russia inside
     Path("Russia").mkdir(parents=True, exist_ok=True)
@@ -363,3 +397,9 @@ if __name__ == '__main__':
     generate_srs_subnets(DiscordSubnets)
     generate_srs_subnets(TwitterSubnets)
     generate_srs_subnets(MetaSubnets)
+
+    # Xray domains
+    prepare_dat_domains(directories, 'russia-inside')
+    prepare_dat_domains(russia_outside, 'russia-outside')
+    prepare_dat_domains(ukraine_inside, 'ukraine-inside')
+    generate_dat_domains()
