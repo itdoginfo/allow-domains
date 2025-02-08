@@ -79,6 +79,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v2.1.0
       with:
-        files:
-          "${{ github.workspace }}/DAT/*.dat"
+        files: |
+          ${{ github.workspace }}/DAT/*.dat
+          ${{ github.workspace }}/SRS/*.srs
         tag_name: ${{ env.TAG_NAME }}
