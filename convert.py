@@ -340,7 +340,7 @@ def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', ou
         )
         print(f"Compiled .dat file: {output_directory}/{output_name}")
     except subprocess.CalledProcessError as e:
-        print(f"Compile error geosite.dat: {e}")
+        print(f"Compile error {data_path}: {e}")
 
 if __name__ == '__main__':
     # Russia inside
