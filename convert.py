@@ -19,6 +19,7 @@ uaDomainsOut='Ukraine/inside'
 DiscordSubnets = 'Subnets/IPv4/discord.lst'
 MetaSubnets = 'Subnets/IPv4/meta.lst'
 TwitterSubnets = 'Subnets/IPv4/twitter.lst'
+TelegramSubnets = 'Subnets/IPv4/telegram.lst'
 
 def raw(src, out):
     domains = set()
@@ -215,8 +216,12 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
+    exclude = {"meta", "twitter", "discord"}
+
     for directory in directories:
         for filename in os.listdir(directory):
+            if any(keyword in filename for keyword in exclude):
+                continue
             file_path = os.path.join(directory, filename)
             
             if os.path.isfile(file_path):
@@ -266,28 +271,14 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
             subnet = line.strip()
             if subnet:
                 subnets.append(subnet)
-
-    if input_file == "Subnets/IPv4/discord.lst":
-        data = {
-            "version": 2,
-            "rules": [
-                {
-                    "network": ["udp"],
-                    "ip_cidr": subnets,
-                    "port_range": ["50000:65535"]
-                }
-            ]
-        }
-
-    else:
-        data = {
-            "version": 2,
-            "rules": [
-                {
-                    "ip_cidr": subnets
-                }
-            ]
-        }
+    data = {
+        "version": 2,
+        "rules": [
+            {
+                "ip_cidr": subnets
+            }
+        ]
+    }
 
     filename = os.path.splitext(os.path.basename(input_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}_subnets.json")
@@ -305,6 +296,63 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
         print(f"Compiled .srs file: {srs_file_path}")
     except subprocess.CalledProcessError as e:
         print(f"Compile error {output_file_path}: {e}")
+
+def generate_srs_combined(input_subnets_file, input_domains_file, output_json_directory='JSON', compiled_output_directory='SRS'):
+    os.makedirs(output_json_directory, exist_ok=True)
+    os.makedirs(compiled_output_directory, exist_ok=True)
+
+    domains = []
+    if os.path.exists(input_domains_file):
+        with open(input_domains_file, 'r', encoding='utf-8') as file:
+            domains = [line.strip() for line in file if line.strip()]
+
+    subnets = []
+    if os.path.exists(input_subnets_file):
+        with open(input_subnets_file, 'r', encoding='utf-8') as file:
+            subnets = [line.strip() for line in file if line.strip()]
+
+    if input_subnets_file == "Subnets/IPv4/discord.lst":
+        data = {
+            "version": 2,
+            "rules": [
+                {
+                    "domain_suffix": domains
+                },
+                {
+                    "network": ["udp"],
+                    "ip_cidr": subnets,
+                    "port_range": ["50000:65535"]
+                }
+            ]
+        }
+    else:
+        data = {
+            "version": 2,
+            "rules": [
+                {
+                    "domain_suffix": domains,
+                    "ip_cidr": subnets
+                }
+            ]
+        }
+
+    filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
+    output_file_path = os.path.join(output_json_directory, f"{filename}.json")
+
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        json.dump(data, output_file, indent=4)
+
+    print(f"JSON file generated: {output_file_path}")
+
+    srs_file_path = os.path.join(compiled_output_directory, f"{filename}.srs")
+    try:
+        subprocess.run(
+            ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
+        )
+        print(f"Compiled .srs file: {srs_file_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"Compile error {output_file_path}: {e}")
+
 
 def prepare_dat_domains(domains_or_dirs, output_name):
     output_lists_directory = 'geosite_data'
@@ -396,9 +444,13 @@ if __name__ == '__main__':
     generate_srs_for_categories(directories)
 
     # Sing-box subnets
-    generate_srs_subnets(DiscordSubnets)
-    generate_srs_subnets(TwitterSubnets)
-    generate_srs_subnets(MetaSubnets)
+    generate_srs_subnets(TelegramSubnets)
+    # generate_srs_subnets(TwitterSubnets)
+    # generate_srs_subnets(MetaSubnets)
+
+    generate_srs_combined(DiscordSubnets, "Services/meta.lst")
+    generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
+    generate_srs_combined(MetaSubnets, "Services/discord.lst")
 
     # Xray domains
     prepare_dat_domains(directories, 'russia-inside')
