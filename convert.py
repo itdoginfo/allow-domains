@@ -335,10 +335,12 @@ def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', ou
     try:
         subprocess.run(
             ["domain-list-community", f"-datapath={data_path}", f"-outputname={output_name}", f"-outputdir={output_directory}"],
-            check=True
+            check=True,
+            stdout=subprocess.DEVNULL
         )
+        print(f"Compiled .dat file: {output_directory}/{output_name}")
     except subprocess.CalledProcessError as e:
-        print(f"Compile error geosite.dat: {e}")
+        print(f"Compile error {data_path}: {e}")
 
 if __name__ == '__main__':
     # Russia inside

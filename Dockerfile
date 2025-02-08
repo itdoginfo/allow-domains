@@ -2,8 +2,6 @@ FROM ghcr.io/sagernet/sing-box:v1.10.7 AS sing-box
 
 FROM golang:1.22.12-alpine3.21 AS go-builder
 
-WORKDIR /app
-
 RUN CGO_ENABLED=0 GOOS=linux go install -ldflags="-s -w" \
     github.com/v2fly/domain-list-community@20250207120917
 
