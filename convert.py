@@ -445,8 +445,6 @@ if __name__ == '__main__':
 
     # Sing-box subnets
     generate_srs_subnets(TelegramSubnets)
-    # generate_srs_subnets(TwitterSubnets)
-    # generate_srs_subnets(MetaSubnets)
 
     generate_srs_combined(DiscordSubnets, "Services/meta.lst")
     generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
