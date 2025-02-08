@@ -336,8 +336,7 @@ def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', ou
         subprocess.run(
             ["domain-list-community", f"-datapath={data_path}", f"-outputname={output_name}", f"-outputdir={output_directory}"],
             check=True,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
+            stdout=subprocess.DEVNULL
         )
         print(f"Compiled .dat file: {output_directory}/{output_name}")
     except subprocess.CalledProcessError as e:
