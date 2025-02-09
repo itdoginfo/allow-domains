@@ -134,6 +134,7 @@ def kvas(src, out, remove={'google.com'}):
                         if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
                             domains.add(tldextract.extract(line.rstrip()).suffix)
 
+    domains = domains - remove
     domains = sorted(domains)
 
     with open(f'{out}-kvas.lst', 'w') as file:
@@ -395,7 +396,7 @@ if __name__ == '__main__':
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
     removeDomains = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
-    removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co' }
+    removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co', 'ua' }
     
     inside_lists = [rusDomainsInsideCategories, rusDomainsInsideServices]
 
