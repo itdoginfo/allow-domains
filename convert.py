@@ -190,7 +190,7 @@ def generate_srs_domains(domains, output_name):
     os.makedirs(compiled_output_directory, exist_ok=True)
 
     data = {
-        "version": 2,
+        "version": 3,
         "rules": [
             {"domain_suffix": domains}
         ]
@@ -234,7 +234,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
                             domains.append(domain)
 
             data = {
-                "version": 2,
+                "version": 3,
                 "rules": [
                     {
                         "domain_suffix": domains
@@ -273,7 +273,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
             if subnet:
                 subnets.append(subnet)
     data = {
-        "version": 2,
+        "version": 3,
         "rules": [
             {
                 "ip_cidr": subnets
@@ -314,7 +314,7 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
 
     if input_subnets_file == "Subnets/IPv4/discord.lst":
         data = {
-            "version": 2,
+            "version": 3,
             "rules": [
                 {
                     "domain_suffix": domains
@@ -328,7 +328,7 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
         }
     else:
         data = {
-            "version": 2,
+            "version": 3,
             "rules": [
                 {
                     "domain_suffix": domains,
