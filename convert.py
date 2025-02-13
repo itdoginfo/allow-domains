@@ -282,14 +282,14 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
     }
 
     filename = os.path.splitext(os.path.basename(input_file))[0]
-    output_file_path = os.path.join(output_json_directory, f"{filename}_subnets.json")
+    output_file_path = os.path.join(output_json_directory, f"{filename}.json")
 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         json.dump(data, output_file, indent=4)
 
     print(f"JSON file generated: {output_file_path}")
 
-    srs_file_path = os.path.join(compiled_output_directory, f"{filename}_subnets.srs")
+    srs_file_path = os.path.join(compiled_output_directory, f"{filename}.srs")
     try:
         subprocess.run(
             ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
