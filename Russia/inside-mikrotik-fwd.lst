@@ -536,6 +536,7 @@
 /ip dns static add name=redgifs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=redis.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=redshieldvpn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=remna.st type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=remove.bg type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=render-state.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rentry.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -602,6 +603,7 @@
 /ip dns static add name=skycdp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=slashlib.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=slavicsac.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=smartbear.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=smartbear.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=smartdeploy.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=snort.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
