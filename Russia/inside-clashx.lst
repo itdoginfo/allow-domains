@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,cherta.media
+DOMAIN-SUFFIX,chess.com
 DOMAIN-SUFFIX,cisco.com
 DOMAIN-SUFFIX,clashofclans.com
 DOMAIN-SUFFIX,clashroyaleapp.com
@@ -124,6 +125,7 @@ DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,community.sophos.com
+DOMAIN-SUFFIX,coomer.su
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coursera.org
 DOMAIN-SUFFIX,cpu-monkey.com
@@ -271,6 +273,7 @@ DOMAIN-SUFFIX,grafana.com
 DOMAIN-SUFFIX,grani.ru
 DOMAIN-SUFFIX,graty.me
 DOMAIN-SUFFIX,graylog.org
+DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,groupon.com
 DOMAIN-SUFFIX,guilded.gg
@@ -342,6 +345,7 @@ DOMAIN-SUFFIX,kara.su
 DOMAIN-SUFFIX,kasparov.ru
 DOMAIN-SUFFIX,kavkaz-uzel.eu
 DOMAIN-SUFFIX,kavkazr.com
+DOMAIN-SUFFIX,kemono.su
 DOMAIN-SUFFIX,keysight.com
 DOMAIN-SUFFIX,kino.pub
 DOMAIN-SUFFIX,kinogo.ec
@@ -545,6 +549,7 @@ DOMAIN-SUFFIX,remna.st
 DOMAIN-SUFFIX,remove.bg
 DOMAIN-SUFFIX,render-state.to
 DOMAIN-SUFFIX,rentry.co
+DOMAIN-SUFFIX,rentry.org
 DOMAIN-SUFFIX,republic.ru
 DOMAIN-SUFFIX,research.net
 DOMAIN-SUFFIX,returnyoutubedislikeapi.com
@@ -620,6 +625,7 @@ DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,sovetromantica.com
 DOMAIN-SUFFIX,spacelift.io
 DOMAIN-SUFFIX,spektr.press
+DOMAIN-SUFFIX,spitfireaudio.com
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spreadthesign.com
 DOMAIN-SUFFIX,sputnikipogrom.com
@@ -634,6 +640,7 @@ DOMAIN-SUFFIX,strana.today
 DOMAIN-SUFFIX,strava.com
 DOMAIN-SUFFIX,suggestqueries.google.com
 DOMAIN-SUFFIX,supercell.com
+DOMAIN-SUFFIX,support.xerox.com
 DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surveymonkey.com
 DOMAIN-SUFFIX,suspilne.media
@@ -692,6 +699,7 @@ DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,turbobit.net
 DOMAIN-SUFFIX,tuta.com
 DOMAIN-SUFFIX,tuta.io
+DOMAIN-SUFFIX,tutanota.com
 DOMAIN-SUFFIX,tvfreedom.io
 DOMAIN-SUFFIX,tvrain.ru
 DOMAIN-SUFFIX,tvrain.tv
@@ -712,6 +720,7 @@ DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,typing.com
+DOMAIN-SUFFIX,uaudio.com
 DOMAIN-SUFFIX,ui.ill.in.ua
 DOMAIN-SUFFIX,ukr.net
 DOMAIN-SUFFIX,ukr.radio
@@ -728,6 +737,7 @@ DOMAIN-SUFFIX,vesma.today
 DOMAIN-SUFFIX,vesty.co.il
 DOMAIN-SUFFIX,vice.com
 DOMAIN-SUFFIX,vine.co
+DOMAIN-SUFFIX,vipergirls.to
 DOMAIN-SUFFIX,visualcapitalist.com
 DOMAIN-SUFFIX,vmware.com
 DOMAIN-SUFFIX,vndb.org
@@ -755,6 +765,7 @@ DOMAIN-SUFFIX,windows10spotlight.com
 DOMAIN-SUFFIX,wonderzine.com
 DOMAIN-SUFFIX,wpengine.com
 DOMAIN-SUFFIX,www3.corsair.com
+DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xhamster.com
 DOMAIN-SUFFIX,xhamsterlive.com
