@@ -444,9 +444,7 @@ if __name__ == '__main__':
     directories = ['Categories', 'Services']
     generate_srs_for_categories(directories)
 
-    # Sing-box subnets
-    generate_srs_subnets(TelegramSubnets)
-
+    # Sing-box subnets + domains
     generate_srs_combined(DiscordSubnets, "Services/discord.lst")
     generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
     generate_srs_combined(MetaSubnets, "Services/meta.lst")
