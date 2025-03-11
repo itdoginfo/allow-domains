@@ -450,6 +450,7 @@ if __name__ == '__main__':
     generate_srs_combined(DiscordSubnets, "Services/discord.lst")
     generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
     generate_srs_combined(MetaSubnets, "Services/meta.lst")
+    generate_srs_combined(TelegramSubnets, "Services/telegram.lst")
 
     # Xray domains
     prepare_dat_domains(directories, 'russia-inside')
