@@ -99,6 +99,7 @@ DOMAIN-SUFFIX,carrefouruae.com
 DOMAIN-SUFFIX,cats.com
 DOMAIN-SUFFIX,cbilling.eu
 DOMAIN-SUFFIX,cbilling.vip
+DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,cdn.web-platform.io
 DOMAIN-SUFFIX,cdnbunny.org
 DOMAIN-SUFFIX,cdninstagram.com
@@ -126,8 +127,10 @@ DOMAIN-SUFFIX,coinpayments.net
 DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
+DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,community.sophos.com
 DOMAIN-SUFFIX,contabo.com
+DOMAIN-SUFFIX,contest.com
 DOMAIN-SUFFIX,coomer.su
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,corsair.com
@@ -195,6 +198,8 @@ DOMAIN-SUFFIX,dw.com
 DOMAIN-SUFFIX,e621.net
 DOMAIN-SUFFIX,echofm.online
 DOMAIN-SUFFIX,edu-cisco.org
+DOMAIN-SUFFIX,ef.com
+DOMAIN-SUFFIX,ef.edu
 DOMAIN-SUFFIX,eggertspiele.de
 DOMAIN-SUFFIX,ej.ru
 DOMAIN-SUFFIX,ekhokavkaza.com
@@ -244,6 +249,7 @@ DOMAIN-SUFFIX,fortanga.org
 DOMAIN-SUFFIX,forum.netgate.com
 DOMAIN-SUFFIX,forum.ru-board.com
 DOMAIN-SUFFIX,foxnews.com
+DOMAIN-SUFFIX,fragment.com
 DOMAIN-SUFFIX,framer.com
 DOMAIN-SUFFIX,freedomletters.org
 DOMAIN-SUFFIX,freeimages.com
@@ -276,6 +282,7 @@ DOMAIN-SUFFIX,gpsonextra.net
 DOMAIN-SUFFIX,gr-assets.com
 DOMAIN-SUFFIX,grafana.com
 DOMAIN-SUFFIX,grani.ru
+DOMAIN-SUFFIX,graph.org
 DOMAIN-SUFFIX,graty.me
 DOMAIN-SUFFIX,graylog.org
 DOMAIN-SUFFIX,grok.com
@@ -466,6 +473,7 @@ DOMAIN-SUFFIX,novaya.no
 DOMAIN-SUFFIX,novayagazeta.eu
 DOMAIN-SUFFIX,novayagazeta.ru
 DOMAIN-SUFFIX,ntc.party
+DOMAIN-SUFFIX,ntp.msn.com
 DOMAIN-SUFFIX,nxp.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -484,6 +492,7 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openmedia.io
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,opposition-news.com
+DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,ovd.info
 DOMAIN-SUFFIX,ovd.legal
 DOMAIN-SUFFIX,ovd.news
@@ -537,6 +546,7 @@ DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,quickconnect.to
+DOMAIN-SUFFIX,quiz.directory
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quora.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,r4.err.ee
@@ -658,19 +668,30 @@ DOMAIN-SUFFIX,swagger.io
 DOMAIN-SUFFIX,swissinfo.ch
 DOMAIN-SUFFIX,synoforum.com
 DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tableau.com
 DOMAIN-SUFFIX,talosintelligence.com
 DOMAIN-SUFFIX,tayga.info
+DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,te-st.org
 DOMAIN-SUFFIX,teamviewer.com
+DOMAIN-SUFFIX,telega.one
+DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegraf.by
 DOMAIN-SUFFIX,telegraf.news
+DOMAIN-SUFFIX,telegram-cdn.org
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.space
 DOMAIN-SUFFIX,telegraph.co.uk
 DOMAIN-SUFFIX,telemetr.io
+DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tempmail.plus
 DOMAIN-SUFFIX,temu.com
 DOMAIN-SUFFIX,terraform.io
+DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,the-village.ru
 DOMAIN-SUFFIX,theaudiodb.com
 DOMAIN-SUFFIX,thebarentsobserver.com
@@ -728,6 +749,7 @@ DOMAIN-SUFFIX,twtrdns.net
 DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,twvid.com
+DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,typing.com
 DOMAIN-SUFFIX,uaudio.com
 DOMAIN-SUFFIX,ui.ill.in.ua
@@ -738,6 +760,7 @@ DOMAIN-SUFFIX,unian.ua
 DOMAIN-SUFFIX,unscreen.com
 DOMAIN-SUFFIX,upwork.com
 DOMAIN-SUFFIX,usa.one
+DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-SUFFIX,vagrantcloud.com
 DOMAIN-SUFFIX,veeam.com
 DOMAIN-SUFFIX,verstka.media
@@ -767,6 +790,7 @@ DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
 DOMAIN-SUFFIX,wide-youtube.l.google.com
+DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
 DOMAIN-SUFFIX,wikidot.com
 DOMAIN-SUFFIX,wilsoncenter.org
