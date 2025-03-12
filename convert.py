@@ -396,6 +396,7 @@ if __name__ == '__main__':
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
     removeDomains = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
+    removeDomainsMikrotik = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 'showip.net' }
     removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co', 'ua' }
     
     inside_lists = [rusDomainsInsideCategories, rusDomainsInsideServices]
@@ -404,7 +405,7 @@ if __name__ == '__main__':
     dnsmasq(inside_lists, rusDomainsInsideOut, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
     kvas(inside_lists, rusDomainsInsideOut, removeDomainsKvas)
-    mikrotik_fwd(inside_lists, rusDomainsInsideOut, removeDomains)
+    mikrotik_fwd(inside_lists, rusDomainsInsideOut, removeDomainsMikrotik)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
