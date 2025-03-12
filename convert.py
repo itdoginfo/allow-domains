@@ -168,7 +168,10 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
-            file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
+            if name.startswith('.'):
+                file.write(f'/ip dns static add name=*.{name[1:]} type=FWD address-list=allow-domains forward-to=localhost\n')
+            else:
+                file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
 
 def domains_from_file(filepath):
     domains = []
