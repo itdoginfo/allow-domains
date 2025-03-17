@@ -168,7 +168,10 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
-            file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
+            if name.startswith('.'):
+                file.write(f'/ip dns static add name=*.{name[1:]} type=FWD address-list=allow-domains forward-to=localhost\n')
+            else:
+                file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
 
 def domains_from_file(filepath):
     domains = []
@@ -396,6 +399,7 @@ if __name__ == '__main__':
     Path("Russia").mkdir(parents=True, exist_ok=True)
 
     removeDomains = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app' }
+    removeDomainsMikrotik = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 'showip.net' }
     removeDomainsKvas = {'google.com', 'googletagmanager.com', 'github.com', 'githubusercontent.com', 'githubcopilot.com', 'microsoft.com', 'cloudflare-dns.com', 'parsec.app', 't.co', 'ua' }
     
     inside_lists = [rusDomainsInsideCategories, rusDomainsInsideServices]
@@ -404,7 +408,7 @@ if __name__ == '__main__':
     dnsmasq(inside_lists, rusDomainsInsideOut, removeDomains)
     clashx(inside_lists, rusDomainsInsideOut, removeDomains)
     kvas(inside_lists, rusDomainsInsideOut, removeDomainsKvas)
-    mikrotik_fwd(inside_lists, rusDomainsInsideOut, removeDomains)
+    mikrotik_fwd(inside_lists, rusDomainsInsideOut, removeDomainsMikrotik)
 
     # Russia outside
     outside_lists = [rusDomainsOutsideSrc]
