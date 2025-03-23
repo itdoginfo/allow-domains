@@ -1,7 +1,7 @@
-/ip dns static add name=.com.by type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=.gov.by type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=.mil.by type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=.of.by type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=*.com.by type=FWD address-list=allow-domains forward-to=localhost
+/ip dns static add name=*.gov.by type=FWD address-list=allow-domains forward-to=localhost
+/ip dns static add name=*.mil.by type=FWD address-list=allow-domains forward-to=localhost
+/ip dns static add name=*.of.by type=FWD address-list=allow-domains forward-to=localhost
 /ip dns static add name=0.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=0370.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=08k.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

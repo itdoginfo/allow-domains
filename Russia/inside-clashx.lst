@@ -80,6 +80,8 @@ DOMAIN-SUFFIX,blackseanews.net
 DOMAIN-SUFFIX,blinkshot.io
 DOMAIN-SUFFIX,bluehost.com
 DOMAIN-SUFFIX,booktracker.org
+DOMAIN-SUFFIX,booth.pm
+DOMAIN-SUFFIX,booth.pximg.net
 DOMAIN-SUFFIX,botnadzor.org
 DOMAIN-SUFFIX,brawlstarsgame.com
 DOMAIN-SUFFIX,broadcom.com
@@ -206,6 +208,7 @@ DOMAIN-SUFFIX,ekhokavkaza.com
 DOMAIN-SUFFIX,element14.com
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,epidemz.net.co
+DOMAIN-SUFFIX,etsy.com
 DOMAIN-SUFFIX,euronews.com
 DOMAIN-SUFFIX,euroradio.fm
 DOMAIN-SUFFIX,eutrp.eu
@@ -422,11 +425,13 @@ DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,monoprice.com
 DOMAIN-SUFFIX,more.fm
 DOMAIN-SUFFIX,mouser.fi
+DOMAIN-SUFFIX,mssg.me
 DOMAIN-SUFFIX,mullvad.net
 DOMAIN-SUFFIX,multporn.net
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,mydoramy.club
+DOMAIN-SUFFIX,myheritage.com
 DOMAIN-SUFFIX,myjetbrains.com
 DOMAIN-SUFFIX,navalny.com
 DOMAIN-SUFFIX,nba.com
@@ -599,6 +604,8 @@ DOMAIN-SUFFIX,salesforceiq.com
 DOMAIN-SUFFIX,salesforceliveagent.com
 DOMAIN-SUFFIX,sap.com
 DOMAIN-SUFFIX,saverudata.net
+DOMAIN-SUFFIX,sci-hub.se
+DOMAIN-SUFFIX,sci-hub.st
 DOMAIN-SUFFIX,sdxcentral.com
 DOMAIN-SUFFIX,seasonvar.ru
 DOMAIN-SUFFIX,selezen.org
