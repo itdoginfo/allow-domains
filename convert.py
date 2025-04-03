@@ -20,6 +20,7 @@ DiscordSubnets = 'Subnets/IPv4/discord.lst'
 MetaSubnets = 'Subnets/IPv4/meta.lst'
 TwitterSubnets = 'Subnets/IPv4/twitter.lst'
 TelegramSubnets = 'Subnets/IPv4/telegram.lst'
+ExcludeServices = {"telegram.lst"}
 
 def raw(src, out):
     domains = set()
@@ -29,8 +30,8 @@ def raw(src, out):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(path.glob('*'))
-            elif path.is_file():
+                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+            elif path.is_file() and path.name not in ExcludeServices:
                 files.append(path)
 
     for f in files:
@@ -58,8 +59,8 @@ def dnsmasq(src, out, remove={'google.com'}):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(path.glob('*'))
-            elif path.is_file():
+                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+            elif path.is_file() and path.name not in ExcludeServices:
                 files.append(path)
 
     for f in files:
@@ -92,8 +93,8 @@ def clashx(src, out, remove={'google.com'}):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(path.glob('*'))
-            elif path.is_file():
+                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+            elif path.is_file() and path.name not in ExcludeServices:
                 files.append(path)
 
     for f in files:
@@ -121,8 +122,8 @@ def kvas(src, out, remove={'google.com'}):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(path.glob('*'))
-            elif path.is_file():
+                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+            elif path.is_file() and path.name not in ExcludeServices:
                 files.append(path)
 
     for f in files:
@@ -150,8 +151,8 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
         for dir_path in src:
             path = Path(dir_path)
             if path.is_dir():
-                files.extend(path.glob('*'))
-            elif path.is_file():
+                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+            elif path.is_file() and path.name not in ExcludeServices:
                 files.append(path)
 
     for f in files:
