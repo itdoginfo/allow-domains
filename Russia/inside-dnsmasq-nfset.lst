@@ -809,6 +809,7 @@ nftset=/youtubekids.com/4#inet#fw4#vpn_domains
 nftset=/yt-video-upload.l.google.com/4#inet#fw4#vpn_domains
 nftset=/ytimg.com/4#inet#fw4#vpn_domains
 nftset=/ytimg.l.google.com/4#inet#fw4#vpn_domains
+nftset=/yting.com/4#inet#fw4#vpn_domains
 nftset=/yummyani.me/4#inet#fw4#vpn_domains
 nftset=/zahav.ru/4#inet#fw4#vpn_domains
 nftset=/zapier.com/4#inet#fw4#vpn_domains

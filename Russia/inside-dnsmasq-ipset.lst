@@ -809,6 +809,7 @@ ipset=/youtubekids.com/vpn_domains
 ipset=/yt-video-upload.l.google.com/vpn_domains
 ipset=/ytimg.com/vpn_domains
 ipset=/ytimg.l.google.com/vpn_domains
+ipset=/yting.com/vpn_domains
 ipset=/yummyani.me/vpn_domains
 ipset=/zahav.ru/vpn_domains
 ipset=/zapier.com/vpn_domains

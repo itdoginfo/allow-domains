@@ -808,6 +808,7 @@
 /ip dns static add name=yt-video-upload.l.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ytimg.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ytimg.l.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=yting.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=yummyani.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zahav.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=zapier.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
