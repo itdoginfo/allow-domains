@@ -19,6 +19,8 @@ notion.site
 notion-static.com
 
 gemini.google.com
+generativelanguage.googleapis.com
+
 news.google.com
 suggestqueries.google.com
 lookerstudio.google.com
@@ -236,6 +238,7 @@ digitalcontent.sky
 sky.com
 skycdp.com
 broadcom.com
+bitnami.com
 recraft.ai
 pkgs.tailscale.com
 builds.parsec.app
@@ -297,3 +300,5 @@ mssg.me
 reve.art
 clip.opus.pro
 capacitorjs.com
+manus.im
+files.manus.cdn
