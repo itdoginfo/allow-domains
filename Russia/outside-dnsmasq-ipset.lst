@@ -12,6 +12,7 @@ ipset=/fssp.gov.ru/vpn_domains
 ipset=/gosuslugi.ru/vpn_domains
 ipset=/gov.ru/vpn_domains
 ipset=/graphql.kinopoisk.ru/vpn_domains
+ipset=/gu-st.ru/vpn_domains
 ipset=/lemanapro.ru/vpn_domains
 ipset=/leroymerlin.ru/vpn_domains
 ipset=/mobileapp.russianpost.ru/vpn_domains

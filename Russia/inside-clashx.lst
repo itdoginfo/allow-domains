@@ -76,6 +76,7 @@ DOMAIN-SUFFIX,bestbuy.com
 DOMAIN-SUFFIX,bestchange.ru
 DOMAIN-SUFFIX,bihus.info
 DOMAIN-SUFFIX,bitdefender.com
+DOMAIN-SUFFIX,bitnami.com
 DOMAIN-SUFFIX,blackseanews.net
 DOMAIN-SUFFIX,blinkshot.io
 DOMAIN-SUFFIX,bluehost.com
@@ -263,6 +264,7 @@ DOMAIN-SUFFIX,gdb.rferl.org
 DOMAIN-SUFFIX,geforcenow.com
 DOMAIN-SUFFIX,gelbooru.com
 DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,geolocation.onetrust.com
 DOMAIN-SUFFIX,germania.one
 DOMAIN-SUFFIX,getoutline.com
@@ -365,6 +367,7 @@ DOMAIN-SUFFIX,kinogo.la
 DOMAIN-SUFFIX,kinogo.uk
 DOMAIN-SUFFIX,kinovod.net
 DOMAIN-SUFFIX,kinozal.guru
+DOMAIN-SUFFIX,kinozal.me
 DOMAIN-SUFFIX,kinozal.tv
 DOMAIN-SUFFIX,kmail-lists.com
 DOMAIN-SUFFIX,knews.kg
@@ -375,6 +378,7 @@ DOMAIN-SUFFIX,korrespondent.net
 DOMAIN-SUFFIX,kovcheg.live
 DOMAIN-SUFFIX,krymr.com
 DOMAIN-SUFFIX,kupujemprodajem.com
+DOMAIN-SUFFIX,kym-cdn.com
 DOMAIN-SUFFIX,lambdalabs.com
 DOMAIN-SUFFIX,lamcdn.net
 DOMAIN-SUFFIX,ldoceonline.com
@@ -402,6 +406,7 @@ DOMAIN-SUFFIX,malwarebytes.com
 DOMAIN-SUFFIX,mangadex.org
 DOMAIN-SUFFIX,mangahub.ru
 DOMAIN-SUFFIX,mangapark.net
+DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,mashable.com
 DOMAIN-SUFFIX,mattermost.com
 DOMAIN-SUFFIX,mbk-news.appspot.com
@@ -493,6 +498,7 @@ DOMAIN-SUFFIX,onlinesim.io
 DOMAIN-SUFFIX,onshape.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openmedia.io
+DOMAIN-SUFFIX,opensanctions.org
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,opposition-news.com
 DOMAIN-SUFFIX,oracle.com
@@ -562,6 +568,7 @@ DOMAIN-SUFFIX,reddxxx.com
 DOMAIN-SUFFIX,redgifs.com
 DOMAIN-SUFFIX,redis.io
 DOMAIN-SUFFIX,redshieldvpn.com
+DOMAIN-SUFFIX,refactoring.guru
 DOMAIN-SUFFIX,remna.st
 DOMAIN-SUFFIX,remove.bg
 DOMAIN-SUFFIX,render-state.to
@@ -653,6 +660,7 @@ DOMAIN-SUFFIX,sputnikipogrom.com
 DOMAIN-SUFFIX,squadbustersgame.com
 DOMAIN-SUFFIX,squareup.com
 DOMAIN-SUFFIX,squietpc.com
+DOMAIN-SUFFIX,startpage.com
 DOMAIN-SUFFIX,static.lostfilm.top
 DOMAIN-SUFFIX,statology.org
 DOMAIN-SUFFIX,steamstat.info
@@ -712,6 +720,7 @@ DOMAIN-SUFFIX,timberland.de
 DOMAIN-SUFFIX,tmdb-image-prod.b-cdn.net
 DOMAIN-SUFFIX,tmdb.com
 DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,torproject.org
 DOMAIN-SUFFIX,torrenteditor.com
 DOMAIN-SUFFIX,torrentgalaxy.to
 DOMAIN-SUFFIX,trailblazer.me

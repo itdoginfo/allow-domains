@@ -12,6 +12,7 @@ nftset=/fssp.gov.ru/4#inet#fw4#vpn_domains
 nftset=/gosuslugi.ru/4#inet#fw4#vpn_domains
 nftset=/gov.ru/4#inet#fw4#vpn_domains
 nftset=/graphql.kinopoisk.ru/4#inet#fw4#vpn_domains
+nftset=/gu-st.ru/4#inet#fw4#vpn_domains
 nftset=/lemanapro.ru/4#inet#fw4#vpn_domains
 nftset=/leroymerlin.ru/4#inet#fw4#vpn_domains
 nftset=/mobileapp.russianpost.ru/4#inet#fw4#vpn_domains
