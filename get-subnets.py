@@ -6,7 +6,7 @@ import os
 import shutil
 
 BGP_TOOLS_URL = 'https://bgp.tools/table.txt'
-USER_AGENT = 'itdog.info - hi@itdog.info'
+HEADERS = { 'User-Agent': 'itdog.info - hi@itdog.info' }
 AS_FILE = 'AS.lst'
 IPv4_DIR = 'Subnets/IPv4'
 IPv6_DIR = 'Subnets/IPv6'
@@ -16,6 +16,7 @@ AS_TWITTER = '13414'
 META = 'meta.lst'
 TWITTER = 'twitter.lst'
 TELEGRAM = 'telegram.lst'
+CLOUDFLARE = 'cloudflare.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -24,6 +25,9 @@ DISCORD_VOICE_V6='https://iplist.opencck.org/?format=text&data=cidr6&site=discor
 DISCORD = 'discord.lst'
 
 TELEGRAM_CIDR_URL = 'https://core.telegram.org/resources/cidr.txt'
+
+CLOUDFLARE_V4='https://www.cloudflare.com/ips-v4'
+CLOUDFLARE_V6='https://www.cloudflare.com/ips-v6'
 
 subnet_list = []
 
@@ -59,7 +63,7 @@ def download_ready_subnets(url_v4, url_v6):
     urls = [(url_v4, 4), (url_v6, 6)]
 
     for url, version in urls:
-        req = urllib.request.Request(url)
+        req = urllib.request.Request(url, headers=HEADERS)
         try:
             with urllib.request.urlopen(req) as response:
                 if response.status == 200:
@@ -100,7 +104,7 @@ def copy_file_legacy(src_filename):
     shutil.copy(src_filename, os.path.join(os.path.dirname(src_filename), new_filename))
 
 if __name__ == '__main__':
-    request = urllib.request.Request(BGP_TOOLS_URL, headers={'User-Agent': USER_AGENT})
+    request = urllib.request.Request(BGP_TOOLS_URL, headers=HEADERS)
     
     with urllib.request.urlopen(request) as response:
         for line in response:
@@ -127,6 +131,11 @@ if __name__ == '__main__':
     ipv4_telegram, ipv6_telegram = download_ready_split_subnets(TELEGRAM_CIDR_URL)
     write_subnets_to_file(ipv4_telegram, f'{IPv4_DIR}/{TELEGRAM}')
     write_subnets_to_file(ipv6_telegram, f'{IPv6_DIR}/{TELEGRAM}')
+
+    # Cloudflare
+    ipv4_cloudflare, ipv6_cloudflare = download_ready_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
+    write_subnets_to_file(ipv4_cloudflare, f'{IPv4_DIR}/{CLOUDFLARE}')
+    write_subnets_to_file(ipv6_cloudflare, f'{IPv6_DIR}/{CLOUDFLARE}')
 
     # Legacy name
     copy_file_legacy(f'{IPv4_DIR}/{META}')

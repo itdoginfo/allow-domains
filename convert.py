@@ -20,7 +20,8 @@ DiscordSubnets = 'Subnets/IPv4/discord.lst'
 MetaSubnets = 'Subnets/IPv4/meta.lst'
 TwitterSubnets = 'Subnets/IPv4/twitter.lst'
 TelegramSubnets = 'Subnets/IPv4/telegram.lst'
-ExcludeServices = {"telegram.lst"}
+CloudflareSubnets = 'Subnets/IPv4/cloudflare.lst'
+ExcludeServices = {"telegram.lst", "cloudflare.lst"}
 
 def raw(src, out):
     domains = set()
@@ -454,6 +455,7 @@ if __name__ == '__main__':
     generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
     generate_srs_combined(MetaSubnets, "Services/meta.lst")
     generate_srs_combined(TelegramSubnets, "Services/telegram.lst")
+    generate_srs_combined(CloudflareSubnets, "Services/cloudflare.lst")
 
     # Xray domains
     prepare_dat_domains(directories, 'russia-inside')
