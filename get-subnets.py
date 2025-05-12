@@ -13,10 +13,15 @@ IPv6_DIR = 'Subnets/IPv6'
 
 AS_META = '32934'
 AS_TWITTER = '13414'
+AS_HETZNER = '24940'
+AS_OVH = '16276'
+
 META = 'meta.lst'
 TWITTER = 'twitter.lst'
 TELEGRAM = 'telegram.lst'
 CLOUDFLARE = 'cloudflare.lst'
+HETZNER = 'hetzner.lst'
+OVH = 'ovh.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -121,6 +126,16 @@ if __name__ == '__main__':
     ipv4_merged_twitter, ipv6_merged_twitter = process_subnets(subnet_list, AS_TWITTER)
     write_subnets_to_file(ipv4_merged_twitter, f'{IPv4_DIR}/{TWITTER}')
     write_subnets_to_file(ipv6_merged_twitter, f'{IPv6_DIR}/{TWITTER}')
+
+    # Hetzner
+    ipv4_merged_hetzner, ipv6_merged_hetzner = process_subnets(subnet_list, AS_HETZNER)
+    write_subnets_to_file(ipv4_merged_hetzner, f'{IPv4_DIR}/{HETZNER}')
+    write_subnets_to_file(ipv6_merged_hetzner, f'{IPv6_DIR}/{HETZNER}')
+
+    # OVH
+    ipv4_merged_ovh, ipv6_merged_ovh = process_subnets(subnet_list, AS_OVH)
+    write_subnets_to_file(ipv4_merged_ovh, f'{IPv4_DIR}/{OVH}')
+    write_subnets_to_file(ipv6_merged_ovh, f'{IPv6_DIR}/{OVH}')
 
     # Discord voice
     ipv4_discord, ipv6_discord = download_ready_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
