@@ -23,7 +23,7 @@ TelegramSubnets = 'Subnets/IPv4/telegram.lst'
 CloudflareSubnets = 'Subnets/IPv4/cloudflare.lst'
 HetznerSubnets = 'Subnets/IPv4/hetzner.lst'
 OVHSubnets = 'Subnets/IPv4/ovh.lst'
-ExcludeServices = {"telegram.lst", "cloudflare.lst", "googleai.lst", "googleplay.lst", 'hetzner.lst', 'ovh.lst'}
+ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst'}
 
 def raw(src, out):
     domains = set()
