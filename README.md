@@ -224,6 +224,10 @@
 # Как найти все-все домены ресурса?
 https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/
 
+# Ресурсы, которых намеренно нет в общих списках
+
+1. В списке GeoBlock больше нет доменов, относящихся к Google AI. Они идут [отдельным списком](https://github.com/itdoginfo/allow-domains/blob/main/Services/google_ai.lst). Это сделано по причине, что многие иностранные серверы Google помечает как RU. 
+
 # Как добавить домены в списки?
 Приветствуется добавление новых доменов и удаление неактуальных.
 
