@@ -264,8 +264,6 @@
 /ip dns static add name=gdb.rferl.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=geforcenow.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gelbooru.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=gemini.google.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=generativelanguage.googleapis.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=geolocation.onetrust.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=germania.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=getoutline.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -767,6 +765,7 @@
 /ip dns static add name=unscreen.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=upwork.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=usa.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=usatoday.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vagrantcloud.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=veeam.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=verstka.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

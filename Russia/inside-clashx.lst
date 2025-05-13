@@ -264,8 +264,6 @@ DOMAIN-SUFFIX,gaming.amazon.com
 DOMAIN-SUFFIX,gdb.rferl.org
 DOMAIN-SUFFIX,geforcenow.com
 DOMAIN-SUFFIX,gelbooru.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,geolocation.onetrust.com
 DOMAIN-SUFFIX,germania.one
 DOMAIN-SUFFIX,getoutline.com
@@ -768,6 +766,7 @@ DOMAIN-SUFFIX,unian.ua
 DOMAIN-SUFFIX,unscreen.com
 DOMAIN-SUFFIX,upwork.com
 DOMAIN-SUFFIX,usa.one
+DOMAIN-SUFFIX,usatoday.com
 DOMAIN-SUFFIX,vagrantcloud.com
 DOMAIN-SUFFIX,veeam.com
 DOMAIN-SUFFIX,verstka.media
