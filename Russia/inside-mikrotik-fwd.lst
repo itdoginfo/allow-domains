@@ -31,6 +31,7 @@
 /ip dns static add name=amdm.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=amedia.site type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=amnezia.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=amplitude.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=amx.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=analog.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=anidub.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -118,6 +119,7 @@
 /ip dns static add name=cherta.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chess.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cisco.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=clamav.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=clashofclans.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=clashroyaleapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=claude.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -162,6 +164,7 @@
 /ip dns static add name=designify.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=developer.nvidia.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=deviantart.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=digash.live type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digikey.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digitalcontent.sky type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digitalocean.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -187,6 +190,7 @@
 /ip dns static add name=discordsays.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=discours.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=disctech.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=disneyplus.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=docs.liquibase.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=dorama.live type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=doramalive.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -261,7 +265,6 @@
 /ip dns static add name=gamedistribution.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gamesrepack.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gaming.amazon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=gdb.rferl.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=geforcenow.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gelbooru.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=geolocation.onetrust.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -297,6 +300,7 @@
 /ip dns static add name=hackmd.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=halooglasi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hashicorp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=hbomax.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hd-rezka.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hdkinoteatr.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=hdrezka.ac type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -383,6 +387,7 @@
 /ip dns static add name=lambdalabs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=lamcdn.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ldoceonline.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=le-production.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=leafletjs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=libgen.li type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=licdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -410,11 +415,13 @@
 /ip dns static add name=manus.im type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mashable.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mattermost.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=max.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mbk-news.appspot.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mediazona.ca type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=medicalnewstoday.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=medium.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=meduza.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=megapeer.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=megapeer.vip type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=merezha.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=meta.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -434,6 +441,7 @@
 /ip dns static add name=multporn.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=muscdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=musical.ly type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=musixmatch.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mydoramy.club type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=myheritage.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=myjetbrains.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -470,6 +478,8 @@
 /ip dns static add name=nitropdf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nnmclub.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nnmstatic.win type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=nordaccount.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=nordcdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=nordvpn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=notepad-plus-plus.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=notion-static.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -579,17 +589,20 @@
 /ip dns static add name=research.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=returnyoutubedislikeapi.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=reve.art type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rezka-ua.in type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rezka.ag type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rezka.my type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rezkify.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rezonans.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rf.dobrochan.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rferl.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=riperam.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=roar-review.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=root-nation.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=roskomsvoboda.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rublacklist.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rule34.art type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rule34.xxx type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.delfi.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.jauns.lv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rutor.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -655,6 +668,7 @@
 /ip dns static add name=sovetromantica.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spacelift.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spektr.press type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=spiceworks.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spitfireaudio.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spotify.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spreadthesign.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -730,6 +744,7 @@
 /ip dns static add name=trailhead.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trellix.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trueblackmetalradio.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=truthsocial.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tsmc.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ttwstatic.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=turbobit.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -772,6 +787,7 @@
 /ip dns static add name=vesma.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vesma.today type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vesty.co.il type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=viber.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vice.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vine.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vipergirls.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -786,8 +802,10 @@
 /ip dns static add name=vpngen.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vpnlove.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vpnpay.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=vyos.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=w.atwiki.jp type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=walmart.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=watchguard.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=watermarkremover.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=weather.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=webnames.ca type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -800,6 +818,7 @@
 /ip dns static add name=wikidot.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wilsoncenter.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=windows10spotlight.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=windsurf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wonderzine.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wpengine.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=www3.corsair.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
