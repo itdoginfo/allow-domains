@@ -77,7 +77,7 @@ jobs:
       run: echo "TAG_NAME=$(date +'%Y-%m-%d_%H-%M')" >> $GITHUB_ENV
 
     - name: Release
-      uses: softprops/action-gh-release@v2.1.0
+      uses: softprops/action-gh-release@v2.2.2
       with:
         files: |
           ${{ github.workspace }}/SRS/*.srs
