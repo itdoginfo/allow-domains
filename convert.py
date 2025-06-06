@@ -391,6 +391,26 @@ def prepare_dat_domains(domains, output_name, dirs=[]):
         for domain, attrs in domain_attrs.items():
             line = domain + "".join(attrs)
             out_f.write(f"{line}\n")
+
+def prepare_dat_combined(dirs):
+    import shutil
+    
+    output_lists_directory = 'geosite_data'
+    os.makedirs(output_lists_directory, exist_ok=True)
+
+    for directory in dirs:
+        if not os.path.isdir(directory):
+            continue
+
+        for filename in os.listdir(directory):
+            source_path = os.path.join(directory, filename)
+            if not os.path.isfile(source_path):
+                continue
+
+            new_name = os.path.splitext(filename)[0].replace('_', '-')
+            destination_path = os.path.join(output_lists_directory, new_name)
+
+            shutil.copyfile(source_path, destination_path)
  
 def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', output_directory='DAT'):
     os.makedirs(output_directory, exist_ok=True)
@@ -472,4 +492,5 @@ if __name__ == '__main__':
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
     prepare_dat_domains(russia_outside, 'russia-outside')
     prepare_dat_domains(ukraine_inside, 'ukraine-inside')
+    prepare_dat_combined(directories)
     generate_dat_domains()
