@@ -31,7 +31,7 @@ jobs:
         -v ${{ github.workspace }}/Services:/app/Services \
         -v ${{ github.workspace }}/SRS:/app/SRS \
         -v ${{ github.workspace }}/DAT:/app/DAT \
-        itdoginfo/compilesrs:0.1.17
+        itdoginfo/compilesrs:0.1.18
 
     - name: Check Russia/inside-dnsmasq-ipset
       uses: itdoginfo/dnsmasq-action@0.1
