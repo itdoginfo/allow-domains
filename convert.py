@@ -362,28 +362,35 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
         print(f"Compile error {output_file_path}: {e}")
 
 
-def prepare_dat_domains(domains_or_dirs, output_name):
+def prepare_dat_domains(domains, output_name, dirs=[]):
     output_lists_directory = 'geosite_data'
-
     os.makedirs(output_lists_directory, exist_ok=True)
 
-    extracted_domains = []
+    domain_attrs = {domain: [] for domain in domains}
 
-    if all(os.path.isdir(d) for d in domains_or_dirs):
-        for directory in domains_or_dirs:
-            for filename in os.listdir(directory):
-                file_path = os.path.join(directory, filename)
+    for directory in dirs:
+        if not os.path.isdir(directory):
+            continue
+        for filename in os.listdir(directory):
+            file_path = os.path.join(directory, filename)
+            if not os.path.isfile(file_path):
+                continue
 
-                if os.path.isfile(file_path):
-                    with open(file_path, 'r', encoding='utf-8') as file:
-                        attribute = os.path.splitext(filename)[0]
-                        extracted_domains.extend(f"{line.strip()} @{attribute}" for line in file if line.strip())
-    else:
-        extracted_domains = domains_or_dirs
+            attribute = os.path.splitext(filename)[0].replace('_', '-')
+
+            with open(file_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    domain = line.strip()
+                    if not domain:
+                        continue
+                    if domain in domain_attrs:
+                        domain_attrs[domain].append(f" @{attribute}")
 
     output_file_path = os.path.join(output_lists_directory, output_name)
-    with open(output_file_path, 'w', encoding='utf-8') as file:
-        file.writelines(f"{name}\n" for name in extracted_domains)
+    with open(output_file_path, 'w', encoding='utf-8') as out_f:
+        for domain, attrs in domain_attrs.items():
+            line = domain + "".join(attrs)
+            out_f.write(f"{line}\n")
  
 def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', output_directory='DAT'):
     os.makedirs(output_directory, exist_ok=True)
