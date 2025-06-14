@@ -23,7 +23,8 @@ TelegramSubnets = 'Subnets/IPv4/telegram.lst'
 CloudflareSubnets = 'Subnets/IPv4/cloudflare.lst'
 HetznerSubnets = 'Subnets/IPv4/hetzner.lst'
 OVHSubnets = 'Subnets/IPv4/ovh.lst'
-ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst'}
+AmazonSubnets = 'Subnets/IPv4/amazon.lst'
+ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'amazon.lst'}
 
 def raw(src, out):
     domains = set()
@@ -224,7 +225,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
-    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh"}
+    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "amazon"}
 
     for directory in directories:
         for filename in os.listdir(directory):
@@ -305,7 +306,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
     except subprocess.CalledProcessError as e:
         print(f"Compile error {output_file_path}: {e}")
 
-def generate_srs_combined(input_subnets_file, input_domains_file, output_json_directory='JSON', compiled_output_directory='SRS'):
+def generate_srs_combined(input_subnets_file, input_domains_file, input_regex_file=None, output_json_directory='JSON', compiled_output_directory='SRS'):
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
@@ -343,6 +344,11 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
                 }
             ]
         }
+    
+    if input_regex_file and os.path.exists(input_regex_file):
+        with open(input_regex_file, 'r', encoding='utf-8') as file:
+            regexs = [line.strip() for line in file if line.strip()]
+            data['rules'][0]['domain_regex'] = regexs
 
     filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}.json")
@@ -487,6 +493,7 @@ if __name__ == '__main__':
     generate_srs_combined(CloudflareSubnets, "Services/cloudflare.lst")
     generate_srs_combined(HetznerSubnets, "Services/hetzner.lst")
     generate_srs_combined(OVHSubnets, "Services/ovh.lst")
+    generate_srs_combined(AmazonSubnets, "Services/amazon.lst", "Regex/amazon.lst")
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
