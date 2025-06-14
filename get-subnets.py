@@ -4,6 +4,7 @@ import ipaddress
 import urllib.request
 import os
 import shutil
+import json
 
 BGP_TOOLS_URL = 'https://bgp.tools/table.txt'
 HEADERS = { 'User-Agent': 'itdog.info - hi@itdog.info' }
@@ -22,6 +23,7 @@ TELEGRAM = 'telegram.lst'
 CLOUDFLARE = 'cloudflare.lst'
 HETZNER = 'hetzner.lst'
 OVH = 'ovh.lst'
+AMAZON = 'amazon.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -33,6 +35,8 @@ TELEGRAM_CIDR_URL = 'https://core.telegram.org/resources/cidr.txt'
 
 CLOUDFLARE_V4='https://www.cloudflare.com/ips-v4'
 CLOUDFLARE_V6='https://www.cloudflare.com/ips-v6'
+
+AMAZON_JSON_URL = 'https://ip-ranges.amazonaws.com/ip-ranges.json'
 
 subnet_list = []
 
@@ -98,6 +102,21 @@ def download_ready_split_subnets(url):
     
     return ipv4_subnets, ipv6_subnets
 
+def download_amazon_json_subnets(url):
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as response:
+        data = json.load(response)
+    ipv4_subnets = []
+    ipv6_subnets = []
+    for prefix in ['prefixes', 'ipv6_prefixes']:
+        for record in data[prefix]:
+            cidr = record['ip_prefix' if prefix == 'prefixes' else 'ipv6_prefix']
+            if isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv4Network):
+                ipv4_subnets.append(cidr)
+            elif isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv6Network):
+                ipv6_subnets.append(cidr)
+    return ipv4_subnets, ipv6_subnets
+
 def write_subnets_to_file(subnets, filename):
     with open(filename, 'w') as file:
         for subnet in subnets:
@@ -151,6 +170,11 @@ if __name__ == '__main__':
     ipv4_cloudflare, ipv6_cloudflare = download_ready_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
     write_subnets_to_file(ipv4_cloudflare, f'{IPv4_DIR}/{CLOUDFLARE}')
     write_subnets_to_file(ipv6_cloudflare, f'{IPv6_DIR}/{CLOUDFLARE}')
+
+    # Amazon
+    ipv4_amazon, ipv6_amazon = download_amazon_json_subnets(AMAZON_JSON_URL)
+    write_subnets_to_file(ipv4_amazon, f'{IPv4_DIR}/{AMAZON}')
+    write_subnets_to_file(ipv6_amazon, f'{IPv6_DIR}/{AMAZON}')
 
     # Legacy name
     copy_file_legacy(f'{IPv4_DIR}/{META}')
