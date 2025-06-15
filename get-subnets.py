@@ -112,8 +112,10 @@ def download_amazon_json_subnets(url):
         for record in data[prefix]:
             cidr = record['ip_prefix' if prefix == 'prefixes' else 'ipv6_prefix']
             if isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv4Network):
+                if cidr in ipv4_subnets: continue
                 ipv4_subnets.append(cidr)
             elif isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv6Network):
+                if cidr in ipv6_subnets: continue
                 ipv6_subnets.append(cidr)
     return ipv4_subnets, ipv6_subnets
 
