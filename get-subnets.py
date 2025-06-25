@@ -24,6 +24,7 @@ CLOUDFLARE = 'cloudflare.lst'
 HETZNER = 'hetzner.lst'
 OVH = 'ovh.lst'
 AMAZON = 'amazon.lst'
+CLOUDFRONT = 'cloudfront.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -90,7 +91,7 @@ def download_ready_subnets(url_v4, url_v6):
         except Exception as e:
             print(f"Query error: {e}")
 
-    return ipv4_subnets, ipv6_subnets
+    return subnet_summarization(ipv4_subnets), subnet_summarization(ipv6_subnets)
 
 def download_ready_split_subnets(url):
     req = urllib.request.Request(url)
@@ -100,9 +101,9 @@ def download_ready_split_subnets(url):
     ipv4_subnets = [cidr for cidr in subnets if isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv4Network)]
     ipv6_subnets = [cidr for cidr in subnets if isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv6Network)]
     
-    return ipv4_subnets, ipv6_subnets
+    return subnet_summarization(ipv4_subnets), subnet_summarization(ipv6_subnets)
 
-def download_amazon_json_subnets(url):
+def download_amazon_json_subnets(url, filter=None):
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
         data = json.load(response)
@@ -111,23 +112,24 @@ def download_amazon_json_subnets(url):
     for prefix in ['prefixes', 'ipv6_prefixes']:
         for record in data[prefix]:
             cidr = record['ip_prefix' if prefix == 'prefixes' else 'ipv6_prefix']
+            if filter and record['service'] != filter: continue
             if isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv4Network):
                 if cidr in ipv4_subnets: continue
                 ipv4_subnets.append(cidr)
             elif isinstance(ipaddress.ip_network(cidr, strict=False), ipaddress.IPv6Network):
                 if cidr in ipv6_subnets: continue
                 ipv6_subnets.append(cidr)
-    return ipv4_subnets, ipv6_subnets
+    return subnet_summarization(ipv4_subnets), subnet_summarization(ipv6_subnets)
 
 def write_subnets_to_file(subnets, filename):
-    with open(filename, 'w') as file:
+    with open(filename, 'w', newline='\n') as file:
         for subnet in subnets:
             file.write(f'{subnet}\n')
 
 def copy_file_legacy(src_filename):
     base_filename = os.path.basename(src_filename)
     new_filename = base_filename.capitalize()
-    shutil.copy(src_filename, os.path.join(os.path.dirname(src_filename), new_filename))
+    shutil.move(src_filename, os.path.join(os.path.dirname(src_filename), new_filename))
 
 if __name__ == '__main__':
     request = urllib.request.Request(BGP_TOOLS_URL, headers=HEADERS)
@@ -177,6 +179,11 @@ if __name__ == '__main__':
     ipv4_amazon, ipv6_amazon = download_amazon_json_subnets(AMAZON_JSON_URL)
     write_subnets_to_file(ipv4_amazon, f'{IPv4_DIR}/{AMAZON}')
     write_subnets_to_file(ipv6_amazon, f'{IPv6_DIR}/{AMAZON}')
+
+    # Cloudfront
+    ipv4_cloudfront, ipv6_cloudfront = download_amazon_json_subnets(AMAZON_JSON_URL, 'CLOUDFRONT')
+    write_subnets_to_file(ipv4_cloudfront, f'{IPv4_DIR}/{CLOUDFRONT}')
+    write_subnets_to_file(ipv6_cloudfront, f'{IPv6_DIR}/{CLOUDFRONT}')
 
     # Legacy name
     copy_file_legacy(f'{IPv4_DIR}/{META}')

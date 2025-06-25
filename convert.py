@@ -24,6 +24,7 @@ CloudflareSubnets = 'Subnets/IPv4/cloudflare.lst'
 HetznerSubnets = 'Subnets/IPv4/hetzner.lst'
 OVHSubnets = 'Subnets/IPv4/ovh.lst'
 AmazonSubnets = 'Subnets/IPv4/amazon.lst'
+CloudfrontSubnets = 'Subnets/IPv4/cloudfront.lst'
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'amazon.lst'}
 
 def raw(src, out):
@@ -50,7 +51,7 @@ def raw(src, out):
 
     domains = sorted(domains)
 
-    with open(f'{out}-raw.lst', 'w') as file:
+    with open(f'{out}-raw.lst', 'w', newline='\n') as file:
         for name in domains:
             file.write(f'{name}\n')
 
@@ -80,11 +81,11 @@ def dnsmasq(src, out, remove={'google.com'}):
     domains = domains - remove
     domains = sorted(domains)
 
-    with open(f'{out}-dnsmasq-nfset.lst', 'w') as file:
+    with open(f'{out}-dnsmasq-nfset.lst', 'w', newline='\n') as file:
         for name in domains:
             file.write(f'nftset=/{name}/4#inet#fw4#vpn_domains\n')
 
-    with open(f'{out}-dnsmasq-ipset.lst', 'w') as file:
+    with open(f'{out}-dnsmasq-ipset.lst', 'w', newline='\n') as file:
         for name in domains:
             file.write(f'ipset=/{name}/vpn_domains\n')
 
@@ -113,7 +114,7 @@ def clashx(src, out, remove={'google.com'}):
     domains = domains - remove
     domains = sorted(domains)
 
-    with open(f'{out}-clashx.lst', 'w') as file:
+    with open(f'{out}-clashx.lst', 'w', newline='\n') as file:
         for name in domains:
             file.write(f'DOMAIN-SUFFIX,{name}\n')
 
@@ -142,7 +143,7 @@ def kvas(src, out, remove={'google.com'}):
     domains = domains - remove
     domains = sorted(domains)
 
-    with open(f'{out}-kvas.lst', 'w') as file:
+    with open(f'{out}-kvas.lst', 'w', newline='\n') as file:
         for name in domains:
             file.write(f'{name}\n')
 
@@ -171,7 +172,7 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
     domains = domains - remove
     domains = sorted(domains)
 
-    with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
+    with open(f'{out}-mikrotik-fwd.lst', 'w', newline='\n') as file:
         for name in domains:
             if name.startswith('.'):
                 file.write(f'/ip dns static add name=*.{name[1:]} type=FWD address-list=allow-domains forward-to=localhost\n')
@@ -208,7 +209,7 @@ def generate_srs_domains(domains, output_name):
     srs_file_path = os.path.join(compiled_output_directory, f"{output_name}.srs")
 
     try:
-        with open(json_file_path, 'w', encoding='utf-8') as json_file:
+        with open(json_file_path, 'w', encoding='utf-8', newline='\n') as json_file:
             json.dump(data, json_file, indent=4)
         print(f"JSON file generated: {json_file_path}")
 
@@ -252,7 +253,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
 
             output_file_path = os.path.join(output_json_directory, f"{os.path.splitext(filename)[0]}.json")
 
-            with open(output_file_path, 'w', encoding='utf-8') as output_file:
+            with open(output_file_path, 'w', encoding='utf-8', newline='\n') as output_file:
                 json.dump(data, output_file, indent=4)
 
             print(f"JSON file generated: {output_file_path}")
@@ -292,7 +293,7 @@ def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_outp
     filename = os.path.splitext(os.path.basename(input_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}.json")
 
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    with open(output_file_path, 'w', encoding='utf-8', newline='\n') as output_file:
         json.dump(data, output_file, indent=4)
 
     print(f"JSON file generated: {output_file_path}")
@@ -353,7 +354,7 @@ def generate_srs_combined(input_subnets_file, input_domains_file, input_regex_fi
     filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}.json")
 
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    with open(output_file_path, 'w', encoding='utf-8', newline='\n') as output_file:
         json.dump(data, output_file, indent=4)
 
     print(f"JSON file generated: {output_file_path}")
@@ -393,7 +394,7 @@ def prepare_dat_domains(domains, output_name, dirs=[]):
                         domain_attrs[domain].append(f" @{attribute}")
 
     output_file_path = os.path.join(output_lists_directory, output_name)
-    with open(output_file_path, 'w', encoding='utf-8') as out_f:
+    with open(output_file_path, 'w', encoding='utf-8', newline='\n') as out_f:
         for domain, attrs in domain_attrs.items():
             line = domain + "".join(attrs)
             out_f.write(f"{line}\n")
@@ -494,6 +495,7 @@ if __name__ == '__main__':
     generate_srs_combined(HetznerSubnets, "Services/hetzner.lst")
     generate_srs_combined(OVHSubnets, "Services/ovh.lst")
     generate_srs_combined(AmazonSubnets, "Services/amazon.lst", "Regex/amazon.lst")
+    generate_srs_combined(CloudfrontSubnets)
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
