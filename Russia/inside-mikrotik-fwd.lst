@@ -786,7 +786,6 @@
 /ip dns static add name=trueblackmetalradio.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=truthsocial.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tsmc.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=ttvnw.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ttwstatic.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=turbobit.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tuta.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -822,6 +821,7 @@
 /ip dns static add name=upwork.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=usa.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=usatoday.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=usher.ttvnw.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vagrantcloud.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=veeam.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=verstka.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
