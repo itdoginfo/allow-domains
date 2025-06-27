@@ -304,6 +304,7 @@ ipset=/goodreads.com/vpn_domains
 ipset=/googlevideo.com/vpn_domains
 ipset=/gpsonextra.net/vpn_domains
 ipset=/gpu-monkey.com/vpn_domains
+ipset=/gql.twitch.tv/vpn_domains
 ipset=/gr-assets.com/vpn_domains
 ipset=/grafana.com/vpn_domains
 ipset=/grani.ru/vpn_domains
