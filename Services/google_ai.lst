@@ -4,7 +4,6 @@ geller-pa.googleapis.com
 generativelanguage.googleapis.com
 proactivebackend-pa.googleapis.com
 ai.google.dev
-alkalicore-pa.clients6.google.com
 alkalimakersuite-pa.clients6.google.com
 generativeai.google
 makersuite.google.com
@@ -13,3 +12,8 @@ bard.google.com
 gemini.google
 gemini.google.com
 notebooklm.google.com
+clients6.google.com
+notebooklm.google
+jules.google
+jules.google.com
+labs.google
