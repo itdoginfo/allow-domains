@@ -707,6 +707,7 @@
 /ip dns static add name=spacelift.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spektr.press type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spiceworks.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=spiegel.de type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spitfireaudio.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spotify.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=spreadthesign.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
