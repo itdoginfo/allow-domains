@@ -435,6 +435,7 @@ DOMAIN-SUFFIX,mail-api.proton.me
 DOMAIN-SUFFIX,mailfence.com
 DOMAIN-SUFFIX,mailinator.com
 DOMAIN-SUFFIX,mailo.com
+DOMAIN-SUFFIX,make.com
 DOMAIN-SUFFIX,malwarebytes.com
 DOMAIN-SUFFIX,mangadex.org
 DOMAIN-SUFFIX,mangahub.ru
@@ -598,7 +599,6 @@ DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
 DOMAIN-SUFFIX,qt.io
-DOMAIN-SUFFIX,quickconnect.to
 DOMAIN-SUFFIX,quora.com
 DOMAIN-SUFFIX,quora.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,r4.err.ee
