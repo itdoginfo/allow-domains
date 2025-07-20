@@ -707,6 +707,7 @@ ipset=/snyk.io/vpn_domains
 ipset=/sobesednik.com/vpn_domains
 ipset=/solarwinds.com/vpn_domains
 ipset=/sora.com/vpn_domains
+ipset=/sotaproject.com/vpn_domains
 ipset=/soundcloud.cloud/vpn_domains
 ipset=/soundcloud.com/vpn_domains
 ipset=/sovetromantica.com/vpn_domains
