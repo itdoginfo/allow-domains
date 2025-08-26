@@ -59,6 +59,7 @@ DOMAIN-SUFFIX,api.service-kp.com
 DOMAIN-SUFFIX,api.theins.info
 DOMAIN-SUFFIX,api.themoviedb.org
 DOMAIN-SUFFIX,apkmirror.com
+DOMAIN-SUFFIX,app.zerossl.com
 DOMAIN-SUFFIX,arbat.media
 DOMAIN-SUFFIX,archive.ph
 DOMAIN-SUFFIX,archiveofourown.org
@@ -367,6 +368,7 @@ DOMAIN-SUFFIX,iichan.hk
 DOMAIN-SUFFIX,ikea.com
 DOMAIN-SUFFIX,ilook.tv
 DOMAIN-SUFFIX,image.tmdb.org
+DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,important-stories.com
 DOMAIN-SUFFIX,indiehackers.com
 DOMAIN-SUFFIX,infineon.com
@@ -395,6 +397,8 @@ DOMAIN-SUFFIX,jnn-pa.googleapis.com
 DOMAIN-SUFFIX,jskor.ill.in.ua
 DOMAIN-SUFFIX,jut-su.net
 DOMAIN-SUFFIX,jut.su
+DOMAIN-SUFFIX,jw-russia.org
+DOMAIN-SUFFIX,jw.org
 DOMAIN-SUFFIX,kaktus.media
 DOMAIN-SUFFIX,kaleido.ai
 DOMAIN-SUFFIX,kamatera.com
@@ -477,6 +481,7 @@ DOMAIN-SUFFIX,metla.press
 DOMAIN-SUFFIX,metopera.org
 DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
+DOMAIN-SUFFIX,miracleptr.wordpress.com
 DOMAIN-SUFFIX,mixcloud.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,monoprice.com
@@ -727,6 +732,8 @@ DOMAIN-SUFFIX,slifki.biz
 DOMAIN-SUFFIX,smartbear.co
 DOMAIN-SUFFIX,smartbear.com
 DOMAIN-SUFFIX,smartdeploy.com
+DOMAIN-SUFFIX,sms-activate.io
+DOMAIN-SUFFIX,snapgene.com
 DOMAIN-SUFFIX,sndcdn.com
 DOMAIN-SUFFIX,snort.org
 DOMAIN-SUFFIX,snyk.io
@@ -852,6 +859,7 @@ DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,typing.com
 DOMAIN-SUFFIX,uaudio.com
 DOMAIN-SUFFIX,ui.ill.in.ua
+DOMAIN-SUFFIX,uizard.io
 DOMAIN-SUFFIX,ukr.net
 DOMAIN-SUFFIX,ukr.radio
 DOMAIN-SUFFIX,ukrtelcdn.net
