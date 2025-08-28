@@ -15,6 +15,7 @@ AS_META = '32934'
 AS_TWITTER = '13414'
 AS_HETZNER = '24940'
 AS_OVH = '16276'
+AS_DO = '14061'
 
 META = 'meta.lst'
 TWITTER = 'twitter.lst'
@@ -22,6 +23,7 @@ TELEGRAM = 'telegram.lst'
 CLOUDFLARE = 'cloudflare.lst'
 HETZNER = 'hetzner.lst'
 OVH = 'ovh.lst'
+DO = 'do.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -136,6 +138,11 @@ if __name__ == '__main__':
     ipv4_merged_ovh, ipv6_merged_ovh = process_subnets(subnet_list, AS_OVH)
     write_subnets_to_file(ipv4_merged_ovh, f'{IPv4_DIR}/{OVH}')
     write_subnets_to_file(ipv6_merged_ovh, f'{IPv6_DIR}/{OVH}')
+
+    # Digital Ocean
+    ipv4_merged_do, ipv6_merged_do = process_subnets(subnet_list, AS_DO)
+    write_subnets_to_file(ipv4_merged_do, f'{IPv4_DIR}/{DO}')
+    write_subnets_to_file(ipv6_merged_do, f'{IPv6_DIR}/{DO}')
 
     # Discord voice
     ipv4_discord, ipv6_discord = download_ready_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
