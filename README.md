@@ -149,6 +149,15 @@
 </details>
 
 <details>
+  <summary>H.O.D.C.A (Hetzner, OVH, DO, Cloudflare, AWS</summary>
+
+- [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst)
+- [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/hodca.srs)
+- geosite:russia-inside@hodca
+
+</details>
+
+<details>
   <summary>Cloudflare</summary>
 
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/cloudflare.lst)
@@ -187,7 +196,7 @@
 <details>
   <summary>Telegram</summary>
 
-- [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/telegram.lst)
+- [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/telegram.srs)
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst)
 
