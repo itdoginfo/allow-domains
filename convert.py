@@ -226,7 +226,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
-    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront", "hodca"}
+    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront"}
 
     for directory in directories:
         for filename in os.listdir(directory):
