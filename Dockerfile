@@ -1,4 +1,4 @@
-FROM ghcr.io/sagernet/sing-box:v1.11.3 AS sing-box
+FROM ghcr.io/sagernet/sing-box:v1.11.15 AS sing-box
 
 FROM golang:1.22.12-alpine3.21 AS go-builder
 
