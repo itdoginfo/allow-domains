@@ -151,7 +151,6 @@ nftset=/clerk.dev/4#inet#fw4#vpn_domains
 nftset=/clickup.com/4#inet#fw4#vpn_domains
 nftset=/clip.opus.pro/4#inet#fw4#vpn_domains
 nftset=/cloudflare.com/4#inet#fw4#vpn_domains
-nftset=/cloudfront.net/4#inet#fw4#vpn_domains
 nftset=/cloudtorrents.com/4#inet#fw4#vpn_domains
 nftset=/cms-twdigitalassets.com/4#inet#fw4#vpn_domains
 nftset=/cnd2exp.online/4#inet#fw4#vpn_domains

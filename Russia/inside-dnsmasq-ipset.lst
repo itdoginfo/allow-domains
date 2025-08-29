@@ -151,7 +151,6 @@ ipset=/clerk.dev/vpn_domains
 ipset=/clickup.com/vpn_domains
 ipset=/clip.opus.pro/vpn_domains
 ipset=/cloudflare.com/vpn_domains
-ipset=/cloudfront.net/vpn_domains
 ipset=/cloudtorrents.com/vpn_domains
 ipset=/cms-twdigitalassets.com/vpn_domains
 ipset=/cnd2exp.online/vpn_domains
