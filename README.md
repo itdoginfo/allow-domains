@@ -34,6 +34,7 @@
 - Tik-Tok
 - Twitter
 - YouTube
+- Google Meet
 
 ## Страны
 ### Россия
@@ -231,6 +232,16 @@
 - geosite:russia-inside@youtube
 
 </details>
+
+
+<details>
+  <summary>Google Meet</summary>
+
+- [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/google_meet.lst)
+- [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/google_meet.srs)
+
+</details>
+
 
 # Как найти все-все домены ресурса?
 https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/
