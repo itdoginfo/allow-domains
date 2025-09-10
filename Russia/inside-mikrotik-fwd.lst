@@ -54,7 +54,6 @@
 /ip dns static add name=ansys.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=anthropic.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=aol.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=api.github.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.jetbrains.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.service-kp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.theins.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
