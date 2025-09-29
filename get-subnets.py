@@ -17,6 +17,7 @@ AS_TWITTER = '13414'
 AS_HETZNER = '24940'
 AS_OVH = '16276'
 AS_DIGITALOCEAN = '14061'
+AS_GOOGLE_MEET = '15169'
 
 META = 'meta.lst'
 TWITTER = 'twitter.lst'
@@ -26,6 +27,7 @@ HETZNER = 'hetzner.lst'
 OVH = 'ovh.lst'
 DIGITALOCEAN = 'digitalocean.lst'
 CLOUDFRONT = 'cloudfront.lst'
+GOOGLE_MEET= 'google_meet.lst'
 
 # From https://iplist.opencck.org/
 DISCORD_VOICE_V4='https://iplist.opencck.org/?format=text&data=cidr4&site=discord.gg&site=discord.media'
@@ -190,6 +192,11 @@ if __name__ == '__main__':
     ipv4_cloudfront, ipv6_cloudfront = download_aws_cloudfront_subnets()
     write_subnets_to_file(ipv4_cloudfront, f'{IPv4_DIR}/{CLOUDFRONT}')
     write_subnets_to_file(ipv6_cloudfront, f'{IPv6_DIR}/{CLOUDFRONT}')
+
+    # Google Meet
+    ipv4_merged_google_meet, ipv6_merged_google_meet = process_subnets(subnet_list, AS_GOOGLE_MEET)
+    write_subnets_to_file(ipv4_merged_google_meet, f'{IPv4_DIR}/{GOOGLE_MEET}')
+    write_subnets_to_file(ipv6_merged_google_meet, f'{IPv6_DIR}/{GOOGLE_MEET}')
 
     # Legacy name
     copy_file_legacy(f'{IPv4_DIR}/{META}')
