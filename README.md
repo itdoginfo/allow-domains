@@ -23,6 +23,7 @@
 - GeoBlock
 - News
 - Porn
+- H.O.D.C.A (Hetzner, OVH, Digital Ocean, Cloudflare, AWS + Akamai)
 
 ## Сервисы
 - Cloudflare
