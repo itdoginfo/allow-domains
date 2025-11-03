@@ -25,6 +25,8 @@
 /ip dns static add name=ahrefs.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ai-chat.bsg.brave.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ai.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=aircanada.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=akc.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=allegro.pl type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=alphacoders.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=alza.hu type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -66,6 +68,7 @@
 /ip dns static add name=archiveofourown.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=as6723.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=assets.heroku.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=atlassian.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=atn.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=att.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=attachments.f95zone.to type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -134,6 +137,7 @@
 /ip dns static add name=chaturbate.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cherta.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chess.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=chesscomfiles.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=chub.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cisco.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cisecurity.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -159,6 +163,7 @@
 /ip dns static add name=coldfilm.xyz type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=colta.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=community.sophos.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=connect.ngrok-agent.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=contabo.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coomer.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=copilot.microsoft.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -195,6 +200,7 @@
 /ip dns static add name=developer.nvidia.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=devexpress.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=deviantart.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=diabrowser.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digash.live type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digikey.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=digitalcontent.sky type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -406,6 +412,7 @@
 /ip dns static add name=image.tmdb.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=imgur.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=important-stories.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=indeed.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=indiehackers.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=infineon.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=insearch.site type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -425,7 +432,6 @@
 /ip dns static add name=is.fi type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=istories.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=itch.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=itdog.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=itninja.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=itsmycity.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=jamf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -536,6 +542,7 @@
 /ip dns static add name=monoprice.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=more.fm type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=moscowtimes.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=mouser.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mouser.fi type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mssg.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mullvad.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -554,6 +561,7 @@
 /ip dns static add name=nba.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=neformat.com.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=neo4j.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=netacad.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=netapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=netflix.ca type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=netflix.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -624,6 +632,7 @@
 /ip dns static add name=openrouter.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opensanctions.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opensea.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=opentrackr.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opposition-news.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=oracle.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ovd.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -801,6 +810,7 @@
 /ip dns static add name=simplix.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=singlekey-id.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=site.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=siteground.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=skat.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sketchup.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=skiff.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -821,6 +831,7 @@
 /ip dns static add name=snyk.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sobesednik.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=solarwinds.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=sonara.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sora.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sotaproject.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=soundcloud.cloud type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -913,6 +924,7 @@
 /ip dns static add name=trae.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trailblazer.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trailhead.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=transferwise.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trellix.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tria.ge type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=trueblackmetalradio.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -928,6 +940,9 @@
 /ip dns static add name=tvrain.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tweetdeck.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=twimg.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=twin.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=twinlife-systems.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=twinme.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=twirpx.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=twitpic.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=twitter.biz type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -997,6 +1012,7 @@
 /ip dns static add name=wilsoncenter.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=windows10spotlight.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=windsurf.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=wise.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wonderzine.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wpengine.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=wunderground.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost

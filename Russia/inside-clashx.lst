@@ -25,6 +25,8 @@ DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,ahrefs.com
 DOMAIN-SUFFIX,ai-chat.bsg.brave.com
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,aircanada.com
+DOMAIN-SUFFIX,akc.org
 DOMAIN-SUFFIX,allegro.pl
 DOMAIN-SUFFIX,alphacoders.com
 DOMAIN-SUFFIX,alza.hu
@@ -66,6 +68,7 @@ DOMAIN-SUFFIX,archive.ph
 DOMAIN-SUFFIX,archiveofourown.org
 DOMAIN-SUFFIX,as6723.net
 DOMAIN-SUFFIX,assets.heroku.com
+DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atn.ua
 DOMAIN-SUFFIX,att.com
 DOMAIN-SUFFIX,attachments.f95zone.to
@@ -134,6 +137,7 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,cherta.media
 DOMAIN-SUFFIX,chess.com
+DOMAIN-SUFFIX,chesscomfiles.com
 DOMAIN-SUFFIX,chub.ai
 DOMAIN-SUFFIX,cisco.com
 DOMAIN-SUFFIX,cisecurity.org
@@ -159,6 +163,7 @@ DOMAIN-SUFFIX,coldfilm.ink
 DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,community.sophos.com
+DOMAIN-SUFFIX,connect.ngrok-agent.com
 DOMAIN-SUFFIX,contabo.com
 DOMAIN-SUFFIX,coomer.su
 DOMAIN-SUFFIX,copilot.microsoft.com
@@ -195,6 +200,7 @@ DOMAIN-SUFFIX,designify.com
 DOMAIN-SUFFIX,developer.nvidia.com
 DOMAIN-SUFFIX,devexpress.com
 DOMAIN-SUFFIX,deviantart.com
+DOMAIN-SUFFIX,diabrowser.com
 DOMAIN-SUFFIX,digash.live
 DOMAIN-SUFFIX,digikey.com
 DOMAIN-SUFFIX,digitalcontent.sky
@@ -406,6 +412,7 @@ DOMAIN-SUFFIX,ilook.tv
 DOMAIN-SUFFIX,image.tmdb.org
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,important-stories.com
+DOMAIN-SUFFIX,indeed.com
 DOMAIN-SUFFIX,indiehackers.com
 DOMAIN-SUFFIX,infineon.com
 DOMAIN-SUFFIX,insearch.site
@@ -425,7 +432,6 @@ DOMAIN-SUFFIX,iptv.online
 DOMAIN-SUFFIX,is.fi
 DOMAIN-SUFFIX,istories.media
 DOMAIN-SUFFIX,itch.io
-DOMAIN-SUFFIX,itdog.info
 DOMAIN-SUFFIX,itninja.com
 DOMAIN-SUFFIX,itsmycity.ru
 DOMAIN-SUFFIX,jamf.com
@@ -536,6 +542,7 @@ DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,monoprice.com
 DOMAIN-SUFFIX,more.fm
 DOMAIN-SUFFIX,moscowtimes.ru
+DOMAIN-SUFFIX,mouser.com
 DOMAIN-SUFFIX,mouser.fi
 DOMAIN-SUFFIX,mssg.me
 DOMAIN-SUFFIX,mullvad.net
@@ -554,6 +561,7 @@ DOMAIN-SUFFIX,navalny.com
 DOMAIN-SUFFIX,nba.com
 DOMAIN-SUFFIX,neformat.com.ua
 DOMAIN-SUFFIX,neo4j.com
+DOMAIN-SUFFIX,netacad.com
 DOMAIN-SUFFIX,netapp.com
 DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
@@ -624,6 +632,7 @@ DOMAIN-SUFFIX,openmedia.io
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,opensanctions.org
 DOMAIN-SUFFIX,opensea.io
+DOMAIN-SUFFIX,opentrackr.org
 DOMAIN-SUFFIX,opposition-news.com
 DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,ovd.info
@@ -802,6 +811,7 @@ DOMAIN-SUFFIX,simplex.im
 DOMAIN-SUFFIX,simplix.info
 DOMAIN-SUFFIX,singlekey-id.com
 DOMAIN-SUFFIX,site.com
+DOMAIN-SUFFIX,siteground.com
 DOMAIN-SUFFIX,skat.media
 DOMAIN-SUFFIX,sketchup.com
 DOMAIN-SUFFIX,skiff.com
@@ -822,6 +832,7 @@ DOMAIN-SUFFIX,snort.org
 DOMAIN-SUFFIX,snyk.io
 DOMAIN-SUFFIX,sobesednik.com
 DOMAIN-SUFFIX,solarwinds.com
+DOMAIN-SUFFIX,sonara.ai
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,sotaproject.com
 DOMAIN-SUFFIX,soundcloud.cloud
@@ -914,6 +925,7 @@ DOMAIN-SUFFIX,torrentgalaxy.to
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,trailblazer.me
 DOMAIN-SUFFIX,trailhead.com
+DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,trellix.com
 DOMAIN-SUFFIX,tria.ge
 DOMAIN-SUFFIX,trueblackmetalradio.com
@@ -929,6 +941,9 @@ DOMAIN-SUFFIX,tvrain.ru
 DOMAIN-SUFFIX,tvrain.tv
 DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twin.me
+DOMAIN-SUFFIX,twinlife-systems.com
+DOMAIN-SUFFIX,twinme.com
 DOMAIN-SUFFIX,twirpx.com
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.biz
@@ -998,6 +1013,7 @@ DOMAIN-SUFFIX,wikidot.com
 DOMAIN-SUFFIX,wilsoncenter.org
 DOMAIN-SUFFIX,windows10spotlight.com
 DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,wonderzine.com
 DOMAIN-SUFFIX,wpengine.com
 DOMAIN-SUFFIX,wunderground.com
