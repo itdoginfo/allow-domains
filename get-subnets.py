@@ -12,11 +12,11 @@ AS_FILE = 'AS.lst'
 IPv4_DIR = 'Subnets/IPv4'
 IPv6_DIR = 'Subnets/IPv6'
 
-AS_META = '32934'
-AS_TWITTER = '13414'
-AS_HETZNER = '24940'
-AS_OVH = '16276'
-AS_DIGITALOCEAN = '14061'
+AS_META = ['32934','63293','54115','149642']
+AS_TWITTER = ['13414']
+AS_HETZNER = ['24940']
+AS_OVH = ['16276']
+AS_DIGITALOCEAN = ['14061']
 
 META = 'meta.lst'
 TWITTER = 'twitter.lst'
@@ -53,7 +53,7 @@ def process_subnets(subnet_list, target_as):
     for subnet_str, as_number in subnet_list:
         try:
             subnet = ipaddress.ip_network(subnet_str)
-            if as_number == target_as:
+            if as_number in target_as:
                 if subnet.version == 4:
                     ipv4_subnets.append(subnet_str)
                 elif subnet.version == 6:
