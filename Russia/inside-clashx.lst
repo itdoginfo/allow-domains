@@ -732,8 +732,6 @@ DOMAIN-SUFFIX,radiojar.com
 DOMAIN-SUFFIX,radiosakharov.org
 DOMAIN-SUFFIX,radiosvoboda.org
 DOMAIN-SUFFIX,rbc.ua
-DOMAIN-SUFFIX,rbxcdn.com
-DOMAIN-SUFFIX,rbxinfra.net
 DOMAIN-SUFFIX,reactflow.dev
 DOMAIN-SUFFIX,realbooru.com
 DOMAIN-SUFFIX,realist.online
@@ -769,8 +767,6 @@ DOMAIN-SUFFIX,rima.media
 DOMAIN-SUFFIX,riperam.org
 DOMAIN-SUFFIX,riseup.net
 DOMAIN-SUFFIX,roar-review.com
-DOMAIN-SUFFIX,roblox.com
-DOMAIN-SUFFIX,robloxdev.com
 DOMAIN-SUFFIX,root-nation.com
 DOMAIN-SUFFIX,roskomsvoboda.org
 DOMAIN-SUFFIX,rublacklist.net
@@ -1035,7 +1031,6 @@ DOMAIN-SUFFIX,vpnlove.me
 DOMAIN-SUFFIX,vpnpay.io
 DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,w.atwiki.jp
-DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,watermarkremover.io
@@ -1046,9 +1041,6 @@ DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
-DOMAIN-SUFFIX,whatsapp.biz
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
