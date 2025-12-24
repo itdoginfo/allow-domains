@@ -25,7 +25,8 @@ HetznerSubnets = 'Subnets/IPv4/hetzner.lst'
 OVHSubnets = 'Subnets/IPv4/ovh.lst'
 DigitalOceanSubnets = 'Subnets/IPv4/digitalocean.lst'
 CloudfrontSubnets = 'Subnets/IPv4/cloudfront.lst'
-ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst'}
+RobloxSubnets = 'Subnets/IPv4/roblox.lst'
+ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst'}
 
 def raw(src, out):
     domains = set()
@@ -57,7 +58,6 @@ def raw(src, out):
 
 def dnsmasq(src, out, remove={'google.com'}):
     domains = set()
-    domains_single = set()
     files = []
 
     if isinstance(src, list):
@@ -91,7 +91,6 @@ def dnsmasq(src, out, remove={'google.com'}):
 
 def clashx(src, out, remove={'google.com'}):
     domains = set()
-    domains_single = set()
     files = []
 
     if isinstance(src, list):
@@ -120,7 +119,6 @@ def clashx(src, out, remove={'google.com'}):
 
 def kvas(src, out, remove={'google.com'}):
     domains = set()
-    domains_single = set()
     files = []
 
     if isinstance(src, list):
@@ -149,7 +147,6 @@ def kvas(src, out, remove={'google.com'}):
 
 def mikrotik_fwd(src, out, remove={'google.com'}):
     domains = set()
-    domains_single = set()
     files = []
 
     if isinstance(src, list):
@@ -226,7 +223,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
-    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront"}
+    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront", "roblox"}
 
     for directory in directories:
         for filename in os.listdir(directory):
@@ -242,21 +239,21 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
                         if domain:
                             domains.append(domain)
 
-            data = {
-                "version": 3,
-                "rules": [
-                    {
-                        "domain_suffix": domains
-                    }
-                ]
-            }
+                data = {
+                    "version": 3,
+                    "rules": [
+                        {
+                            "domain_suffix": domains
+                        }
+                    ]
+                }
 
-            output_file_path = os.path.join(output_json_directory, f"{os.path.splitext(filename)[0]}.json")
+                output_file_path = os.path.join(output_json_directory, f"{os.path.splitext(filename)[0]}.json")
 
-            with open(output_file_path, 'w', encoding='utf-8') as output_file:
-                json.dump(data, output_file, indent=4)
+                with open(output_file_path, 'w', encoding='utf-8') as output_file:
+                    json.dump(data, output_file, indent=4)
 
-            print(f"JSON file generated: {output_file_path}")
+                print(f"JSON file generated: {output_file_path}")
 
     print("\nCompile JSON files to .srs files...")
     for filename in os.listdir(output_json_directory):
@@ -491,6 +488,7 @@ if __name__ == '__main__':
     generate_srs_combined(OVHSubnets, "Services/ovh.lst")
     generate_srs_combined(DigitalOceanSubnets, "Services/digitalocean.lst")
     generate_srs_combined(CloudfrontSubnets, "Services/cloudfront.lst")
+    generate_srs_combined(RobloxSubnets, "Services/roblox.lst")
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
