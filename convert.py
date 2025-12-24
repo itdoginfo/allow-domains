@@ -1,4 +1,4 @@
-#!/usr/bin/python3.10
+#!/usr/bin/env python3
 
 import tldextract
 import urllib.request
@@ -332,6 +332,18 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
                 }
             ]
         }
+    elif input_subnets_file == "Subnets/IPv4/telegram.lst" and input_domains_file == "voice_messengers":
+        data = {
+            "version": 3,
+            "rules": [
+                {
+                    "network": ["udp"],
+                    "ip_cidr": subnets,
+                    "port": [1400],
+                    "port_range": ["596:599"]
+                }
+            ]
+        }
     else:
         data = {
             "version": 3,
@@ -343,7 +355,10 @@ def generate_srs_combined(input_subnets_file, input_domains_file, output_json_di
             ]
         }
 
-    filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
+    if input_domains_file == "voice_messengers":
+        filename = "voice_messengers"
+    else:
+        filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
     output_file_path = os.path.join(output_json_directory, f"{filename}.json")
 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
@@ -489,6 +504,9 @@ if __name__ == '__main__':
     generate_srs_combined(DigitalOceanSubnets, "Services/digitalocean.lst")
     generate_srs_combined(CloudfrontSubnets, "Services/cloudfront.lst")
     generate_srs_combined(RobloxSubnets, "Services/roblox.lst")
+
+    # Sing-box voice for messengers
+    generate_srs_combined(TelegramSubnets, "voice_messengers")
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
