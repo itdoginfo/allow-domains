@@ -77,6 +77,7 @@ DOMAIN-SUFFIX,att.com
 DOMAIN-SUFFIX,attachments.f95zone.to
 DOMAIN-SUFFIX,atv4.dnskp.cc
 DOMAIN-SUFFIX,audiobookbay.lu
+DOMAIN-SUFFIX,augmentcode.com
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-SUFFIX,avira.com
 DOMAIN-SUFFIX,azathabar.com
@@ -115,6 +116,7 @@ DOMAIN-SUFFIX,btdig.com
 DOMAIN-SUFFIX,btod.com
 DOMAIN-SUFFIX,buanzo.org
 DOMAIN-SUFFIX,buf.build
+DOMAIN-SUFFIX,bufferbloat.net
 DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
@@ -143,6 +145,7 @@ DOMAIN-SUFFIX,cherta.media
 DOMAIN-SUFFIX,chess.com
 DOMAIN-SUFFIX,chesscomfiles.com
 DOMAIN-SUFFIX,chub.ai
+DOMAIN-SUFFIX,circlecrewpinkcrowd.com
 DOMAIN-SUFFIX,cisco.com
 DOMAIN-SUFFIX,cisecurity.org
 DOMAIN-SUFFIX,citrix.com
@@ -245,6 +248,7 @@ DOMAIN-SUFFIX,download3.omnissa.com
 DOMAIN-SUFFIX,doxa.team
 DOMAIN-SUFFIX,dpidetector.org
 DOMAIN-SUFFIX,dreamhost.com
+DOMAIN-SUFFIX,dreamina.capcut.com
 DOMAIN-SUFFIX,dub.sh
 DOMAIN-SUFFIX,ducati.com
 DOMAIN-SUFFIX,dumka.media
@@ -296,6 +300,7 @@ DOMAIN-SUFFIX,filmitorrent.net
 DOMAIN-SUFFIX,filmix.ac
 DOMAIN-SUFFIX,filmix.biz
 DOMAIN-SUFFIX,filmix.day
+DOMAIN-SUFFIX,filmix.fan
 DOMAIN-SUFFIX,filmix.fm
 DOMAIN-SUFFIX,filmix.la
 DOMAIN-SUFFIX,flibusta.is
@@ -475,6 +480,7 @@ DOMAIN-SUFFIX,kinozal.guru
 DOMAIN-SUFFIX,kinozal.me
 DOMAIN-SUFFIX,kinozal.tv
 DOMAIN-SUFFIX,kinozaltv.life
+DOMAIN-SUFFIX,klarna.com
 DOMAIN-SUFFIX,kmail-lists.com
 DOMAIN-SUFFIX,knews.kg
 DOMAIN-SUFFIX,knowyourmeme.com
@@ -552,6 +558,7 @@ DOMAIN-SUFFIX,metla.press
 DOMAIN-SUFFIX,metopera.org
 DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
+DOMAIN-SUFFIX,mintmobile.com
 DOMAIN-SUFFIX,miracleptr.wordpress.com
 DOMAIN-SUFFIX,mixcloud.com
 DOMAIN-SUFFIX,modrinth.com
@@ -673,6 +680,7 @@ DOMAIN-SUFFIX,parallels.net
 DOMAIN-SUFFIX,parallelsaccess.com
 DOMAIN-SUFFIX,paritydeals.com
 DOMAIN-SUFFIX,patreon.com
+DOMAIN-SUFFIX,patreonusercontent.com
 DOMAIN-SUFFIX,patriot.dp.ua
 DOMAIN-SUFFIX,pb.wtf
 DOMAIN-SUFFIX,pcgamesn.com
@@ -686,6 +694,7 @@ DOMAIN-SUFFIX,phncdn.com.sds.rncdn7.com
 DOMAIN-SUFFIX,pimpletv.ru
 DOMAIN-SUFFIX,pingdom.com
 DOMAIN-SUFFIX,piratbit.top
+DOMAIN-SUFFIX,pixabay.com
 DOMAIN-SUFFIX,pkgs.tailscale.com
 DOMAIN-SUFFIX,platform.activestate.com
 DOMAIN-SUFFIX,playboy.com
@@ -721,6 +730,7 @@ DOMAIN-SUFFIX,prowlarr.com
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
+DOMAIN-SUFFIX,pvpessence.com
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qualcomm.com
 DOMAIN-SUFFIX,quicknode.com
@@ -861,6 +871,7 @@ DOMAIN-SUFFIX,snyk.io
 DOMAIN-SUFFIX,sobesednik.com
 DOMAIN-SUFFIX,solarwinds.com
 DOMAIN-SUFFIX,sonara.ai
+DOMAIN-SUFFIX,sophos.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,sotaproject.com
 DOMAIN-SUFFIX,soundcloud.cloud
@@ -1031,6 +1042,7 @@ DOMAIN-SUFFIX,vpnlove.me
 DOMAIN-SUFFIX,vpnpay.io
 DOMAIN-SUFFIX,vyos.io
 DOMAIN-SUFFIX,w.atwiki.jp
+DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,walmart.com
 DOMAIN-SUFFIX,watchguard.com
 DOMAIN-SUFFIX,watermarkremover.io
@@ -1041,6 +1053,9 @@ DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
+DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
