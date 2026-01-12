@@ -701,6 +701,7 @@
 /ip dns static add name=micro-solution.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=micrus.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mid-dnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=mikrotik.wiki type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mil-lnr.info type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mil.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mincult.govdnr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -888,6 +889,7 @@
 /ip dns static add name=oldbk2.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=olimp.bet type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ombudsmandnr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=onespot.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=onetrust.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=online-cloud.moscow type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=onlinezakladki.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -1107,6 +1109,7 @@
 /ip dns static add name=rzd.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=s8.capital type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sadmin.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=samlab.ws type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sampo.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sape.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=sberbank.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -1364,6 +1367,7 @@
 /ip dns static add name=voicesevas.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voidboost.cc type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voidboost.in type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=vokino.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vokrug.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voloshyna.org.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voltbet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
