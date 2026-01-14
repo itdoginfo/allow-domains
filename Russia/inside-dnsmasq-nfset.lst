@@ -126,3 +126,4 @@ nftset=/sapphire.api.microsoftapp.net/4#inet#fw4#vpn_domains
 nftset=/self.events.data.microsoft.com/4#inet#fw4#vpn_domains
 nftset=/services.bingapis.com/4#inet#fw4#vpn_domains
 nftset=/sydney.bing.com/4#inet#fw4#vpn_domains
+nftset=/github.gallerycdn.vsassets.io/4#inet#fw4#vpn_domains
