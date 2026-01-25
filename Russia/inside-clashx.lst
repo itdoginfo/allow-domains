@@ -22,12 +22,14 @@ DOMAIN-SUFFIX,adminforge.de
 DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,adultmult.tv
+DOMAIN-SUFFIX,affinity.studio
 DOMAIN-SUFFIX,agents.media
 DOMAIN-SUFFIX,ahrefs.com
 DOMAIN-SUFFIX,ai-chat.bsg.brave.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,aircanada.com
 DOMAIN-SUFFIX,akc.org
+DOMAIN-SUFFIX,all3dp.com
 DOMAIN-SUFFIX,allegro.pl
 DOMAIN-SUFFIX,alphacoders.com
 DOMAIN-SUFFIX,alza.hu
@@ -279,7 +281,7 @@ DOMAIN-SUFFIX,euroradio.fm
 DOMAIN-SUFFIX,eutrp.eu
 DOMAIN-SUFFIX,everand.com
 DOMAIN-SUFFIX,exchanger.bits.media
-DOMAIN-SUFFIX,exler.ru
+DOMAIN-SUFFIX,exler.es
 DOMAIN-SUFFIX,expandrive.com
 DOMAIN-SUFFIX,expres.online
 DOMAIN-SUFFIX,extremetech.com
@@ -352,7 +354,6 @@ DOMAIN-SUFFIX,git.new
 DOMAIN-SUFFIX,glavred.info
 DOMAIN-SUFFIX,glavred.net
 DOMAIN-SUFFIX,global.fncstatic.com
-DOMAIN-SUFFIX,global.platform.seconddinnertech.com
 DOMAIN-SUFFIX,glpals.com
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,gofile.io
@@ -524,6 +525,7 @@ DOMAIN-SUFFIX,lostfilm.uno
 DOMAIN-SUFFIX,lostfilmtv2.site
 DOMAIN-SUFFIX,lu4.org
 DOMAIN-SUFFIX,lucid.app
+DOMAIN-SUFFIX,lyst.com
 DOMAIN-SUFFIX,magaz.global
 DOMAIN-SUFFIX,mail-api.proton.me
 DOMAIN-SUFFIX,mailerlite.com
@@ -556,6 +558,7 @@ DOMAIN-SUFFIX,metacritic.com
 DOMAIN-SUFFIX,metal-archives.com
 DOMAIN-SUFFIX,metla.press
 DOMAIN-SUFFIX,metopera.org
+DOMAIN-SUFFIX,mezha.net
 DOMAIN-SUFFIX,middlewareinventory.com
 DOMAIN-SUFFIX,mignews.com
 DOMAIN-SUFFIX,mintmobile.com
@@ -643,6 +646,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,obozrevatel.com
 DOMAIN-SUFFIX,ocstore.com
+DOMAIN-SUFFIX,octopus.do
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,ohmyswift.ru
 DOMAIN-SUFFIX,oi.legal
@@ -713,6 +717,7 @@ DOMAIN-SUFFIX,postimees.ee
 DOMAIN-SUFFIX,pravda.com
 DOMAIN-SUFFIX,pravda.com.ua
 DOMAIN-SUFFIX,premierleague.com
+DOMAIN-SUFFIX,primark.com
 DOMAIN-SUFFIX,primevideo.com
 DOMAIN-SUFFIX,primevue.org
 DOMAIN-SUFFIX,privatekeys.pw
@@ -721,6 +726,7 @@ DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,proekt.media
 DOMAIN-SUFFIX,profitwell.com
+DOMAIN-SUFFIX,pronouns.page
 DOMAIN-SUFFIX,prosleduetmedia.com
 DOMAIN-SUFFIX,prostovpn.org
 DOMAIN-SUFFIX,proton.me
@@ -828,6 +834,7 @@ DOMAIN-SUFFIX,scryde9.net
 DOMAIN-SUFFIX,sdxcentral.com
 DOMAIN-SUFFIX,searchfloor.org
 DOMAIN-SUFFIX,seasonvar.ru
+DOMAIN-SUFFIX,seconddinnertech.com
 DOMAIN-SUFFIX,selezen.org
 DOMAIN-SUFFIX,semnasem.org
 DOMAIN-SUFFIX,semrush.com
@@ -864,6 +871,7 @@ DOMAIN-SUFFIX,smartbear.co
 DOMAIN-SUFFIX,smartbear.com
 DOMAIN-SUFFIX,smartdeploy.com
 DOMAIN-SUFFIX,sms-activate.io
+DOMAIN-SUFFIX,snapgametech.com
 DOMAIN-SUFFIX,snapgene.com
 DOMAIN-SUFFIX,sndcdn.com
 DOMAIN-SUFFIX,snort.org
@@ -935,6 +943,7 @@ DOMAIN-SUFFIX,thebarentsobserver.com
 DOMAIN-SUFFIX,thebell.io
 DOMAIN-SUFFIX,theins.press
 DOMAIN-SUFFIX,theins.ru
+DOMAIN-SUFFIX,themoscowtimes.com
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,thepiratebay.org
 DOMAIN-SUFFIX,theporndude.com
@@ -1008,6 +1017,8 @@ DOMAIN-SUFFIX,uizard.io
 DOMAIN-SUFFIX,ukdevilz.com
 DOMAIN-SUFFIX,ukr.net
 DOMAIN-SUFFIX,ukr.radio
+DOMAIN-SUFFIX,ukrainer.net
+DOMAIN-SUFFIX,ukrinform.net
 DOMAIN-SUFFIX,ukrtelcdn.net
 DOMAIN-SUFFIX,unian.ua
 DOMAIN-SUFFIX,unscreen.com
@@ -1068,6 +1079,7 @@ DOMAIN-SUFFIX,wonderzine.com
 DOMAIN-SUFFIX,wpengine.com
 DOMAIN-SUFFIX,wunderground.com
 DOMAIN-SUFFIX,www3.corsair.com
+DOMAIN-SUFFIX,x-minus.pro
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xhamster.com
