@@ -128,3 +128,6 @@ nftset=/services.bingapis.com/4#inet#fw4#vpn_domains
 nftset=/sydney.bing.com/4#inet#fw4#vpn_domains
 nftset=/github.gallerycdn.vsassets.io/4#inet#fw4#vpn_domains
 nftset=/ucarecdn.com/4#inet#fw4#vpn_domains
+nftset=/pornolab.net/4#inet#fw4#vpn_domains
+nftset=/pornhub.com/4#inet#fw4#vpn_domains
+nftset=/charts.bitnami.com/4#inet#fw4#vpn_domains
