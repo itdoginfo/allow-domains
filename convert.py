@@ -26,7 +26,8 @@ OVHSubnets = 'Subnets/IPv4/ovh.lst'
 DigitalOceanSubnets = 'Subnets/IPv4/digitalocean.lst'
 CloudfrontSubnets = 'Subnets/IPv4/cloudfront.lst'
 RobloxSubnets = 'Subnets/IPv4/roblox.lst'
-ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst'}
+GoogleMeetSubnets = 'Subnets/IPv4/google_meet.lst'
+ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst', 'google_meet.lst'}
 
 def raw(src, out):
     domains = set()
@@ -223,7 +224,7 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
     os.makedirs(output_json_directory, exist_ok=True)
     os.makedirs(compiled_output_directory, exist_ok=True)
 
-    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront", "roblox"}
+    exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront", "roblox", "google_meet"}
 
     for directory in directories:
         for filename in os.listdir(directory):
@@ -504,6 +505,7 @@ if __name__ == '__main__':
     generate_srs_combined(DigitalOceanSubnets, "Services/digitalocean.lst")
     generate_srs_combined(CloudfrontSubnets, "Services/cloudfront.lst")
     generate_srs_combined(RobloxSubnets, "Services/roblox.lst")
+    generate_srs_combined(GoogleMeetSubnets, "Services/google_meet.lst")
 
     # Sing-box voice for messengers
     generate_srs_combined(TelegramSubnets, "voice_messengers")
