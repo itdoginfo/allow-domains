@@ -62,6 +62,7 @@ nftset=/rutracker.cc/4#inet#fw4#vpn_domains
 nftset=/rutracker.net/4#inet#fw4#vpn_domains
 nftset=/rutracker.org/4#inet#fw4#vpn_domains
 nftset=/rutracker.wiki/4#inet#fw4#vpn_domains
+nftset=/site.yummyani.me/4#inet#fw4#vpn_domains
 nftset=/spotify.com/4#inet#fw4#vpn_domains
 nftset=/twin.me/4#inet#fw4#vpn_domains
 nftset=/twinlife-systems.com/4#inet#fw4#vpn_domains
