@@ -943,6 +943,7 @@
 /ip dns static add name=pflnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=phoenix-dnr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=php.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=phpbbguru.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pikabu.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pikinform.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pikuco.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -1373,7 +1374,6 @@
 /ip dns static add name=voltbet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=voskhodinfo.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vperedlnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=vpn.zaborona.help type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vremya.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vs.krm.sudrf.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=vsednr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
