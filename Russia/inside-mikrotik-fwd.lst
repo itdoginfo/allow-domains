@@ -175,7 +175,7 @@
 /ip dns static add name=community.sophos.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=connect.ngrok-agent.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=contabo.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=coomer.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=coomer.st type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=copilot.microsoft.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=corsair.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coursera.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -467,7 +467,7 @@
 /ip dns static add name=kasparov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kavkaz-uzel.eu type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kavkazr.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
-/ip dns static add name=kemono.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=kemono.cr type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=keysight.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kilo.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kilocode.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
