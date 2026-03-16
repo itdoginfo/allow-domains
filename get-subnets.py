@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.13
+#!/usr/bin/env python3
 
 import ipaddress
 import urllib.request
@@ -8,7 +8,7 @@ import json
 import sys
 
 RIPE_STAT_URL = 'https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS{}'
-HEADERS = { 'User-Agent': 'itdog.info - hi@itdog.info' }
+USER_AGENT = 'allow-domains/1.0'
 IPv4_DIR = 'Subnets/IPv4'
 IPv6_DIR = 'Subnets/IPv6'
 
@@ -51,6 +51,11 @@ GOOGLE_MEET_V6 = [
 
 AWS_CIDR_URL='https://ip-ranges.amazonaws.com/ip-ranges.json'
 
+def make_request(url):
+    req = urllib.request.Request(url)
+    req.add_header('User-Agent', USER_AGENT)
+    return req
+
 def subnet_summarization(subnet_list):
     subnets = [ipaddress.ip_network(subnet) for subnet in subnet_list]
     return list(ipaddress.collapse_addresses(subnets))
@@ -61,7 +66,7 @@ def fetch_asn_prefixes(asn_list):
 
     for asn in asn_list:
         url = RIPE_STAT_URL.format(asn)
-        req = urllib.request.Request(url, headers=HEADERS)
+        req = make_request(url)
         try:
             with urllib.request.urlopen(req) as response:
                 data = json.loads(response.read().decode('utf-8'))
@@ -80,51 +85,30 @@ def fetch_asn_prefixes(asn_list):
             print(f"Error fetching AS{asn}: {e}")
             sys.exit(1)
 
-    ipv4_merged = subnet_summarization(ipv4_subnets)
-    ipv6_merged = subnet_summarization(ipv6_subnets)
+    return ipv4_subnets, ipv6_subnets
 
-    return ipv4_merged, ipv6_merged
-
-def download_ready_subnets(url_v4, url_v6):
+def download_subnets(*urls):
     ipv4_subnets = []
     ipv6_subnets = []
 
-    urls = [url_v4, url_v6]
-
     for url in urls:
-        req = urllib.request.Request(url, headers=HEADERS)
+        req = make_request(url)
         try:
             with urllib.request.urlopen(req) as response:
                 subnets = response.read().decode('utf-8').splitlines()
                 for subnet_str in subnets:
                     try:
-                        subnet = ipaddress.ip_network(subnet_str)
-                        if subnet.version == 4:
+                        network = ipaddress.ip_network(subnet_str, strict=False)
+                        if network.version == 4:
                             ipv4_subnets.append(subnet_str)
-                        elif subnet.version == 6:
+                        else:
                             ipv6_subnets.append(subnet_str)
                     except ValueError:
                         print(f"Invalid subnet: {subnet_str}")
                         sys.exit(1)
         except Exception as e:
-            print(f"Query error: {e}")
+            print(f"Query error {url}: {e}")
             sys.exit(1)
-
-    return ipv4_subnets, ipv6_subnets
-
-def download_ready_split_subnets(url):
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req) as response:
-        subnets = response.read().decode('utf-8').splitlines()
-
-    ipv4_subnets = []
-    ipv6_subnets = []
-    for cidr in subnets:
-        network = ipaddress.ip_network(cidr, strict=False)
-        if network.version == 4:
-            ipv4_subnets.append(cidr)
-        else:
-            ipv6_subnets.append(cidr)
 
     return ipv4_subnets, ipv6_subnets
 
@@ -132,7 +116,7 @@ def download_aws_cloudfront_subnets():
     ipv4_subnets = []
     ipv6_subnets = []
     
-    req = urllib.request.Request(AWS_CIDR_URL, headers=HEADERS)
+    req = make_request(AWS_CIDR_URL)
     try:
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode('utf-8'))
@@ -164,33 +148,39 @@ def copy_file_legacy(src_filename):
 if __name__ == '__main__':
     # Services from ASN (meta, twitter, hetzner, ovh, digitalocean)
     for filename, asn_list in ASN_SERVICES.items():
-        ipv4_merged, ipv6_merged = fetch_asn_prefixes(asn_list)
-        write_subnets_to_file(ipv4_merged, f'{IPv4_DIR}/{filename}')
-        write_subnets_to_file(ipv6_merged, f'{IPv6_DIR}/{filename}')
+        print(f'Fetching {filename}...')
+        ipv4, ipv6 = fetch_asn_prefixes(asn_list)
+        write_subnets_to_file(subnet_summarization(ipv4), f'{IPv4_DIR}/{filename}')
+        write_subnets_to_file(subnet_summarization(ipv6), f'{IPv6_DIR}/{filename}')
 
     # Discord voice
-    ipv4_discord, ipv6_discord = download_ready_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
+    print(f'Fetching {DISCORD}...')
+    ipv4_discord, ipv6_discord = download_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
     write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
     write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
 
     # Telegram
-    ipv4_telegram_file, ipv6_telegram_file = download_ready_split_subnets(TELEGRAM_CIDR_URL)
+    print(f'Fetching {TELEGRAM}...')
+    ipv4_telegram_file, ipv6_telegram_file = download_subnets(TELEGRAM_CIDR_URL)
     ipv4_telegram_asn, ipv6_telegram_asn = fetch_asn_prefixes(ASN_TELEGRAM)
-    ipv4_telegram = subnet_summarization(ipv4_telegram_file + [str(s) for s in ipv4_telegram_asn])
-    ipv6_telegram = subnet_summarization(ipv6_telegram_file + [str(s) for s in ipv6_telegram_asn])
+    ipv4_telegram = subnet_summarization(ipv4_telegram_file + ipv4_telegram_asn)
+    ipv6_telegram = subnet_summarization(ipv6_telegram_file + ipv6_telegram_asn)
     write_subnets_to_file(ipv4_telegram, f'{IPv4_DIR}/{TELEGRAM}')
     write_subnets_to_file(ipv6_telegram, f'{IPv6_DIR}/{TELEGRAM}')
 
     # Cloudflare
-    ipv4_cloudflare, ipv6_cloudflare = download_ready_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
+    print(f'Fetching {CLOUDFLARE}...')
+    ipv4_cloudflare, ipv6_cloudflare = download_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
     write_subnets_to_file(ipv4_cloudflare, f'{IPv4_DIR}/{CLOUDFLARE}')
     write_subnets_to_file(ipv6_cloudflare, f'{IPv6_DIR}/{CLOUDFLARE}')
 
     # Google Meet
+    print(f'Writing {GOOGLE_MEET}...')
     write_subnets_to_file(GOOGLE_MEET_V4, f'{IPv4_DIR}/{GOOGLE_MEET}')
     write_subnets_to_file(GOOGLE_MEET_V6, f'{IPv6_DIR}/{GOOGLE_MEET}')
 
     # AWS CloudFront
+    print(f'Fetching {CLOUDFRONT}...')
     ipv4_cloudfront, ipv6_cloudfront = download_aws_cloudfront_subnets()
     write_subnets_to_file(ipv4_cloudfront, f'{IPv4_DIR}/{CLOUDFRONT}')
     write_subnets_to_file(ipv6_cloudfront, f'{IPv6_DIR}/{CLOUDFRONT}')
