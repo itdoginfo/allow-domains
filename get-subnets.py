@@ -1,4 +1,4 @@
-#!/usr/bin/python3.10
+#!/usr/bin/env python3.13
 
 import ipaddress
 import urllib.request
@@ -14,6 +14,7 @@ IPv6_DIR = 'Subnets/IPv6'
 
 AS_META = ['32934','63293','54115','149642']
 AS_TWITTER = ['13414']
+AS_TELEGRAM = ['44907','59930','62014','62041','211157']
 AS_HETZNER = ['24940']
 AS_OVH = ['16276']
 AS_DIGITALOCEAN = ['14061']
@@ -37,6 +38,19 @@ TELEGRAM_CIDR_URL = 'https://core.telegram.org/resources/cidr.txt'
 
 CLOUDFLARE_V4='https://www.cloudflare.com/ips-v4'
 CLOUDFLARE_V6='https://www.cloudflare.com/ips-v6'
+
+# https://support.google.com/a/answer/1279090
+GOOGLE_MEET = 'google_meet.lst'
+GOOGLE_MEET_V4 = [
+    '74.125.247.128/32',
+    '74.125.250.0/24',
+    '142.250.82.0/24',
+]
+GOOGLE_MEET_V6 = [
+    '2001:4860:4864:4:8000::/128',
+    '2001:4860:4864:5::/64',
+    '2001:4860:4864:6::/64',
+]
 
 AWS_IP_RANGES_URL='https://ip-ranges.amazonaws.com/ip-ranges.json'
 
@@ -177,7 +191,10 @@ if __name__ == '__main__':
     write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
 
     # Telegram
-    ipv4_telegram, ipv6_telegram = download_ready_split_subnets(TELEGRAM_CIDR_URL)
+    ipv4_telegram_file, ipv6_telegram_file = download_ready_split_subnets(TELEGRAM_CIDR_URL)
+    ipv4_telegram_asn, ipv6_telegram_asn = process_subnets(subnet_list, AS_TELEGRAM)
+    ipv4_telegram = subnet_summarization(ipv4_telegram_file + [str(s) for s in ipv4_telegram_asn])
+    ipv6_telegram = subnet_summarization(ipv6_telegram_file + [str(s) for s in ipv6_telegram_asn])
     write_subnets_to_file(ipv4_telegram, f'{IPv4_DIR}/{TELEGRAM}')
     write_subnets_to_file(ipv6_telegram, f'{IPv6_DIR}/{TELEGRAM}')
 
@@ -185,6 +202,10 @@ if __name__ == '__main__':
     ipv4_cloudflare, ipv6_cloudflare = download_ready_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
     write_subnets_to_file(ipv4_cloudflare, f'{IPv4_DIR}/{CLOUDFLARE}')
     write_subnets_to_file(ipv6_cloudflare, f'{IPv6_DIR}/{CLOUDFLARE}')
+
+    # Google Meet
+    write_subnets_to_file(GOOGLE_MEET_V4, f'{IPv4_DIR}/{GOOGLE_MEET}')
+    write_subnets_to_file(GOOGLE_MEET_V6, f'{IPv6_DIR}/{GOOGLE_MEET}')
 
     # AWS CloudFront
     ipv4_cloudfront, ipv6_cloudfront = download_aws_cloudfront_subnets()
