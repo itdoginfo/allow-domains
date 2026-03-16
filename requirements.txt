@@ -1,2 +1,2 @@
 tldextract
-protobuf
+protobuf>=6.32.1
