@@ -96,6 +96,7 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
 
 def lines_from_file(filepath):
     if not os.path.exists(filepath):
+        print(f"Warning: input file not found: {filepath}", file=sys.stderr)
         return []
     with open(filepath, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f if line.strip()]

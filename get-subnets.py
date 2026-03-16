@@ -68,7 +68,7 @@ def fetch_asn_prefixes(asn_list):
         url = RIPE_STAT_URL.format(asn)
         req = make_request(url)
         try:
-            with urllib.request.urlopen(req) as response:
+            with urllib.request.urlopen(req, timeout=30) as response:
                 data = json.loads(response.read().decode('utf-8'))
                 for entry in data['data']['prefixes']:
                     prefix = entry['prefix']
@@ -94,7 +94,7 @@ def download_subnets(*urls):
     for url in urls:
         req = make_request(url)
         try:
-            with urllib.request.urlopen(req) as response:
+            with urllib.request.urlopen(req, timeout=30) as response:
                 subnets = response.read().decode('utf-8').splitlines()
                 for subnet_str in subnets:
                     try:
@@ -118,7 +118,7 @@ def download_aws_cloudfront_subnets():
     
     req = make_request(AWS_CIDR_URL)
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=30) as response:
             data = json.loads(response.read().decode('utf-8'))
 
             for prefix in data.get('prefixes', []):
