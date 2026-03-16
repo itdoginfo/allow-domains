@@ -19,19 +19,26 @@ jobs:
   generate-lists:
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v4.3.0
-    - name: Compile ruleset srs
+    - uses: actions/checkout@v6.0.2
+
+    - name: Cache sing-box
+      uses: actions/cache@v4
+      id: cache-singbox
+      with:
+        path: /usr/local/bin/sing-box
+        key: sing-box-1.12.25
+
+    - name: Install sing-box
+      if: steps.cache-singbox.outputs.cache-hit != 'true'
       run: |
-        docker run --rm \
-        -v ${{ github.workspace }}/src:/app/src \
-        -v ${{ github.workspace }}/Subnets:/app/Subnets \
-        -v ${{ github.workspace }}/Russia:/app/Russia \
-        -v ${{ github.workspace }}/Ukraine:/app/Ukraine \
-        -v ${{ github.workspace }}/Categories:/app/Categories \
-        -v ${{ github.workspace }}/Services:/app/Services \
-        -v ${{ github.workspace }}/SRS:/app/SRS \
-        -v ${{ github.workspace }}/DAT:/app/DAT \
-        itdoginfo/compilesrs:0.1.22
+        wget -qO- https://github.com/SagerNet/sing-box/releases/download/v1.12.25/sing-box-1.12.25-linux-amd64.tar.gz | tar xz
+        sudo mv sing-box-*/sing-box /usr/local/bin/
+
+    - name: Install Python dependencies
+      run: pip install -r requirements.txt
+
+    - name: Generate lists
+      run: python3 convert.py
 
     - name: Check Russia/inside-dnsmasq-ipset
       uses: itdoginfo/dnsmasq-action@0.1
