@@ -14,13 +14,13 @@ permissions:
 
 jobs:
   generate-subnet:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@v4.1.7
+    - uses: actions/checkout@v6.0.2
     - name: Generate subnets
-      uses: actions/setup-python@v5.1.0
+      uses: actions/setup-python@v6.2.0
       with:
-        python-version: '3.10'
+        python-version: '3.13'
     - run: |
         python get-subnets.py
     - name: Push subnets

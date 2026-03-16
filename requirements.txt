@@ -1,1 +1,2 @@
 tldextract
+protobuf>=6.32.1

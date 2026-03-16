@@ -6,7 +6,9 @@ import re
 from pathlib import Path
 import json
 import os
+import shutil
 import subprocess
+import sys
 
 rusDomainsInsideOut='Russia/inside'
 rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
@@ -16,71 +18,49 @@ rusDomainsOutsideSrc='src/Russia-domains-outside.lst'
 rusDomainsOutsideOut='Russia/outside'
 uaDomainsSrc='src/Ukraine-domains-inside.lst'
 uaDomainsOut='Ukraine/inside'
-DiscordSubnets = 'Subnets/IPv4/discord.lst'
-MetaSubnets = 'Subnets/IPv4/meta.lst'
-TwitterSubnets = 'Subnets/IPv4/twitter.lst'
-TelegramSubnets = 'Subnets/IPv4/telegram.lst'
-CloudflareSubnets = 'Subnets/IPv4/cloudflare.lst'
-HetznerSubnets = 'Subnets/IPv4/hetzner.lst'
-OVHSubnets = 'Subnets/IPv4/ovh.lst'
-DigitalOceanSubnets = 'Subnets/IPv4/digitalocean.lst'
-CloudfrontSubnets = 'Subnets/IPv4/cloudfront.lst'
-RobloxSubnets = 'Subnets/IPv4/roblox.lst'
-GoogleMeetSubnets = 'Subnets/IPv4/google_meet.lst'
+SUBNET_SERVICES = [
+    'discord', 'meta', 'twitter', 'telegram',
+    'cloudflare', 'hetzner', 'ovh', 'digitalocean',
+    'cloudfront', 'roblox', 'google_meet',
+]
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst', 'google_meet.lst'}
 
-def raw(src, out):
-    domains = set()
+def collect_files(src):
     files = []
+    for dir_path in src:
+        path = Path(dir_path)
+        if path.is_dir():
+            files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
+        elif path.is_file() and path.name not in ExcludeServices:
+            files.append(path)
+    return files
 
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
+def collect_domains(src, dot_prefix=True):
+    domains = set()
+    for f in collect_files(src):
+        if not f.is_file():
+            continue
+        with open(f) as infile:
+            for line in infile:
+                ext = tldextract.extract(line.rstrip())
+                if not ext.suffix:
+                    continue
+                if re.search(r'[^а-я\-]', ext.domain):
+                    domains.add(ext.fqdn)
+                elif not ext.domain:
+                    prefix = '.' if dot_prefix else ''
+                    domains.add(prefix + ext.suffix)
+    return domains
 
-    for f in files:
-        if f.is_file():
-            with open(f) as infile:
-                    for line in infile:
-                        if tldextract.extract(line).suffix:
-                            if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                                domains.add(tldextract.extract(line.rstrip()).fqdn)
-                            if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                                domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = sorted(domains)
+def raw(src, out):
+    domains = sorted(collect_domains(src))
 
     with open(f'{out}-raw.lst', 'w') as file:
         for name in domains:
             file.write(f'{name}\n')
 
 def dnsmasq(src, out, remove={'google.com'}):
-    domains = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        if f.is_file():
-            with open(f) as infile:
-                    for line in infile:
-                        if tldextract.extract(line).suffix:
-                            if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                                domains.add(tldextract.extract(line.rstrip()).fqdn)
-                            if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                                domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    domains = sorted(collect_domains(src) - remove)
 
     with open(f'{out}-dnsmasq-nfset.lst', 'w') as file:
         for name in domains:
@@ -91,84 +71,21 @@ def dnsmasq(src, out, remove={'google.com'}):
             file.write(f'ipset=/{name}/vpn_domains\n')
 
 def clashx(src, out, remove={'google.com'}):
-    domains = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    domains = sorted(collect_domains(src) - remove)
 
     with open(f'{out}-clashx.lst', 'w') as file:
         for name in domains:
             file.write(f'DOMAIN-SUFFIX,{name}\n')
 
 def kvas(src, out, remove={'google.com'}):
-    domains = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add(tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    domains = sorted(collect_domains(src, dot_prefix=False) - remove)
 
     with open(f'{out}-kvas.lst', 'w') as file:
         for name in domains:
             file.write(f'{name}\n')
 
 def mikrotik_fwd(src, out, remove={'google.com'}):
-    domains = set()
-    files = []
-
-    if isinstance(src, list):
-        for dir_path in src:
-            path = Path(dir_path)
-            if path.is_dir():
-                files.extend(f for f in path.glob('*') if f.name not in ExcludeServices)
-            elif path.is_file() and path.name not in ExcludeServices:
-                files.append(path)
-
-    for f in files:
-        with open(f) as infile:
-                for line in infile:
-                    if tldextract.extract(line).suffix:
-                        if re.search(r'[^а-я\-]', tldextract.extract(line).domain):
-                            domains.add(tldextract.extract(line.rstrip()).fqdn)
-                        if not tldextract.extract(line).domain and tldextract.extract(line).suffix:
-                            domains.add("." + tldextract.extract(line.rstrip()).suffix)
-
-    domains = domains - remove
-    domains = sorted(domains)
+    domains = sorted(collect_domains(src) - remove)
 
     with open(f'{out}-mikrotik-fwd.lst', 'w') as file:
         for name in domains:
@@ -177,53 +94,36 @@ def mikrotik_fwd(src, out, remove={'google.com'}):
             else:
                 file.write(f'/ip dns static add name={name} type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost\n')
 
-def domains_from_file(filepath):
-    domains = []
-    try:
-        with open(filepath, 'r', encoding='utf-8') as file:
-            for line in file:
-                domain = line.strip()
-                if domain:
-                    domains.append(domain)
-    except FileNotFoundError:
-        print(f"File not found: {filepath}")
-    return domains
+def lines_from_file(filepath):
+    if not os.path.exists(filepath):
+        print(f"Warning: input file not found: {filepath}", file=sys.stderr)
+        return []
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return [line.strip() for line in f if line.strip()]
 
-def generate_srs_domains(domains, output_name):
-    output_directory = 'JSON'
-    compiled_output_directory = 'SRS'
+def compile_srs(data, name, json_dir='JSON', srs_dir='SRS'):
+    os.makedirs(json_dir, exist_ok=True)
+    os.makedirs(srs_dir, exist_ok=True)
 
-    os.makedirs(output_directory, exist_ok=True)
-    os.makedirs(compiled_output_directory, exist_ok=True)
+    json_path = os.path.join(json_dir, f"{name}.json")
+    srs_path = os.path.join(srs_dir, f"{name}.srs")
 
-    data = {
-        "version": 3,
-        "rules": [
-            {"domain_suffix": domains}
-        ]
-    }
-
-    json_file_path = os.path.join(output_directory, f"{output_name}.json")
-    srs_file_path = os.path.join(compiled_output_directory, f"{output_name}.srs")
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4)
 
     try:
-        with open(json_file_path, 'w', encoding='utf-8') as json_file:
-            json.dump(data, json_file, indent=4)
-        print(f"JSON file generated: {json_file_path}")
-
         subprocess.run(
-            ["sing-box", "rule-set", "compile", json_file_path, "-o", srs_file_path], check=True
+            ["sing-box", "rule-set", "compile", json_path, "-o", srs_path], check=True
         )
-        print(f"Compiled .srs file: {srs_file_path}")
+        print(f"Compiled: {srs_path}")
     except subprocess.CalledProcessError as e:
-        print(f"Compile error {json_file_path}: {e}")
-    except Exception as e:
-        print(f"Error while processing {output_name}: {e}")
+        print(f"Compile error {json_path}: {e}")
+        sys.exit(1)
 
-def generate_srs_for_categories(directories, output_json_directory='JSON', compiled_output_directory='SRS'):
-    os.makedirs(output_json_directory, exist_ok=True)
-    os.makedirs(compiled_output_directory, exist_ok=True)
+def srs_rule(name, rules):
+    compile_srs({"version": 3, "rules": rules}, name)
 
+def generate_srs_for_categories(directories):
     exclude = {"meta", "twitter", "discord", "telegram", "hetzner", "ovh", "digitalocean", "cloudfront", "roblox", "google_meet"}
 
     for directory in directories:
@@ -231,159 +131,19 @@ def generate_srs_for_categories(directories, output_json_directory='JSON', compi
             if any(keyword in filename for keyword in exclude):
                 continue
             file_path = os.path.join(directory, filename)
-            
             if os.path.isfile(file_path):
-                domains = []
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    for line in file:
-                        domain = line.strip()
-                        if domain:
-                            domains.append(domain)
-
-                data = {
-                    "version": 3,
-                    "rules": [
-                        {
-                            "domain_suffix": domains
-                        }
-                    ]
-                }
-
-                output_file_path = os.path.join(output_json_directory, f"{os.path.splitext(filename)[0]}.json")
-
-                with open(output_file_path, 'w', encoding='utf-8') as output_file:
-                    json.dump(data, output_file, indent=4)
-
-                print(f"JSON file generated: {output_file_path}")
-
-    print("\nCompile JSON files to .srs files...")
-    for filename in os.listdir(output_json_directory):
-        if filename.endswith('.json'):
-            json_file_path = os.path.join(output_json_directory, filename)
-            srs_file_path = os.path.join(compiled_output_directory, f"{os.path.splitext(filename)[0]}.srs")
-            try:
-                subprocess.run(
-                    ["sing-box", "rule-set", "compile", json_file_path, "-o", srs_file_path], check=True
-                )
-                print(f"Compiled .srs file: {srs_file_path}")
-            except subprocess.CalledProcessError as e:
-                print(f"Compile error {json_file_path}: {e}")
-
-def generate_srs_subnets(input_file, output_json_directory='JSON', compiled_output_directory='SRS'):
-    os.makedirs(output_json_directory, exist_ok=True)
-    os.makedirs(compiled_output_directory, exist_ok=True)
-
-    subnets = []
-    with open(input_file, 'r', encoding='utf-8') as file:
-        for line in file:
-            subnet = line.strip()
-            if subnet:
-                subnets.append(subnet)
-    data = {
-        "version": 3,
-        "rules": [
-            {
-                "ip_cidr": subnets
-            }
-        ]
-    }
-
-    filename = os.path.splitext(os.path.basename(input_file))[0]
-    output_file_path = os.path.join(output_json_directory, f"{filename}.json")
-
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        json.dump(data, output_file, indent=4)
-
-    print(f"JSON file generated: {output_file_path}")
-
-    srs_file_path = os.path.join(compiled_output_directory, f"{filename}.srs")
-    try:
-        subprocess.run(
-            ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
-        )
-        print(f"Compiled .srs file: {srs_file_path}")
-    except subprocess.CalledProcessError as e:
-        print(f"Compile error {output_file_path}: {e}")
-
-def generate_srs_combined(input_subnets_file, input_domains_file, output_json_directory='JSON', compiled_output_directory='SRS'):
-    os.makedirs(output_json_directory, exist_ok=True)
-    os.makedirs(compiled_output_directory, exist_ok=True)
-
-    domains = []
-    if os.path.exists(input_domains_file):
-        with open(input_domains_file, 'r', encoding='utf-8') as file:
-            domains = [line.strip() for line in file if line.strip()]
-
-    subnets = []
-    if os.path.exists(input_subnets_file):
-        with open(input_subnets_file, 'r', encoding='utf-8') as file:
-            subnets = [line.strip() for line in file if line.strip()]
-
-    if input_subnets_file == "Subnets/IPv4/discord.lst":
-        data = {
-            "version": 3,
-            "rules": [
-                {
-                    "domain_suffix": domains
-                },
-                {
-                    "network": ["udp"],
-                    "ip_cidr": subnets,
-                    "port_range": ["50000:65535"]
-                }
-            ]
-        }
-    elif input_subnets_file == "Subnets/IPv4/telegram.lst" and input_domains_file == "voice_messengers":
-        data = {
-            "version": 3,
-            "rules": [
-                {
-                    "network": ["udp"],
-                    "ip_cidr": subnets,
-                    "port": [1400],
-                    "port_range": ["596:599"]
-                }
-            ]
-        }
-    else:
-        data = {
-            "version": 3,
-            "rules": [
-                {
-                    "domain_suffix": domains,
-                    "ip_cidr": subnets
-                }
-            ]
-        }
-
-    if input_domains_file == "voice_messengers":
-        filename = "voice_messengers"
-    else:
-        filename = os.path.splitext(os.path.basename(input_subnets_file))[0]
-    output_file_path = os.path.join(output_json_directory, f"{filename}.json")
-
-    with open(output_file_path, 'w', encoding='utf-8') as output_file:
-        json.dump(data, output_file, indent=4)
-
-    print(f"JSON file generated: {output_file_path}")
-
-    srs_file_path = os.path.join(compiled_output_directory, f"{filename}.srs")
-    try:
-        subprocess.run(
-            ["sing-box", "rule-set", "compile", output_file_path, "-o", srs_file_path], check=True
-        )
-        print(f"Compiled .srs file: {srs_file_path}")
-    except subprocess.CalledProcessError as e:
-        print(f"Compile error {output_file_path}: {e}")
+                domains = lines_from_file(file_path)
+                name = os.path.splitext(filename)[0]
+                srs_rule(name, [{"domain_suffix": domains}])
 
 
-def prepare_dat_domains(domains, output_name, dirs=[]):
+def prepare_dat_domains(domains, output_name, dirs=None):
     output_lists_directory = 'geosite_data'
     os.makedirs(output_lists_directory, exist_ok=True)
 
     domain_attrs = {domain: [] for domain in domains}
 
-    for directory in dirs:
+    for directory in (dirs or []):
         if not os.path.isdir(directory):
             continue
         for filename in os.listdir(directory):
@@ -408,8 +168,6 @@ def prepare_dat_domains(domains, output_name, dirs=[]):
             out_f.write(f"{line}\n")
 
 def prepare_dat_combined(dirs):
-    import shutil
-    
     output_lists_directory = 'geosite_data'
     os.makedirs(output_lists_directory, exist_ok=True)
 
@@ -427,18 +185,65 @@ def prepare_dat_combined(dirs):
 
             shutil.copyfile(source_path, destination_path)
  
+def parse_geosite_line(line):
+    from proto import geosite_pb2
+
+    parts = line.split()
+    raw_domain = parts[0]
+    attrs = [p.lstrip('@') for p in parts[1:] if p.startswith('@')]
+
+    if raw_domain.startswith('full:'):
+        domain_type = geosite_pb2.Domain.Full
+        value = raw_domain[5:]
+    elif raw_domain.startswith('regexp:'):
+        domain_type = geosite_pb2.Domain.Regex
+        value = raw_domain[7:]
+    elif raw_domain.startswith('keyword:'):
+        domain_type = geosite_pb2.Domain.Plain
+        value = raw_domain[8:]
+    else:
+        domain_type = geosite_pb2.Domain.RootDomain
+        value = raw_domain.lstrip('.')
+
+    return domain_type, value, attrs
+
 def generate_dat_domains(data_path='geosite_data', output_name='geosite.dat', output_directory='DAT'):
+    from proto import geosite_pb2
+
     os.makedirs(output_directory, exist_ok=True)
 
-    try:
-        subprocess.run(
-            ["domain-list-community", f"-datapath={data_path}", f"-outputname={output_name}", f"-outputdir={output_directory}"],
-            check=True,
-            stdout=subprocess.DEVNULL
-        )
-        print(f"Compiled .dat file: {output_directory}/{output_name}")
-    except subprocess.CalledProcessError as e:
-        print(f"Compile error {data_path}: {e}")
+    geo_site_list = geosite_pb2.GeoSiteList()
+
+    for filename in sorted(os.listdir(data_path)):
+        file_path = os.path.join(data_path, filename)
+        if not os.path.isfile(file_path):
+            continue
+
+        geo_site = geo_site_list.entry.add()
+        geo_site.country_code = filename.upper()
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+
+                domain_type, value, attrs = parse_geosite_line(line)
+
+                domain = geo_site.domain.add()
+                domain.type = domain_type
+                domain.value = value
+
+                for attr in attrs:
+                    attribute = domain.attribute.add()
+                    attribute.key = attr
+                    attribute.bool_value = True
+
+    output_path = os.path.join(output_directory, output_name)
+    with open(output_path, 'wb') as f:
+        f.write(geo_site_list.SerializeToString())
+
+    print(f"Compiled .dat file: {output_path}")
 
 if __name__ == '__main__':
     # Russia inside
@@ -483,32 +288,32 @@ if __name__ == '__main__':
         Path(temp_file).unlink()
 
     # Sing-box ruleset main
-    russia_inside = domains_from_file('Russia/inside-raw.lst')
-    russia_outside = domains_from_file('Russia/outside-raw.lst')
-    ukraine_inside = domains_from_file('Ukraine/inside-raw.lst')
-    generate_srs_domains(russia_inside, 'russia_inside')
-    generate_srs_domains(russia_outside, 'russia_outside')
-    generate_srs_domains(ukraine_inside, 'ukraine_inside')
+    russia_inside = lines_from_file('Russia/inside-raw.lst')
+    russia_outside = lines_from_file('Russia/outside-raw.lst')
+    ukraine_inside = lines_from_file('Ukraine/inside-raw.lst')
+    srs_rule('russia_inside', [{"domain_suffix": russia_inside}])
+    srs_rule('russia_outside', [{"domain_suffix": russia_outside}])
+    srs_rule('ukraine_inside', [{"domain_suffix": ukraine_inside}])
 
     # Sing-box categories
     directories = ['Categories', 'Services']
     generate_srs_for_categories(directories)
 
     # Sing-box subnets + domains
-    generate_srs_combined(DiscordSubnets, "Services/discord.lst")
-    generate_srs_combined(TwitterSubnets, "Services/twitter.lst")
-    generate_srs_combined(MetaSubnets, "Services/meta.lst")
-    generate_srs_combined(TelegramSubnets, "Services/telegram.lst")
-    generate_srs_combined(CloudflareSubnets, "Services/cloudflare.lst")
-    generate_srs_combined(HetznerSubnets, "Services/hetzner.lst")
-    generate_srs_combined(OVHSubnets, "Services/ovh.lst")
-    generate_srs_combined(DigitalOceanSubnets, "Services/digitalocean.lst")
-    generate_srs_combined(CloudfrontSubnets, "Services/cloudfront.lst")
-    generate_srs_combined(RobloxSubnets, "Services/roblox.lst")
-    generate_srs_combined(GoogleMeetSubnets, "Services/google_meet.lst")
+    for service in SUBNET_SERVICES:
+        if service == 'discord':
+            continue
+        subnets = lines_from_file(f'Subnets/IPv4/{service}.lst')
+        domains = lines_from_file(f'Services/{service}.lst')
+        srs_rule(service, [{"domain_suffix": domains, "ip_cidr": subnets}])
 
-    # Sing-box voice for messengers
-    generate_srs_combined(TelegramSubnets, "voice_messengers")
+    # Discord (domains + UDP subnets on high ports)
+    discord_subnets = lines_from_file('Subnets/IPv4/discord.lst')
+    discord_domains = lines_from_file('Services/discord.lst')
+    srs_rule('discord', [
+        {"domain_suffix": discord_domains},
+        {"network": ["udp"], "ip_cidr": discord_subnets, "port_range": ["50000:65535"]},
+    ])
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
