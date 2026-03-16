@@ -380,7 +380,6 @@ DOMAIN-SUFFIX,habr.com
 DOMAIN-SUFFIX,hackernoon.com
 DOMAIN-SUFFIX,hackmd.io
 DOMAIN-SUFFIX,halooglasi.com
-DOMAIN-SUFFIX,hangouts.googleapis.com
 DOMAIN-SUFFIX,hashicorp.com
 DOMAIN-SUFFIX,haydaygame.com
 DOMAIN-SUFFIX,hbomax.com
@@ -550,9 +549,6 @@ DOMAIN-SUFFIX,mediazona.ca
 DOMAIN-SUFFIX,medicalnewstoday.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,meduza.io
-DOMAIN-SUFFIX,meet.google.com
-DOMAIN-SUFFIX,meetings.clients6.google.com
-DOMAIN-SUFFIX,meetings.googleapis.com
 DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,megapeer.ru
 DOMAIN-SUFFIX,megapeer.vip
@@ -909,7 +905,6 @@ DOMAIN-SUFFIX,steamstat.info
 DOMAIN-SUFFIX,strana.news
 DOMAIN-SUFFIX,strana.today
 DOMAIN-SUFFIX,strava.com
-DOMAIN-SUFFIX,stream.meet.google.com
 DOMAIN-SUFFIX,suggestqueries.google.com
 DOMAIN-SUFFIX,supercell.com
 DOMAIN-SUFFIX,supersliv.biz
