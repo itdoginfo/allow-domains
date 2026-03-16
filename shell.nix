@@ -4,6 +4,7 @@ pkgs.mkShell {
   buildInputs = with pkgs; [
     python312
     python312Packages.tldextract
+    python312Packages.protobuf
     sing-box
   ];
 
