@@ -8,6 +8,7 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 
 rusDomainsInsideOut='Russia/inside'
 rusDomainsInsideSrcSingle='src/Russia-domains-inside-single.lst'
@@ -116,6 +117,7 @@ def compile_srs(data, name, json_dir='JSON', srs_dir='SRS'):
         print(f"Compiled: {srs_path}")
     except subprocess.CalledProcessError as e:
         print(f"Compile error {json_path}: {e}")
+        sys.exit(1)
 
 def srs_rule(name, rules):
     compile_srs({"version": 3, "rules": rules}, name)

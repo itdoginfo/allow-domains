@@ -57,7 +57,7 @@ def make_request(url):
     return req
 
 def subnet_summarization(subnet_list):
-    subnets = [ipaddress.ip_network(subnet) for subnet in subnet_list]
+    subnets = [ipaddress.ip_network(subnet, strict=False) for subnet in subnet_list]
     return list(ipaddress.collapse_addresses(subnets))
 
 def fetch_asn_prefixes(asn_list):
