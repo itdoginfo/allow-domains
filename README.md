@@ -7,6 +7,7 @@
 - Dnsmasq ipset. Для Dnsmasq в формате ipset (OpenWrt <= 21.02) `ipset=/showip.net/vpn_domains` 
 - Sing-box Source. Для Sing-box версии 1.11.0 и выше.
 - Xray Dat. Общий файл geosite.dat с разбивкой по категориям.
+- Mihomo MRS. Бинарные rule-set для Mihomo (Clash Meta). Файлы с суффиксом `_domain` для доменов, `_ipcidr` для подсетей.
 - ClashX `DOMAIN-SUFFIX,showip.net`
 - Mikrotik FWD `/ip dns static add name=fast.com type=FWD...`
 - Kvas. Для Kvas 1.1.8 и новее. Просто отсортированный список доменов.
@@ -75,6 +76,7 @@
 - [Kvas](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-kvas.lst)
 - [Mikrotik](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Russia/inside-mikrotik-fwd.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/russia_inside.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/russia_inside_domain.mrs)
 - geosite:russia-inside
 
 </details>
@@ -89,6 +91,7 @@
 - [Kvas](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/outside-kvas.lst)
 - [Mikrotik](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Russia/outside-mikrotik-fwd.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/russia_outside.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/russia_outside_domain.mrs)
 - geosite:russia-outside
 
 </details>
@@ -102,6 +105,7 @@
 - [Kvas](https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Ukraine/inside-kvas.lst)
 - [Mikrotik](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Ukraine/inside-mikrotik-fwd.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/ukraine_inside.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/ukraine_inside_domain.mrs)
 - geosite:ukraine
 
 </details>
@@ -111,6 +115,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/anime.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/anime.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/anime_domain.mrs)
 - geosite:russia-inside@anime
 
 </details>
@@ -120,6 +125,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/block.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/block.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/block_domain.mrs)
 - geosite:russia-inside@block
 
 </details>
@@ -129,6 +135,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/geoblock.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/geoblock.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/geoblock_domain.mrs)
 - geosite:russia-inside@geoblock
 
 </details>
@@ -138,6 +145,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/news.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/news.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/news_domain.mrs)
 - geosite:russia-inside@news
 
 </details>
@@ -147,6 +155,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/porn.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/porn.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/porn_domain.mrs)
 - geosite:russia-inside@porn
 
 </details>
@@ -156,6 +165,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/hodca.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/hodca_domain.mrs)
 - geosite:russia-inside@hodca
 
 </details>
@@ -165,6 +175,8 @@
 
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/cloudflare.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/cloudflare.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/cloudflare_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/cloudflare_ipcidr.mrs)
 
 </details>
 
@@ -174,6 +186,8 @@
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/discord.lst)
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/discord.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/discord.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/discord_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/discord_ipcidr.mrs)
 
 </details>
 
@@ -182,6 +196,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/hdrezka.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/hdrezka.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/hdrezka_domain.mrs)
 - geosite:russia-inside@hdrezka
 
 </details>
@@ -192,6 +207,8 @@
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/meta.srs)
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/meta.lst)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/meta_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/meta_ipcidr.mrs)
 - geosite:russia-inside@meta
 
 </details>
@@ -202,6 +219,8 @@
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/telegram.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/telegram.srs)
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/telegram.lst)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/telegram_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/telegram_ipcidr.mrs)
 
 </details>
 
@@ -210,6 +229,7 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/tiktok.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/tiktok.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/tiktok_domain.mrs)
 - geosite:russia-inside@tiktok
 
 </details>
@@ -220,6 +240,8 @@
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/twitter.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/twitter.srs)
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/twitter.lst)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/twitter_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/twitter_ipcidr.mrs)
 - geosite:russia-inside@twitter
 
 </details>
@@ -229,16 +251,18 @@
 
 - [RAW](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/youtube.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/youtube.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/youtube_domain.mrs)
 - geosite:russia-inside@youtube
 
 </details>
-
 
 <details>
   <summary>Google Meet</summary>
 
 - [Subnets](https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Subnets/IPv4/google_meet.lst)
 - [SRS](https://github.com/itdoginfo/allow-domains/releases/latest/download/google_meet.srs)
+- [MRS domain](https://github.com/itdoginfo/allow-domains/releases/latest/download/google_meet_domain.mrs)
+- [MRS ipcidr](https://github.com/itdoginfo/allow-domains/releases/latest/download/google_meet_ipcidr.mrs)
 
 </details>
 
@@ -302,6 +326,16 @@ service firewall restart && service dnsmasq restart
 - Можно ли как-то тестировать список, если да, то как. Это нужно, чтобы пользователи всегда имели рабочий конфиг
 
 *Meta признана экстремистской и террористической организацией в России
+
+# Разработка
+
+```bash
+nix-shell
+
+python3 get-subnets.py
+
+python3 convert.py
+```
 
 ---
 

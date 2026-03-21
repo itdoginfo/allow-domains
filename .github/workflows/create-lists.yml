@@ -34,6 +34,20 @@ jobs:
         wget -qO- https://github.com/SagerNet/sing-box/releases/download/v1.12.25/sing-box-1.12.25-linux-amd64.tar.gz | tar xz
         sudo mv sing-box-*/sing-box /usr/local/bin/
 
+    - name: Cache mihomo
+      uses: actions/cache@v5.0.3
+      id: cache-mihomo
+      with:
+        path: /usr/local/bin/mihomo
+        key: mihomo-1.19.8
+
+    - name: Install mihomo
+      if: steps.cache-mihomo.outputs.cache-hit != 'true'
+      run: |
+        wget -qO- https://github.com/MetaCubeX/mihomo/releases/download/v1.19.8/mihomo-linux-amd64-v1.19.8.gz | gunzip > mihomo
+        chmod +x mihomo
+        sudo mv mihomo /usr/local/bin/
+
     - name: Install Python dependencies
       run: pip install -r requirements.txt
 
@@ -88,5 +102,6 @@ jobs:
       with:
         files: |
           ${{ github.workspace }}/SRS/*.srs
+          ${{ github.workspace }}/MRS/*.mrs
           ${{ github.workspace }}/DAT/*.dat
         tag_name: ${{ env.TAG_NAME }}

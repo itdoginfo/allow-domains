@@ -101,6 +101,25 @@ def lines_from_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         return [line.strip() for line in f if line.strip()]
 
+def compile_mrs(domains, name, mrs_dir='MRS', behavior='domain'):
+    os.makedirs(mrs_dir, exist_ok=True)
+
+    txt_path = os.path.join(mrs_dir, f"{name}.txt")
+    mrs_path = os.path.join(mrs_dir, f"{name}.mrs")
+
+    with open(txt_path, 'w', encoding='utf-8') as f:
+        for d in domains:
+            f.write(f"{d}\n")
+
+    try:
+        subprocess.run(
+            ["mihomo", "convert-ruleset", behavior, "text", txt_path, mrs_path], check=True
+        )
+        print(f"Compiled: {mrs_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"Compile error {txt_path}: {e}")
+        sys.exit(1)
+
 def compile_srs(data, name, json_dir='JSON', srs_dir='SRS'):
     os.makedirs(json_dir, exist_ok=True)
     os.makedirs(srs_dir, exist_ok=True)
@@ -314,6 +333,29 @@ if __name__ == '__main__':
         {"domain_suffix": discord_domains},
         {"network": ["udp"], "ip_cidr": discord_subnets, "port_range": ["50000:65535"]},
     ])
+
+    # Mihomo main
+    to_mrs = lambda domains: [f'+.{d.lstrip(".")}' for d in domains]
+    mrs_russia_inside = to_mrs(russia_inside)
+    mrs_russia_outside = to_mrs(russia_outside)
+    mrs_ukraine_inside = to_mrs(ukraine_inside)
+    compile_mrs(mrs_russia_inside, 'russia_inside_domain')
+    compile_mrs(mrs_russia_outside, 'russia_outside_domain')
+    compile_mrs(mrs_ukraine_inside, 'ukraine_inside_domain')
+
+    # Mihomo categories
+    for directory in ['Categories', 'Services']:
+        for filename in os.listdir(directory):
+            file_path = os.path.join(directory, filename)
+            if os.path.isfile(file_path):
+                domains = to_mrs(lines_from_file(file_path))
+                name = os.path.splitext(filename)[0]
+                compile_mrs(domains, f'{name}_domain')
+
+    # Mihomo subnets
+    for service in SUBNET_SERVICES:
+        subnets = lines_from_file(f'Subnets/IPv4/{service}.lst')
+        compile_mrs(subnets, f'{service}_ipcidr', behavior='ipcidr')
 
     # Xray domains
     prepare_dat_domains(russia_inside, 'russia-inside', directories)
