@@ -36,6 +36,11 @@ DISCORD_VOICE_V6='https://iplist.opencck.org/?format=text&data=cidr6&site=discor
 
 DISCORD = 'discord.lst'
 
+# todo: parse this dynamically!
+DISCORD_CF_V4 = [
+    '104.16.0.0/12',
+]
+
 TELEGRAM_CIDR_URL = 'https://core.telegram.org/resources/cidr.txt'
 
 CLOUDFLARE_V4='https://www.cloudflare.com/ips-v4'
@@ -161,6 +166,7 @@ if __name__ == '__main__':
     # Discord voice
     print(f'Fetching {DISCORD}...')
     ipv4_discord, ipv6_discord = download_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
+    ipv4_discord.extend(DISCORD_CF_V4)
     write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
     write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
 
