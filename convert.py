@@ -292,7 +292,12 @@ if __name__ == '__main__':
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
 
-    urllib.request.urlretrieve("https://uablacklist.net/domains.txt", "uablacklist-domains.lst")
+    with urllib.request.urlopen("https://raw.githubusercontent.com/uablacklist/uablacklist.net/master/gen/scripts/domains.json") as resp:
+        uablacklist_data = json.loads(resp.read().decode())
+    with open("uablacklist-domains.lst", 'w') as f:
+        for domain in uablacklist_data.keys():
+            f.write(f"{domain}\n")
+
     urllib.request.urlretrieve("https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/domainsdb.txt", "zaboronahelp-domains.lst")
 
     ua_lists = ['uablacklist-domains.lst', 'zaboronahelp-domains.lst', uaDomainsSrc]
