@@ -24,7 +24,7 @@ jobs:
     - run: |
         python get-subnets.py
     - name: Push subnets
-      uses: EndBug/add-and-commit@v9.1.4
+      uses: EndBug/add-and-commit@v10.0.0
       with:
         add: 'Subnets'
         author_name: GitHub Action
