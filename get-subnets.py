@@ -24,7 +24,8 @@ ASN_TELEGRAM = ['44907', '59930', '62014', '62041', '211157']
 TELEGRAM = 'telegram.lst'
 # Subnets not announced via ASN but confirmed as Telegram infrastructure
 TELEGRAM_V4 = [
-    '5.28.192.0/18',  # TELEGRAM-MESSENGER-INFRA-NET
+    '5.28.192.0/18',
+    '194.221.0.0/16'
 ]
 
 CLOUDFLARE = 'cloudflare.lst'

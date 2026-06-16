@@ -1,4 +1,5 @@
 cloudflare.com
+cloudflarestorage.com
 artstation.com
 bitru.org
 clerk.com
@@ -169,6 +170,30 @@ cloudns.net
 luadns.com
 filmix.my
 bitbucket.org
+gitlab.com
+callfilter.app
+vivo.com.cn
+pusher.com 
+irc-ws.chat.twitch.tv
+bitvise.com
+higgsfield.ai
+sbox.game
+gizmochina.com
+lowendtalk.com
+seriesgraph.com
+blackhatworld.com
+ping-admin.com
+scribd.com
+pdfcoffee.com
+consensus.app
+whoer.net
+vpnjantit.com
+figshare.com
+opintopolku.fi
+studyinfinland.fi
+transistor.fm
+walletbot.me
+allawnos.com
 
 hetzner.com
 hetzner.cloud
@@ -180,6 +205,7 @@ nextcloud.com
 ocbase.com
 archlinux.org
 beamng.com
+media5.cdnbase.com
 
 amazon.com
 fossorial.io
@@ -190,6 +216,7 @@ vrchat.com
 vrchat.cloud
 mongodb.com
 amazonaws.com
+cloudfront.net
 
 zerotier.com
 forum.syncthing.net
@@ -227,3 +254,8 @@ stripecdn.com
 scira.ai
 cdn.embedly.com
 dodopayments.com
+
+d4c.nintendo.net
+eshop.nintendo.net
+srv.nintendo.net
+dragons.nintendo.net
