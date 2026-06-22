@@ -354,6 +354,7 @@
 /ip dns static add name=fantlab.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=farmanager.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fastpic.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=fedulovschool.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=feedsmart.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=feo.rk.gov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fgi-lnr.su type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -399,6 +400,7 @@
 /ip dns static add name=gcdn.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=genichesk.khogov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=getcourse.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=getnet.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ggbet.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=giapkdnr.msdnr.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gisclub.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -936,6 +938,7 @@
 /ip dns static add name=paymaster.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=paymaster.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=paystree.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=pchela.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pcprogs.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pct.amocrm.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pdd.yandex.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
