@@ -288,6 +288,11 @@ DOMAIN-SUFFIX,eporner.com
 DOMAIN-SUFFIX,espreso.tv
 DOMAIN-SUFFIX,etahub.com
 DOMAIN-SUFFIX,etsy.com
+DOMAIN-SUFFIX,eu-cdn03-prem.boomio-cdn.com
+DOMAIN-SUFFIX,eu-cdn04-prem.boomio-cdn.com
+DOMAIN-SUFFIX,eu-cdn05-prem.boomio-cdn.com
+DOMAIN-SUFFIX,eu-cdn08-prem.boomio-cdn.com
+DOMAIN-SUFFIX,eu-cdn11-prem.boomio-cdn.com
 DOMAIN-SUFFIX,euronews.com
 DOMAIN-SUFFIX,europesays.com
 DOMAIN-SUFFIX,euroradio.fm
@@ -829,6 +834,8 @@ DOMAIN-SUFFIX,rublacklist.net
 DOMAIN-SUFFIX,rule34.art
 DOMAIN-SUFFIX,rule34.us
 DOMAIN-SUFFIX,rule34.xxx
+DOMAIN-SUFFIX,rule34gen.com
+DOMAIN-SUFFIX,rule34video.com
 DOMAIN-SUFFIX,rus.delfi.ee
 DOMAIN-SUFFIX,rus.jauns.lv
 DOMAIN-SUFFIX,ruscryde.net
