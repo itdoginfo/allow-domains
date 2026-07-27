@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,blinkshot.io
 DOMAIN-SUFFIX,bluehost.com
 DOMAIN-SUFFIX,booktracker.org
 DOMAIN-SUFFIX,boominfo.org
+DOMAIN-SUFFIX,boomio-cdn.com
 DOMAIN-SUFFIX,booth.pm
 DOMAIN-SUFFIX,booth.pximg.net
 DOMAIN-SUFFIX,bosch.com
@@ -829,6 +830,8 @@ DOMAIN-SUFFIX,rublacklist.net
 DOMAIN-SUFFIX,rule34.art
 DOMAIN-SUFFIX,rule34.us
 DOMAIN-SUFFIX,rule34.xxx
+DOMAIN-SUFFIX,rule34gen.com
+DOMAIN-SUFFIX,rule34video.com
 DOMAIN-SUFFIX,rus.delfi.ee
 DOMAIN-SUFFIX,rus.jauns.lv
 DOMAIN-SUFFIX,ruscryde.net

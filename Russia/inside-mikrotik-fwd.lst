@@ -109,6 +109,7 @@
 /ip dns static add name=bluehost.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=booktracker.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=boominfo.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=boomio-cdn.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=booth.pm type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=booth.pximg.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=bosch.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -829,6 +830,8 @@
 /ip dns static add name=rule34.art type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rule34.us type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rule34.xxx type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rule34gen.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=rule34video.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.delfi.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.jauns.lv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ruscryde.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
