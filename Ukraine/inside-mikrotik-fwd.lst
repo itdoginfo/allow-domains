@@ -365,6 +365,7 @@
 /ip dns static add name=finbet.bet type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=findexiq.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fixmypc.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=fixti.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=flashboot.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=flipperzero.one type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=fon.bet type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -398,6 +399,7 @@
 /ip dns static add name=gb-dnr.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gb.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=gcdn.co type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=gdebenz.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=genichesk.khogov.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=getcourse.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=getnet.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
