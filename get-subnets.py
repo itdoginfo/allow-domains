@@ -29,6 +29,8 @@ TELEGRAM_V4 = [
 ]
 
 CLOUDFLARE = 'cloudflare.lst'
+# ips-v4/ips-v6 list only the shared CDN ranges; BYOIP, enterprise and Spectrum ranges are announced separately
+ASN_CLOUDFLARE = ['13335', '209242']
 CLOUDFRONT = 'cloudfront.lst'
 
 # From https://iplist.opencck.org/
@@ -182,7 +184,10 @@ if __name__ == '__main__':
 
     # Cloudflare
     print(f'Fetching {CLOUDFLARE}...')
-    ipv4_cloudflare, ipv6_cloudflare = download_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
+    ipv4_cloudflare_file, ipv6_cloudflare_file = download_subnets(CLOUDFLARE_V4, CLOUDFLARE_V6)
+    ipv4_cloudflare_asn, ipv6_cloudflare_asn = fetch_asn_prefixes(ASN_CLOUDFLARE)
+    ipv4_cloudflare = subnet_summarization(ipv4_cloudflare_file + ipv4_cloudflare_asn)
+    ipv6_cloudflare = subnet_summarization(ipv6_cloudflare_file + ipv6_cloudflare_asn)
     write_subnets_to_file(ipv4_cloudflare, f'{IPv4_DIR}/{CLOUDFLARE}')
     write_subnets_to_file(ipv6_cloudflare, f'{IPv6_DIR}/{CLOUDFLARE}')
 
