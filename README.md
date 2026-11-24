@@ -36,6 +36,7 @@
 - Twitter
 - YouTube
 - Google Meet
+- GetsTV
 
 ## Страны
 ### Россия
